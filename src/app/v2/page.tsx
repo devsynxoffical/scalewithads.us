@@ -11,11 +11,11 @@ import { StickyContentScroll } from "@/components/redesign/StickyContentScroll";
 import { OwnershipSection } from "@/components/redesign/OwnershipSection";
 import { MeetTheTeamSection } from "@/components/redesign/MeetTheTeamSection";
 import { GuaranteeSection } from "@/components/redesign/GuaranteeSection";
+import { PricingSection } from "@/components/redesign/PricingSection";
 import { CommunitySection } from "@/components/redesign/CommunitySection";
 import { ClientTestimonialsSection } from "@/components/redesign/ClientTestimonialsSection";
 import { FaqSection } from "@/components/redesign/FaqSection";
 import { ProcessSection } from "@/components/redesign/ProcessSection";
-import { CreativeCtaSection } from "@/components/redesign/CreativeCtaSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 
@@ -80,6 +80,10 @@ export default function RedesignPage() {
         <GuaranteeSection />
       </div>
 
+      {/* Engagement options — no dollar amounts shown */}
+      <div id="pricing">
+        <PricingSection />
+      </div>
 
       {/* Verified Client Video Testimonials */}
       <ClientTestimonialsSection />
