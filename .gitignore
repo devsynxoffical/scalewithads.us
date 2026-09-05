@@ -1,0 +1,61 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# large video binaries (streamed from CDN in the app)
+public/media/**/*.mp4
+
+# funnel VSL videos served from the app itself
+!public/media/videos/mastermind.mp4
+!public/media/videos/metads.mp4
+!public/media/training/*.mp4
+
+# crawl reference dumps
+_crawl/
+
+# local scratch / incomplete downloads
+_crawl/
+scratch/
+*.part
+*.mp4.part
+mxKXQZ2SkCE*
+physics-footer.html
+scale-with-ads-hero*.html
