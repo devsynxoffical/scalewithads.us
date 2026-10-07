@@ -75,28 +75,28 @@ export function AdGenieHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4, delay: 0.55, ease: silkEase }}
-          className="mt-2 max-w-3xl text-center space-y-3 font-sans"
+          className="mt-3 max-w-4xl text-center space-y-3.5 font-sans"
         >
-          <p className="text-base sm:text-xl font-bold text-stone-800 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-2xl md:text-[26px] font-bold text-stone-900 max-w-3xl mx-auto leading-relaxed">
             Or We&apos;ll Continue Working For You At <span className="font-extrabold text-stone-950 underline underline-offset-4 decoration-purple-500">No Management Fee</span> Until We Do.
           </p>
 
-          <p className="text-xs sm:text-sm font-semibold text-stone-600 tracking-wide uppercase">
+          <p className="text-sm sm:text-base md:text-lg font-bold text-stone-700 tracking-wider uppercase">
             Done-For-You Client Acquisition From Meta Ads To The Booked Call.
           </p>
 
           {/* Clean Pill Badges */}
-          <div className="flex flex-wrap items-center justify-center gap-2.5 pt-3">
-            <span className="px-4 py-1.5 rounded-full bg-stone-950 text-white font-mono text-[11px] font-black uppercase tracking-wider inline-flex items-center gap-1.5 shadow-sm">
-              <ShieldCheck className="w-3.5 h-3.5 text-purple-400" />
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <span className="px-5 py-2 rounded-full bg-stone-950 text-white font-mono text-xs sm:text-sm font-black uppercase tracking-wider inline-flex items-center gap-2 shadow-md">
+              <ShieldCheck className="w-4 h-4 text-purple-400" />
               <span>Backed By A Written Agreement</span>
             </span>
-            <span className="px-4 py-1.5 rounded-full bg-purple-100 text-purple-950 border border-purple-300 font-mono text-[11px] font-black uppercase tracking-wider inline-flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-purple-700" />
+            <span className="px-5 py-2 rounded-full bg-purple-100 text-purple-950 border border-purple-300 font-mono text-xs sm:text-sm font-black uppercase tracking-wider inline-flex items-center gap-2 shadow-sm">
+              <CheckCircle2 className="w-4 h-4 text-purple-700" />
               <span>100% Asset Ownership</span>
             </span>
-            <span className="px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300 font-mono text-[11px] font-black uppercase tracking-wider inline-flex items-center gap-1.5">
-              <Zap className="w-3.5 h-3.5 text-emerald-700" />
+            <span className="px-5 py-2 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300 font-mono text-xs sm:text-sm font-black uppercase tracking-wider inline-flex items-center gap-2 shadow-sm">
+              <Zap className="w-4 h-4 text-emerald-700" />
               <span>Zero Risk Guarantee</span>
             </span>
           </div>
