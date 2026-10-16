@@ -218,6 +218,16 @@
     animation: drift-reverse 42s linear infinite;
   }
 
+  .marquee-track-left {
+    display: flex;
+    width: max-content;
+    animation: drift var(--marquee-duration, 48s) linear infinite;
+  }
+
+  .marquee-track-left:hover {
+    animation-play-state: paused;
+  }
+
   .band {
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
@@ -587,7 +597,8 @@
   }
 
   .marquee-track,
-  .marquee-track-reverse {
+  .marquee-track-reverse,
+  .marquee-track-left {
     animation: none;
   }
 }

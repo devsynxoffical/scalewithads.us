@@ -18,6 +18,7 @@ import { FaqSection } from "@/components/redesign/FaqSection";
 import { ProcessSection } from "@/components/redesign/ProcessSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
+import UFSquareMarquee from "@/components/redesign/UFSquareMarquee";
 
 export const metadata = {
   title: "Scale With Ads™ | Proprietary Client Acquisition System",
@@ -98,7 +99,12 @@ export default function RedesignPage() {
         <FaqSection />
       </div>
 
-      {/* 16. Lusion Interactive End Section */}
+      {/* 17. 3D Glassmorphic Photo Ribbon & Acquisition Playbook */}
+      <div id="playbook">
+        <UFSquareMarquee />
+      </div>
+
+      {/* 18. Lusion Interactive End Section */}
       <LusionEndSection />
 
       {/* 17. Editorial Footer */}
