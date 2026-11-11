@@ -23,7 +23,7 @@ export function FloatingNavbar() {
       dropdown: [
         { label: "Private Mastermind", href: "/privatemastermind", icon: Crown, desc: "Private 1:1 Advisory & Media Systems" },
         { label: "$847K LTO Funnel", href: "/metalto", icon: BookOpen, desc: "$847K Meta Ads Funnel Case Study" },
-        { label: "Sniper Method", href: "/snipermethod", icon: Crosshair, desc: "Hidden Facebook Audiences for PI Cases" },
+        { label: "MVA Lead Generation", href: "/snipermethod", icon: Crosshair, desc: "Sniper Method: Hidden Facebook Audiences for PI Cases" },
         { label: "Paid Pilot Trial", href: "/paidpilot", icon: Zap, desc: "Guaranteed Revenue Paid Trial" },
       ],
     },
