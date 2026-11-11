@@ -89,7 +89,7 @@ function Eyebrow({ children, icon: Icon = Sparkles }: { children: React.ReactNod
   );
 }
 
-export default function SniperMethodPage() {
+export default function MvaLeadGenerationPage() {
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-stone-900 font-sans selection:bg-purple-200 selection:text-purple-950">
       <FloatingNavbar />
