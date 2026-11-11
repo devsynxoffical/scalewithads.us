@@ -93,6 +93,9 @@ export function EditorialFooter() {
                 <Link href="/metalto" className="text-stone-600 hover:text-purple-700 transition-colors">
                   $847K Meta Funnel
                 </Link>
+                <Link href="/snipermethod" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  PI Sniper Method
+                </Link>
                 <Link href="/paidpilot" className="text-stone-600 hover:text-purple-700 transition-colors">
                   7-Day Paid Pilot
                 </Link>
