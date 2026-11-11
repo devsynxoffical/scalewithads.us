@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      // Old slug of the MVA Lead Generation page; keeps shared links working.
+      { source: "/snipermethod", destination: "/mvaleadgeneration", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {
