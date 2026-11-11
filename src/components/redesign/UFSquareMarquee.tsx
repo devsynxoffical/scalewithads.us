@@ -93,7 +93,7 @@ const RANDOM_PHOTOS = [
  * #FDFBF7 soft cream backdrop, crisp white cards, Mac window buttons,
  * purple accent highlights, and smooth infinite marquee glide.
  */
-export default function UFSquareMarquee() {
+export default function UFSquareMarquee({ heading }: { heading?: React.ReactNode } = {}) {
   const [isSystemActive, setIsSystemActive] = useState(true);
 
   return (
@@ -186,6 +186,8 @@ export default function UFSquareMarquee() {
 
         {/* Headline styled with website theme: bold black headline with purple script accent */}
         <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[76px] font-black tracking-tight text-stone-950 font-hero uppercase leading-[1.02]">
+          {heading ?? (
+            <>
           Scale your acquisition{" "}
           <span className="italic font-light text-purple-600 lowercase font-serif">
             without
@@ -194,6 +196,8 @@ export default function UFSquareMarquee() {
           <span className="font-serif italic font-normal text-purple-600 lowercase text-5xl sm:text-7xl md:text-8xl block mt-1">
             leaks.
           </span>
+            </>
+          )}
         </h2>
 
         {/* Live System State Toggle Widget */}
