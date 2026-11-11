@@ -33,7 +33,7 @@ export const metadata = {
  * - Direct .mp4 URL → rendered in a <video> player
  * Leave empty to show the "video coming soon" placeholder.
  */
-const MASTERMIND_VIDEO_URL = "";
+const MASTERMIND_VIDEO_URL = "https://player.vimeo.com/video/1245761641?title=0&byline=0&portrait=0&dnt=1";
 
 const BOOKING_URL =
   "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MmTk94_MhSyjkpFQ6YvKT6tixEbjNfAdSslrScOGWjLTyee2aQlQxetfdPYxk-ZrOXFl_1Ln7?gv=true";
@@ -121,7 +121,7 @@ function MastermindVideo() {
     <iframe
       src={MASTERMIND_VIDEO_URL}
       title="The Sniper Method Mastermind"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
       allowFullScreen
       className="h-full w-full border-0"
     />
