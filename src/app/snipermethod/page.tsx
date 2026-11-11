@@ -311,14 +311,7 @@ export default function SniperMethodPage() {
       <ClientTestimonialsSection />
 
       {/* Photo ribbon (same as home page) */}
-      <UFSquareMarquee
-        heading={
-          <>
-            MVA Lead{" "}
-            <span className="font-serif italic font-normal text-purple-600 lowercase">generation.</span>
-          </>
-        }
-      />
+      <UFSquareMarquee hideCallout />
 
       {/* SECTION 6 — WANT US TO RUN YOUR ADS? (CTA → /contact booking page) */}
       <section id="run-your-ads" className="py-24 px-4 md:px-8 max-w-5xl mx-auto">

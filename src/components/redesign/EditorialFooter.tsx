@@ -94,7 +94,7 @@ export function EditorialFooter() {
                   $847K Meta Funnel
                 </Link>
                 <Link href="/snipermethod" className="text-stone-600 hover:text-purple-700 transition-colors">
-                  PI Sniper Method
+                  MVA Lead Generation
                 </Link>
                 <Link href="/paidpilot" className="text-stone-600 hover:text-purple-700 transition-colors">
                   7-Day Paid Pilot
