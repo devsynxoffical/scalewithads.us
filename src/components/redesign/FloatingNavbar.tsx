@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, ArrowRight, Menu, X, ChevronDown, Crown, Users, BookOpen, Zap } from "lucide-react";
+import { Sparkles, ArrowRight, Menu, X, ChevronDown, Crown, Users, BookOpen, Zap, Crosshair } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -23,6 +23,7 @@ export function FloatingNavbar() {
       dropdown: [
         { label: "Private Mastermind", href: "/privatemastermind", icon: Crown, desc: "Private 1:1 Advisory & Media Systems" },
         { label: "$847K LTO Funnel", href: "/metalto", icon: BookOpen, desc: "$847K Meta Ads Funnel Case Study" },
+        { label: "Sniper Method", href: "/snipermethod", icon: Crosshair, desc: "Hidden Facebook Audiences for PI Cases" },
         { label: "Paid Pilot Trial", href: "/paidpilot", icon: Zap, desc: "Guaranteed Revenue Paid Trial" },
       ],
     },

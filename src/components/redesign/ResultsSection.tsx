@@ -14,7 +14,13 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-export function ResultsSection() {
+type ResultsSectionProps = {
+  eyebrow?: string;
+  title?: React.ReactNode;
+  subtitle?: string;
+};
+
+export function ResultsSection({ eyebrow, title, subtitle }: ResultsSectionProps = {}) {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
   // All 59 proof images from /public/workproof/
@@ -101,16 +107,20 @@ export function ResultsSection() {
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16 sm:mb-20">
           <span className="text-xs font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-1.5 rounded-full inline-block mb-4 shadow-sm">
-            ✦ PROVEN TRACK RECORD
+            ✦ {eyebrow ?? "PROVEN TRACK RECORD"}
           </span>
           
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-stone-950 leading-tight uppercase font-hero">
-            Don&apos;t Take Our Word For It... <br />
-            <span className="font-serif italic lowercase animate-purple-gradient">see what our clients have achieved.</span>
+            {title ?? (
+              <>
+                Don&apos;t Take Our Word For It... <br />
+                <span className="font-serif italic lowercase animate-purple-gradient">see what our clients have achieved.</span>
+              </>
+            )}
           </h2>
 
           <p className="mt-4 text-stone-600 text-base sm:text-lg font-medium max-w-2xl mx-auto">
-            Real revenue dashboards, verified Meta Ads ROI, and client case studies.
+            {subtitle ?? "Real revenue dashboards, verified Meta Ads ROI, and client case studies."}
           </p>
         </div>
 
