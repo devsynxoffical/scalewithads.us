@@ -6,12 +6,20 @@ import { Sparkles } from "lucide-react";
 export const MacbookScroll = ({
   src,
   videoSrc,
+  embedUrl: customEmbedUrl,
+  className = "max-w-5xl my-8",
+  title = "Scale With Ads System Video",
 }: {
   src?: string;
   videoSrc?: string;
+  /** Full iframe URL used as-is (e.g. a Vimeo player URL). Takes priority over videoSrc. */
+  embedUrl?: string;
+  /** Width/margin classes for the outer wrapper. */
+  className?: string;
+  title?: string;
 }) => {
   const videoId = videoSrc ? videoSrc.split('/').pop()?.split('?')[0] : "1PGP3xs_nBk";
-  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=1&rel=0&modestbranding=1`;
+  const youtubeEmbedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=1&rel=0&modestbranding=1`;
 
   // Mouse tilt animation state
   const mouseX = useMotionValue(0);
@@ -42,7 +50,7 @@ export const MacbookScroll = ({
       transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative max-w-5xl w-full mx-auto my-8 px-2 sm:px-4 perspective-1000 select-none cursor-pointer"
+      className={`relative ${className} w-full mx-auto px-2 sm:px-4 perspective-1000 select-none cursor-pointer`}
       style={{ perspective: "1200px" }}
     >
       {/* Dynamic Animated Glow Aura Behind Laptop */}
@@ -78,12 +86,12 @@ export const MacbookScroll = ({
 
           {/* SCREEN DISPLAY AREA (16:9) */}
           <div className="relative w-full aspect-video rounded-lg sm:rounded-xl overflow-hidden bg-black shadow-inner border border-white/10 group">
-            {videoSrc ? (
+            {customEmbedUrl || videoSrc ? (
               <iframe
-                src={embedUrl}
-                title="Scale With Ads System Video"
+                src={customEmbedUrl ?? youtubeEmbedUrl}
+                title={title}
                 className="w-full h-full border-0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             ) : (

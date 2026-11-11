@@ -18,9 +18,11 @@ type ResultsSectionProps = {
   eyebrow?: string;
   title?: React.ReactNode;
   subtitle?: string;
+  /** Hide the 6 "Verified Result" proof cards above the dashboard marquee. */
+  hideFeaturedProof?: boolean;
 };
 
-export function ResultsSection({ eyebrow, title, subtitle }: ResultsSectionProps = {}) {
+export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = false }: ResultsSectionProps = {}) {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
   // All 59 proof images from /public/workproof/
@@ -125,6 +127,7 @@ export function ResultsSection({ eyebrow, title, subtitle }: ResultsSectionProps
         </div>
 
         {/* FEATURED PROOF CARDS GRID (Top Highlights) */}
+        {!hideFeaturedProof && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {featuredProof.map((file, idx) => (
             <motion.div
@@ -173,6 +176,7 @@ export function ResultsSection({ eyebrow, title, subtitle }: ResultsSectionProps
             </motion.div>
           ))}
         </div>
+        )}
 
         {/* 50+ SCREENSHOTS CONTINUOUS MARQUEE STREAM */}
         <div className="mb-16 select-none overflow-hidden rounded-3xl bg-stone-950 p-6 sm:p-10 border border-stone-800 text-white shadow-2xl relative">

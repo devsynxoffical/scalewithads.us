@@ -18,6 +18,7 @@ import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { ResultsSection } from "@/components/redesign/ResultsSection";
 import { ClientTestimonialsSection } from "@/components/redesign/ClientTestimonialsSection";
 import UFSquareMarquee from "@/components/redesign/UFSquareMarquee";
+import { MacbookScroll } from "@/components/ui/MacbookScroll";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 
@@ -27,12 +28,7 @@ export const metadata = {
     "Discover hidden Facebook audiences that can help personal injury law firms and agencies generate more qualified cases at up to 50% lower advertising costs.",
 };
 
-/**
- * Paste the 1h 33m mastermind video URL here.
- * - YouTube/Vimeo embed URL (e.g. https://www.youtube.com/embed/VIDEO_ID) → rendered in an iframe
- * - Direct .mp4 URL → rendered in a <video> player
- * Leave empty to show the "video coming soon" placeholder.
- */
+/** 1h 33m mastermind video, played inside the laptop mockup in the hero (any iframe embed URL works). */
 const MASTERMIND_VIDEO_URL = "https://player.vimeo.com/video/1245761641?title=0&byline=0&portrait=0&dnt=1";
 
 const caseTypes = ["Car Accidents", "Motorcycle Accidents", "18-Wheeler Accidents", "Rideshare Accidents", "Other PI Cases"];
@@ -84,47 +80,6 @@ const benefits = [
   "Gain a competitive advantage in crowded personal injury markets.",
 ];
 
-function MastermindVideo() {
-  if (!MASTERMIND_VIDEO_URL) {
-    return (
-      <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 bg-[#060816] text-center px-6">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-purple-900/40 via-transparent to-purple-500/10" />
-        <span className="relative flex h-20 w-20 items-center justify-center rounded-full bg-purple-600 shadow-[0_0_40px_rgba(168,85,247,0.6)]">
-          <Play className="h-9 w-9 fill-white text-white translate-x-0.5" />
-        </span>
-        <p className="relative font-hero text-lg sm:text-2xl font-black uppercase tracking-tight text-white">
-          The Sniper Method Mastermind
-        </p>
-        <p className="relative font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest text-purple-200">
-          1 hr 33 min · Full Recording
-        </p>
-      </div>
-    );
-  }
-
-  if (/\.(mp4|webm|mov)(\?|$)/i.test(MASTERMIND_VIDEO_URL)) {
-    return (
-      <video
-        src={MASTERMIND_VIDEO_URL}
-        controls
-        playsInline
-        preload="metadata"
-        className="h-full w-full object-cover"
-      />
-    );
-  }
-
-  return (
-    <iframe
-      src={MASTERMIND_VIDEO_URL}
-      title="The Sniper Method Mastermind"
-      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-      allowFullScreen
-      className="h-full w-full border-0"
-    />
-  );
-}
-
 function Eyebrow({ children, icon: Icon = Sparkles }: { children: React.ReactNode; icon?: React.ElementType }) {
   return (
     <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2 shadow-sm">
@@ -139,21 +94,36 @@ export default function SniperMethodPage() {
     <main className="min-h-screen bg-[#FDFBF7] text-stone-900 font-sans selection:bg-purple-200 selection:text-purple-950">
       <FloatingNavbar />
 
-      {/* SECTION 1 — HERO */}
-      <section className="pt-28 sm:pt-36 pb-16 px-4 md:px-8 bg-white text-stone-900 overflow-hidden border-b border-stone-200 relative">
+      {/* SECTION 1 — HERO + SECTION 2 — MASTERMIND VIDEO (laptop) */}
+      <section className="pt-28 sm:pt-36 pb-16 sm:pb-20 px-4 md:px-8 bg-white text-stone-900 overflow-hidden border-b border-stone-200 relative">
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-gradient-to-tr from-purple-200/40 via-purple-100/20 to-amber-100/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-5xl mx-auto text-center flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 border border-purple-200 text-purple-900 font-extrabold text-xs tracking-widest uppercase mb-6 shadow-sm">
-            <Crosshair className="w-4 h-4 text-purple-700" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100 border border-purple-200 text-purple-900 font-extrabold text-[11px] tracking-widest uppercase mb-5 shadow-sm">
+            <Crosshair className="w-3.5 h-3.5 text-purple-700" />
             <span>Exclusive Personal Injury Mastermind</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-stone-950 tracking-tight uppercase font-hero leading-tight">
+          <h1 className="max-w-4xl text-2xl sm:text-4xl md:text-[44px] font-black text-stone-950 tracking-tight uppercase font-hero leading-[1.12]">
             Discover Hidden Facebook Audiences That Can Help You Generate More{" "}
             <span className="animate-purple-gradient font-hero tracking-tight">Qualified Personal Injury Cases</span>{" "}
             at Up to 50% Lower Advertising Costs.
           </h1>
+
+          {/* Mastermind video inside the laptop mockup (same as home page) */}
+          <div id="video" className="w-full mt-8 sm:mt-10 scroll-mt-28">
+            <p className="mb-2 inline-flex items-center gap-2 font-mono text-[11px] sm:text-xs font-black uppercase tracking-widest text-stone-600">
+              <Play className="w-3.5 h-3.5 fill-purple-700 text-purple-700" />
+              Watch the Exclusive Sniper Method Mastermind
+              <span className="text-stone-400">·</span>
+              <span className="text-purple-700">1 hr 33 min</span>
+            </p>
+            <MacbookScroll
+              embedUrl={MASTERMIND_VIDEO_URL}
+              title="The Sniper Method Mastermind"
+              className="max-w-3xl my-4"
+            />
+          </div>
 
           <p className="mt-6 text-base sm:text-lg font-medium text-stone-700 max-w-3xl mx-auto leading-relaxed">
             Whether you&apos;re targeting car accidents, motorcycle accidents, 18-wheeler accidents, rideshare accidents, or
@@ -161,85 +131,137 @@ export default function SniperMethodPage() {
             uncover untapped Facebook audiences.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
             {caseTypes.map((c) => (
               <span
                 key={c}
-                className="rounded-full border-2 border-stone-950 bg-white px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-wider text-stone-900 shadow-sm"
+                className="rounded-full border-2 border-stone-950 bg-white px-3 py-1 text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-stone-900 shadow-sm"
               >
                 {c}
               </span>
             ))}
           </div>
 
-          <p className="mt-8 inline-flex items-center gap-2 rounded-2xl border-2 border-stone-950 bg-stone-50 px-5 py-3 text-sm sm:text-base font-bold text-stone-800 shadow-sm">
-            <Clock className="w-5 h-5 text-purple-700 shrink-0" />
+          <p className="mt-6 inline-flex items-center gap-2 rounded-2xl border-2 border-stone-950 bg-stone-50 px-4 py-2.5 text-xs sm:text-sm font-bold text-stone-800 shadow-sm text-left">
+            <Clock className="w-4 h-4 text-purple-700 shrink-0" />
             <span>
               An exclusive <span className="text-purple-700">1-hour 33-minute</span> mastermind for personal injury law firms,
               agency owners, and agencies running ads for attorneys.
             </span>
           </p>
-        </div>
-      </section>
 
-      {/* SECTION 2 — EXCLUSIVE MASTERMIND VIDEO */}
-      <section id="video" className="py-16 sm:py-20 px-4 md:px-8 max-w-5xl mx-auto text-center">
-        <div className="mb-8">
-          <Eyebrow icon={Play}>Exclusive Mastermind Video</Eyebrow>
-          <h2 className="text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight mt-4 uppercase leading-tight">
-            Watch the Exclusive <span className="animate-purple-gradient font-hero tracking-tight">Sniper Method</span> Mastermind
-          </h2>
-        </div>
-
-        <div className="relative rounded-[32px] overflow-hidden border-4 border-stone-950 shadow-[0_25px_70px_rgba(147,51,234,0.3)] bg-black aspect-video">
-          <MastermindVideo />
-        </div>
-
-        <div className="mt-10 flex flex-col items-center gap-3">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center gap-3 px-10 py-5 sm:px-14 sm:py-6 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-lg sm:text-2xl uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 active:scale-95 border-2 border-purple-500/40"
-          >
-            <span>Book Your Call</span>
-            <ArrowRight className="w-6 h-6 sm:w-7 sm:h-7 stroke-[2.5]" />
-          </Link>
-          <span className="text-xs font-mono font-bold text-stone-500 uppercase tracking-widest flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>100% Free Strategy Session • Limited Weekly Spots</span>
-          </span>
+          <div className="mt-8 flex flex-col items-center gap-3">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-3 px-9 py-4 sm:px-12 sm:py-5 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-base sm:text-xl uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 active:scale-95 border-2 border-purple-500/40"
+            >
+              <span>Book Your Call</span>
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
+            </Link>
+            <span className="text-[11px] font-mono font-bold text-stone-500 uppercase tracking-widest flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>100% Free Strategy Session • Limited Weekly Spots</span>
+            </span>
+          </div>
         </div>
       </section>
 
       {/* SECTION 3 — WHAT YOU'LL DISCOVER */}
-      <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto border-t border-stone-200">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <Eyebrow>What You&apos;ll Discover</Eyebrow>
-          <h2 className="text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight mt-4 uppercase leading-tight">
-            Inside This <span className="animate-purple-gradient font-hero tracking-tight">Exclusive Mastermind</span>
-          </h2>
-        </div>
+      <section className="relative overflow-hidden bg-stone-950 text-white py-24 sm:py-28 px-4 md:px-8">
+        {/* Ambient glows + grid texture */}
+        <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full bg-purple-700/25 blur-3xl" />
+        <div className="pointer-events-none absolute bottom-0 right-0 w-[500px] h-[400px] rounded-full bg-fuchsia-600/10 blur-3xl" />
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+            maskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)",
+            WebkitMaskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)",
+          }}
+        />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {discoverItems.map((item) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={item.number}
-                className="bg-white rounded-3xl border-2 border-stone-950 p-8 shadow-xl hover:border-purple-600 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(147,51,234,0.18)] transition-all duration-300 flex flex-col group"
-              >
-                <div className="flex items-center justify-between mb-5">
-                  <span className="text-4xl font-black text-purple-700 font-mono">{item.number}</span>
-                  <span className="w-11 h-11 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 group-hover:bg-purple-700 group-hover:text-white transition-colors">
-                    <Icon className="w-5 h-5" />
+        <div className="relative max-w-6xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
+            <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-200 bg-purple-500/15 border border-purple-400/30 px-4 py-2 rounded-full inline-flex items-center gap-2">
+              <Sparkles className="w-3.5 h-3.5 text-purple-300" />
+              <span>What You&apos;ll Discover</span>
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-black font-hero tracking-tight mt-5 uppercase leading-tight">
+              Inside This{" "}
+              <span className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-purple-400 bg-clip-text text-transparent">
+                Exclusive Mastermind
+              </span>
+            </h2>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-2 font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-stone-300">
+              <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1">6 Core Lessons</span>
+              <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1">1 hr 33 min Recording</span>
+              <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1">Built for PI Advertisers</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {discoverItems.map((item, idx) => {
+              const Icon = item.icon;
+              const featured = idx === 0;
+              return (
+                <div
+                  key={item.number}
+                  className={`group relative overflow-hidden rounded-3xl p-7 sm:p-8 border transition-all duration-300 hover:-translate-y-1.5 ${
+                    featured
+                      ? "bg-gradient-to-br from-purple-600 to-purple-900 border-purple-400/50 shadow-[0_20px_60px_rgba(147,51,234,0.35)]"
+                      : "bg-white/[0.04] border-white/10 hover:border-purple-400/60 hover:bg-white/[0.07] hover:shadow-[0_20px_50px_rgba(147,51,234,0.25)]"
+                  }`}
+                >
+                  {/* Oversized outline number */}
+                  <span
+                    aria-hidden
+                    className="pointer-events-none absolute -right-2 -top-6 font-hero text-[120px] font-black leading-none text-transparent select-none"
+                    style={{ WebkitTextStroke: featured ? "1.5px rgba(255,255,255,0.22)" : "1.5px rgba(192,132,252,0.18)" }}
+                  >
+                    {item.number}
                   </span>
+
+                  <div className="relative flex items-center gap-3 mb-6">
+                    <span
+                      className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-colors ${
+                        featured
+                          ? "bg-white text-purple-700"
+                          : "bg-purple-500/15 border border-purple-400/30 text-purple-300 group-hover:bg-purple-600 group-hover:text-white"
+                      }`}
+                    >
+                      <Icon className="w-5 h-5" />
+                    </span>
+                    <span className={`font-mono text-[11px] font-black uppercase tracking-widest ${featured ? "text-purple-100" : "text-purple-300"}`}>
+                      Lesson {item.number}
+                    </span>
+                  </div>
+
+                  <h3 className="relative text-xl sm:text-2xl font-black font-hero tracking-tight mb-3 text-white">
+                    {item.title}
+                  </h3>
+                  <p className={`relative text-sm font-medium leading-relaxed ${featured ? "text-purple-50" : "text-stone-300"}`}>
+                    {item.desc}
+                  </p>
+
+                  <div
+                    className={`relative mt-6 h-px w-full ${featured ? "bg-white/25" : "bg-gradient-to-r from-purple-500/60 via-white/10 to-transparent"}`}
+                  />
                 </div>
-                <h3 className="text-2xl font-black text-stone-950 font-hero tracking-tight mb-3 group-hover:text-purple-700 transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-stone-600 text-sm font-medium leading-relaxed">{item.desc}</p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
+          <div className="mt-12 text-center">
+            <a
+              href="#video"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-purple-400/40 bg-white text-stone-950 hover:bg-purple-600 hover:text-white px-7 py-3.5 font-black text-sm uppercase tracking-wider transition-colors"
+            >
+              <Play className="w-4 h-4" />
+              <span>Watch the Mastermind</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -283,12 +305,20 @@ export default function SniperMethodPage() {
             </>
           }
           subtitle="Explore the real advertising performance and client results generated through our campaign strategies."
+          hideFeaturedProof
         />
       </div>
       <ClientTestimonialsSection />
 
       {/* Photo ribbon (same as home page) */}
-      <UFSquareMarquee />
+      <UFSquareMarquee
+        heading={
+          <>
+            MVA Lead{" "}
+            <span className="font-serif italic font-normal text-purple-600 lowercase">generation.</span>
+          </>
+        }
+      />
 
       {/* SECTION 6 — WANT US TO RUN YOUR ADS? (CTA → /contact booking page) */}
       <section id="run-your-ads" className="py-24 px-4 md:px-8 max-w-5xl mx-auto">
