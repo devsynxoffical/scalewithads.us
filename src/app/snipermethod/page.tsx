@@ -35,9 +35,6 @@ export const metadata = {
  */
 const MASTERMIND_VIDEO_URL = "https://player.vimeo.com/video/1245761641?title=0&byline=0&portrait=0&dnt=1";
 
-const BOOKING_URL =
-  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MmTk94_MhSyjkpFQ6YvKT6tixEbjNfAdSslrScOGWjLTyee2aQlQxetfdPYxk-ZrOXFl_1Ln7?gv=true";
-
 const caseTypes = ["Car Accidents", "Motorcycle Accidents", "18-Wheeler Accidents", "Rideshare Accidents", "Other PI Cases"];
 
 const discoverItems = [
@@ -199,13 +196,13 @@ export default function SniperMethodPage() {
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-3">
-          <a
-            href="#book"
+          <Link
+            href="/contact"
             className="inline-flex items-center justify-center gap-3 px-10 py-5 sm:px-14 sm:py-6 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-lg sm:text-2xl uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 active:scale-95 border-2 border-purple-500/40"
           >
             <span>Book Your Call</span>
             <ArrowRight className="w-6 h-6 sm:w-7 sm:h-7 stroke-[2.5]" />
-          </a>
+          </Link>
           <span className="text-xs font-mono font-bold text-stone-500 uppercase tracking-widest flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span>100% Free Strategy Session • Limited Weekly Spots</span>
@@ -293,9 +290,9 @@ export default function SniperMethodPage() {
       {/* Photo ribbon (same as home page) */}
       <UFSquareMarquee />
 
-      {/* SECTION 6 — WANT US TO RUN YOUR ADS? + BOOKING */}
-      <section id="book" className="py-24 px-4 md:px-8 max-w-5xl mx-auto scroll-mt-28">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+      {/* SECTION 6 — WANT US TO RUN YOUR ADS? (CTA → /contact booking page) */}
+      <section id="run-your-ads" className="py-24 px-4 md:px-8 max-w-5xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto">
           <Eyebrow icon={CalendarCheck}>Want Us to Run Your Ads?</Eyebrow>
           <h2 className="text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight mt-4 uppercase leading-tight">
             Want Our Team to Generate{" "}
@@ -308,43 +305,14 @@ export default function SniperMethodPage() {
           <p className="mt-3 text-base sm:text-lg font-bold text-stone-900 leading-relaxed">
             Let us take care of your advertising while you focus on growing your law firm or agency.
           </p>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact"
             className="mt-8 inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-base sm:text-xl uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 active:scale-95 border-2 border-purple-500/40"
           >
             <span>Let&apos;s Discuss Your Campaigns</span>
             <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
-          </a>
-        </div>
-
-        {/* Google Calendar Appointment Scheduling */}
-        <div className="rounded-[32px] border-4 border-stone-950 bg-white p-2 sm:p-4 shadow-[0_25px_70px_rgba(147,51,234,0.2)]">
-          <div className="flex items-center justify-between px-2 pb-3">
-            <div className="flex items-center gap-1.5">
-              <span className="h-2.5 w-2.5 rounded-full bg-[#FF5F56] border border-black/15" />
-              <span className="h-2.5 w-2.5 rounded-full bg-[#FFBD2E] border border-black/15" />
-              <span className="h-2.5 w-2.5 rounded-full bg-[#27C93F] border border-black/15" />
-            </div>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-purple-200 bg-purple-100 px-2.5 py-0.5 font-mono text-[10px] font-black uppercase tracking-wider text-purple-950">
-              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-purple-600" />
-              Book a Strategy Call
-            </span>
-          </div>
-          <iframe
-            src={BOOKING_URL}
-            title="Book an appointment"
-            className="w-full h-[720px] sm:h-[640px] rounded-2xl border border-stone-200 bg-white"
-            loading="lazy"
-          />
-        </div>
-        <p className="mt-4 text-center text-xs font-mono font-bold text-stone-500 uppercase tracking-widest">
-          Calendar not loading?{" "}
-          <Link href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="text-purple-700 underline">
-            Open it in a new tab
           </Link>
-        </p>
+        </div>
       </section>
 
       <LusionEndSection />
