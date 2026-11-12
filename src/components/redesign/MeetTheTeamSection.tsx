@@ -28,9 +28,9 @@ export function MeetTheTeamSection() {
     },
     {
       id: "03",
-      name: "Syed Hassan Ali Shah",
-      role: "Web Developer",
-      img: "/team/hassan.png",
+      name: "Ali Jawed",
+      role: "Video Editor",
+      img: "/team/Ali.jpeg",
       zIndex: 30,
     },
     {
@@ -42,9 +42,9 @@ export function MeetTheTeamSection() {
     },
     {
       id: "05",
-      name: "Ali Jawed",
-      role: "Video Editor",
-      img: "/team/Ali.jpeg",
+      name: "Syed Hassan Ali Shah",
+      role: "Web Developer",
+      img: "/team/hassan.png",
       zIndex: 50,
     },
   ];
@@ -83,7 +83,7 @@ export function MeetTheTeamSection() {
   const card2X = useTransform(scrollYProgress, [0, 0.78, 1], ["0%", "0%", "-74%"]);
   const card2Rotate = useTransform(scrollYProgress, [0, 0.10, 0.25, 0.78, 1], [0, 5, 2, 2, 0]);
 
-  // Card 3 (Syed Hassan Ali Shah) - Fully hidden until 0.28, slides UP and lands on Card 2
+  // Card 3 (Ali Jawed) - Fully hidden until 0.28, slides UP and lands on Card 2
   const card3Y = useTransform(
     scrollYProgress,
     [0, 0.28, 0.43, 0.78, 1],
@@ -111,7 +111,7 @@ export function MeetTheTeamSection() {
   const card4X = useTransform(scrollYProgress, [0, 0.78, 1], ["0%", "0%", "74%"]);
   const card4Rotate = useTransform(scrollYProgress, [0, 0.46, 0.61, 0.78, 1], [0, 4, 1.5, 1.5, 0]);
 
-  // Card 5 (Ali Jawed) - Fully hidden until 0.63, slides UP and lands on Card 4
+  // Card 5 (Syed Hassan Ali Shah) - Fully hidden until 0.63, slides UP and lands on Card 4
   const card5Y = useTransform(
     scrollYProgress,
     [0, 0.63, 0.76, 0.78, 1],
