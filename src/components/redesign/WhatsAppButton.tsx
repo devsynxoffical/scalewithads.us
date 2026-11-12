@@ -2,10 +2,15 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export function WhatsAppButton() {
+  const pathname = usePathname();
   const phoneNumber = "918287782334";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hi%2C%20I%20would%20like%20to%20learn%20more%20about%20ScaleWithAds`;
+
+  // Not shown on the private outreach admin panel.
+  if (pathname?.startsWith("/outreach")) return null;
 
   return (
     <motion.a

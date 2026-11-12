@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Node-only mail/database libraries used by the outreach system.
+  serverExternalPackages: ["nodemailer", "imapflow", "postgres"],
   async redirects() {
     return [
       // Old slug of the MVA Lead Generation page; keeps shared links working.

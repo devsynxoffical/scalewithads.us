@@ -9,6 +9,7 @@ Next.js funnel site for [scalewithads.us](https://scalewithads.us).
 - `/metads` — LTO Meta Ads VSL
 - `/privatemastermind` — Hidden Facebook Interest mastermind
 - `/book` — application form
+- `/outreach` — private cold email system (setup: [OUTREACH.md](OUTREACH.md))
 
 ## Develop
 
