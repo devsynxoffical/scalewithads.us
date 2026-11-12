@@ -64,6 +64,12 @@ export function EditorialSubhero() {
   // Real ScaleWithAds High-Impact Client Cards
   const clients = [
     {
+      name: "Marcus Filly",
+      role: "Fitness Coach | Functional Bodybuilding",
+      metric: "1.1M Followers",
+      img: "/images/clients/marcus-filly.webp",
+    },
+    {
       name: "Darrell Stern",
       role: "Webinar Scaling Coach",
       metric: "19K Followers",
