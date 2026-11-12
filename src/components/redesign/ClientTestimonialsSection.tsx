@@ -9,8 +9,13 @@ interface TestimonialCard {
   clientName: string;
   title: string;
   subtitle: string;
-  duration: string;
-  videoUrl: string;
+  duration?: string;
+  /** Direct .mp4 URL, played in a <video> element. */
+  videoUrl?: string;
+  /** Vimeo video ID, played in Vimeo's player. Use instead of videoUrl. */
+  vimeoId?: string;
+  /** Preview image for cards without a direct video file (e.g. Vimeo). */
+  poster?: string;
   aspectRatio: string;
 }
 
@@ -20,6 +25,15 @@ export function ClientTestimonialsSection() {
   const testimonials: TestimonialCard[] = [
     {
       id: "01",
+      clientName: "Marcus Filly",
+      title: "Marcus Filly (1.1M Followers), Founder of Functional Bodybuilding, on Working With ScaleWithAds",
+      subtitle: "Client Video Testimonial",
+      vimeoId: "1246210855",
+      poster: "/images/clients/marcus-filly.webp",
+      aspectRatio: "aspect-[16/10]",
+    },
+    {
+      id: "02",
       clientName: "Edgar",
       title: "How Edgar Landed High-Ticket Clients Using Our ScaleWithAds Client Acquisition System",
       subtitle: "High-Ticket Client Acquisition Walkthrough",
@@ -28,7 +42,7 @@ export function ClientTestimonialsSection() {
       aspectRatio: "aspect-[16/10]",
     },
     {
-      id: "02",
+      id: "03",
       clientName: "Marie Grace Berg",
       title: "Generated 2,000+ High-Ticket Registrations & Sales for Mary Grace Berg Summit",
       subtitle: "2,000+ Summit Registrations Case Study",
@@ -37,7 +51,7 @@ export function ClientTestimonialsSection() {
       aspectRatio: "aspect-[16/10]",
     },
     {
-      id: "03",
+      id: "04",
       clientName: "Edgar & Jeremi",
       title: "How Edgar & Jeremi Are Getting High-Ticket Clients Using Our Million Dollar Funnel™ System",
       subtitle: "$4,500 MRR Deal at $7 CPL Walkthrough",
@@ -70,8 +84,8 @@ export function ClientTestimonialsSection() {
           </p>
         </div>
 
-        {/* 3 Video Cards Grid (Sleek White Cards with Black Border & Hover Glow) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+        {/* Video Cards Grid (Sleek White Cards with Black Border & Hover Glow) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
           {testimonials.map((item) => (
             <motion.div
               key={item.id}
@@ -82,20 +96,32 @@ export function ClientTestimonialsSection() {
             >
               {/* Direct Video Preview Frame Container */}
               <div className="relative w-full aspect-video bg-stone-950 flex items-center justify-center p-2 overflow-hidden rounded-t-3xl border-b border-stone-200">
-                <video
-                  src={item.videoUrl}
-                  preload="metadata"
-                  muted
-                  playsInline
-                  className="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500"
-                />
+                {item.videoUrl ? (
+                  <video
+                    src={item.videoUrl}
+                    preload="metadata"
+                    muted
+                    playsInline
+                    className="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={item.poster}
+                    alt={item.clientName}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-top rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 opacity-40 group-hover:opacity-10 transition-opacity pointer-events-none" />
 
                 {/* Top Right Duration Badge */}
-                <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/20 flex items-center gap-1.5 text-[11px] font-mono text-purple-200 shadow-lg pointer-events-none">
-                  <Volume2 className="w-3 h-3 text-purple-400" />
-                  <span>{item.duration}</span>
-                </div>
+                {item.duration && (
+                  <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/20 flex items-center gap-1.5 text-[11px] font-mono text-purple-200 shadow-lg pointer-events-none">
+                    <Volume2 className="w-3 h-3 text-purple-400" />
+                    <span>{item.duration}</span>
+                  </div>
+                )}
 
                 {/* Center Play Icon with Purple Glow */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -165,12 +191,22 @@ export function ClientTestimonialsSection() {
 
               {/* Video Player */}
               <div className="relative aspect-video bg-black flex items-center justify-center">
-                <video
-                  src={activeVideo.videoUrl}
-                  controls
-                  autoPlay
-                  className="w-full h-full object-contain"
-                />
+                {activeVideo.vimeoId ? (
+                  <iframe
+                    src={`https://player.vimeo.com/video/${activeVideo.vimeoId}?autoplay=1&title=0&byline=0&portrait=0&dnt=1`}
+                    title={`${activeVideo.clientName} Video Testimonial`}
+                    allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+                    allowFullScreen
+                    className="w-full h-full border-0"
+                  />
+                ) : (
+                  <video
+                    src={activeVideo.videoUrl}
+                    controls
+                    autoPlay
+                    className="w-full h-full object-contain"
+                  />
+                )}
               </div>
             </motion.div>
           </motion.div>
