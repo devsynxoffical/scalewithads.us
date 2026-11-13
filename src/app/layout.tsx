@@ -21,6 +21,10 @@ export const metadata: Metadata = {
       "Complete done-for-you client acquisition system: Meta Ads, creatives, landing pages, CRM, AI automations, and qualification. Double revenue in 90 days, in writing.",
     type: "website",
   },
+  // Google Search Console ownership: renders <meta name="google-site-verification" ...>
+  verification: {
+    google: "z0F900_Qf7pNqEC16VvMjYKnK1M5MZmOmmLSURZChsg",
+  },
 };
 
 export default function RootLayout({
