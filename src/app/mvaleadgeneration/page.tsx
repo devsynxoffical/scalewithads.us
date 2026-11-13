@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import React from "react";
 import Link from "next/link";
 import {
@@ -22,11 +24,12 @@ import { MacbookScroll } from "@/components/ui/MacbookScroll";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 
-export const metadata = {
-  title: "The Sniper Method Mastermind | Hidden Facebook Audiences for Personal Injury",
+export const metadata: Metadata = pageMeta({
+  title: "MVA Lead Generation: The Sniper Method | Hidden Facebook Audiences for Personal Injury",
   description:
-    "Discover hidden Facebook audiences that can help personal injury law firms and agencies generate more qualified cases at up to 50% lower advertising costs.",
-};
+    "A 1-hour 33-minute mastermind on the Sniper Method for finding hidden Facebook audiences that help personal injury law firms and agencies get more qualified MVA cases at up to 50% lower ad costs.",
+  path: "/mvaleadgeneration",
+});
 
 /** 1h 33m mastermind video, played inside the laptop mockup in the hero (any iframe embed URL works). */
 const MASTERMIND_VIDEO_URL = "https://player.vimeo.com/video/1245761641?title=0&byline=0&portrait=0&dnt=1";

@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
@@ -5,10 +7,12 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { Zap, ArrowRight, ShieldCheck, Play, CheckCircle2, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Lead Pilot DFY Ads | 1-on-1 Growth Coaching | ScaleWithAds",
-  description: "Done-for-you Meta ads across all industries. $10K minimum. We double your revenue in 90 days, written in the agreement.",
-};
+export const metadata: Metadata = pageMeta({
+  title: "Lead Pilot DFY Ads | 1-on-1 Growth Coaching | Scale With Ads™",
+  description:
+    "Done-for-you Meta ads across all industries for $10K+/month businesses. We double your revenue in 90 days, written in the agreement.",
+  path: "/privatemastermind/coaching",
+});
 
 export default function GrowthCoachingPage() {
   const stats = [

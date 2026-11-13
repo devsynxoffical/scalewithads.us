@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { SmoothScroll } from "../components/providers/SmoothScroll";
 import { ScrollToTop } from "../components/ScrollToTop";
 import { WhatsAppButton } from "../components/redesign/WhatsAppButton";
-import { SITE_URL } from "@/lib/seo";
+import { OG_IMAGE, SITE_JSONLD, SITE_URL } from "@/lib/seo";
+import { JsonLd } from "../components/seo/JsonLd";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -31,9 +32,11 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Scale With Ads™",
     locale: "en_US",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Scale With Ads™: Double Your Revenue In 90 Days" }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
+    images: [OG_IMAGE],
     title: "Scale With Ads™ | Double Your Revenue In 90 Days",
     description:
       "Done-for-you client acquisition: Meta Ads, creatives, landing pages, CRM and AI automations. Double revenue in 90 days, in writing.",
@@ -52,6 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
       <body className="min-h-full antialiased font-sans bg-[#FDFBF7] text-stone-900" suppressHydrationWarning>
+        <JsonLd data={SITE_JSONLD} />
         <ScrollToTop />
         <SmoothScroll>
           {children}

@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { CreativeCtaSection } from "@/components/redesign/CreativeCtaSection";
@@ -5,10 +7,12 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import Link from "next/link";
 import { ArrowRight, Calendar, Clock, User } from "lucide-react";
 
-export const metadata = {
-  title: "Blog & Insights | ScaleWithAds",
-  description: "Read performance ad strategies, VSL frameworks, and Meta/TikTok scaling tactics from our media buyers.",
-};
+export const metadata: Metadata = pageMeta({
+  title: "Blog & Insights | Meta Ads, VSL & Funnel Strategy | Scale With Ads™",
+  description:
+    "Performance ad strategies, VSL frameworks, and Meta and TikTok scaling tactics from the Scale With Ads™ media buyers.",
+  path: "/blog",
+});
 
 export default function BlogPage() {
   const posts = [

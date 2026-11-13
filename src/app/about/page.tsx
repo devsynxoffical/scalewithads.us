@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { EditorialSubhero } from "@/components/redesign/EditorialSubhero";
@@ -7,10 +9,12 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import Link from "next/link";
 import { ArrowRight, Sparkles, Target, Zap, Award } from "lucide-react";
 
-export const metadata = {
-  title: "About Us | ScaleWithAds",
-  description: "Learn about the team, philosophy, and performance marketing strategy behind ScaleWithAds.",
-};
+export const metadata: Metadata = pageMeta({
+  title: "About Scale With Ads™ | Team & Philosophy",
+  description:
+    "Meet the team behind Scale With Ads™, led by founders Vaishali Kapoor and Gaurav Kapoor, and the performance marketing philosophy behind our done-for-you client acquisition system.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
