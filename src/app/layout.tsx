@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import { SmoothScroll } from "../components/providers/SmoothScroll";
 import { ScrollToTop } from "../components/ScrollToTop";
 import { WhatsAppButton } from "../components/redesign/WhatsAppButton";
+import { SITE_URL } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  // Lets relative URLs in metadata (Open Graph, canonical) resolve to the live domain.
+  metadataBase: new URL(SITE_URL),
+  applicationName: "Scale With Ads™",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  },
   title: "Scale With Ads™ | Done-For-You Client Acquisition System",
   description:
     "We install our proprietary Scale With Ads™ Client Acquisition System into your business and double your revenue in 90 days, or we work at no management fee until we do. Backed by a written agreement. For $10K+/month businesses.",
@@ -20,6 +29,14 @@ export const metadata: Metadata = {
     description:
       "Complete done-for-you client acquisition system: Meta Ads, creatives, landing pages, CRM, AI automations, and qualification. Double revenue in 90 days, in writing.",
     type: "website",
+    siteName: "Scale With Ads™",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: "Scale With Ads™ | Double Your Revenue In 90 Days",
+    description:
+      "Done-for-you client acquisition: Meta Ads, creatives, landing pages, CRM and AI automations. Double revenue in 90 days, in writing.",
   },
   // Google Search Console ownership: renders <meta name="google-site-verification" ...>
   verification: {

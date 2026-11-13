@@ -24,6 +24,9 @@ export const metadata = {
   title: "Scale With Ads™ | Proprietary Client Acquisition System",
   description:
     "We install our proprietary Scale With Ads™ Client Acquisition System into your business and double your revenue in 90 days, or we work at no management fee until we do. Backed by a written agreement.",
+  // /v2 renders the same page as the home page; point search engines at "/" and keep /v2 out of the index.
+  alternates: { canonical: "/" },
+  robots: { index: false, follow: true },
 };
 
 export default function RedesignPage() {
