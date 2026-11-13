@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { ResultsSection } from "@/components/redesign/ResultsSection";
@@ -7,10 +9,12 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { GoogleBookingCalendar } from "@/components/redesign/GoogleBookingCalendar";
 import { CheckCircle2 } from "lucide-react";
 
-export const metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Book Your Strategy Call | Scale With Ads™",
-  description: "Pick a time for your free strategy call with the Scale With Ads™ team.",
-};
+  description:
+    "Book a free strategy call with the Scale With Ads™ team. We audit your client acquisition, review your offer and map a 90-day growth plan.",
+  path: "/contact",
+});
 
 const highlights = [
   "100% Free Strategy Session",

@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { ResultsSection } from "@/components/redesign/ResultsSection";
@@ -8,10 +10,12 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { Crown, ArrowRight, ShieldCheck, Sparkles, CheckCircle2, TrendingUp, BarChart2, Star, AlertTriangle, Play, Zap, RefreshCw, Lock, Award, FileText } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Paid Pilot Trial | 8-Figure Operator Circle | ScaleWithAds",
-  description: "90-Day Guaranteed Paid Pilot Trial for agency owners, coaches, and high-ticket service founders.",
-};
+export const metadata: Metadata = pageMeta({
+  title: "Paid Pilot Trial | 90-Day Guaranteed | Scale With Ads™",
+  description:
+    "A 90-day guaranteed paid pilot trial of the Scale With Ads™ client acquisition system for agency owners, coaches and high-ticket service founders.",
+  path: "/paidpilot",
+});
 
 export default function PaidPilotPage() {
   const stats = [

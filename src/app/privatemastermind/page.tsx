@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { ClientTestimonialsSection } from "@/components/redesign/ClientTestimonialsSection";
@@ -9,10 +11,12 @@ import { MASTERMIND_FUNNEL } from "@/lib/funnels";
 import { Crown, Sparkles, ArrowRight, ShieldCheck, Zap, Users, Trophy, Play, CheckCircle2, XCircle, TrendingUp, BarChart2, Star, AlertTriangle, HelpCircle, Layers, FileText, Lock, Target, Award, Crosshair } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = pageMeta({
   title: MASTERMIND_FUNNEL.metaTitle,
-  description: MASTERMIND_FUNNEL.metaDescription,
-};
+  description:
+    MASTERMIND_FUNNEL.metaDescription,
+  path: "/privatemastermind",
+});
 
 export default function PrivateMastermindPage() {
   const stats = [

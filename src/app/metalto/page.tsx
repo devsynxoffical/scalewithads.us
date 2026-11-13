@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { ResultsSection } from "@/components/redesign/ResultsSection";
@@ -8,10 +10,12 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { BookOpen, ArrowRight, ShieldCheck, Download, Sparkles, CheckCircle2, AlertTriangle, Play, TrendingUp, DollarSign, Layers, Clock, Cpu } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "How We Scaled an LTO Funnel to $847K | ScaleWithAds Meta LTO",
-  description: "Plug-and-play Meta Ads SOPs, VSL scripts, and $847K LTO funnel scaling case study.",
-};
+export const metadata: Metadata = pageMeta({
+  title: "How We Scaled an LTO Funnel to $847K | Meta Ads Case Study | Scale With Ads™",
+  description:
+    "Case study: how we scaled a low-ticket offer funnel to $847K in revenue with $255K in Meta ad spend, a 3.32x ROAS and 13,630+ sales, plus the SOPs and VSL scripts behind it.",
+  path: "/metalto",
+});
 
 export default function MetaLTOPage() {
   const stats = [

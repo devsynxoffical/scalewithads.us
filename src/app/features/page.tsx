@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { MarqueeTicker } from "@/components/redesign/MarqueeTicker";
@@ -6,10 +8,12 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import Link from "next/link";
 import { ArrowRight, BarChart3, ShieldCheck, Zap, Layers, Sparkles, Database } from "lucide-react";
 
-export const metadata = {
-  title: "Features & OS | ScaleWithAds",
-  description: "Discover the proprietary ScaleWithAds OS features, live dashboard tracking, and attribution tools.",
-};
+export const metadata: Metadata = pageMeta({
+  title: "Features & Acquisition OS | Scale With Ads™",
+  description:
+    "The proprietary Scale With Ads™ operating system: live dashboard tracking, attribution, CRM automation and lead qualification tools.",
+  path: "/features",
+});
 
 export default function FeaturesPage() {
   const features = [
