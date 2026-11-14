@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import type { Faq } from "./faqs";
 
-/** Canonical origin of the live site. Used by the sitemap, robots.txt and metadataBase. */
-export const SITE_URL = "https://scalewithads.us";
+/** Canonical origin of the live site (Vercel redirects scalewithads.us to www). Used by the sitemap, robots.txt, JSON-LD and metadataBase. */
+export const SITE_URL = "https://www.scalewithads.us";
 export const SITE_NAME = "Scale With Ads™";
 /** Default 1200x630 share image (public/og-image.png). */
 export const OG_IMAGE = "/og-image.png";
