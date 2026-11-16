@@ -10,9 +10,9 @@ import { GoogleBookingCalendar } from "@/components/redesign/GoogleBookingCalend
 import { CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = pageMeta({
-  title: "Book Your Strategy Call | Scale With Ads™",
+  title: "Book a Free Meta Ads Strategy Call | Scale With Ads™",
   description:
-    "Book a free strategy call with the Scale With Ads™ team. We audit your client acquisition, review your offer and map a 90-day growth plan.",
+    "Pick a time for a free strategy call. We audit your client acquisition, review your offer and map out a 90-day Meta Ads growth plan for your business.",
   path: "/contact",
 });
 

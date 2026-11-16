@@ -26,7 +26,14 @@ Clients own 100% of every asset we build. Onboarding and system build take rough
 - [Private Mastermind](https://www.scalewithads.us/privatemastermind): private 1:1 advisory and media systems
 - [MVA Lead Generation: The Sniper Method](https://www.scalewithads.us/mvaleadgeneration): a 1 hour 33 minute mastermind on finding hidden Facebook audiences for personal injury (motor vehicle accident) cases at up to 50% lower ad costs
 - [$847K LTO funnel case study](https://www.scalewithads.us/metalto): how a low-ticket offer funnel reached $847K revenue on $255K Meta ad spend (3.32x ROAS)
-- [Paid Pilot Trial](https://www.scalewithads.us/paidpilot): 90-day guaranteed paid pilot
+- [Paid Pilot Trial](https://www.scalewithads.us/paidpilot): 7-day paid pilot to test the system before committing
+- [Personal injury lead generation](https://www.scalewithads.us/personal-injury-lead-generation): exclusive MVA and personal injury case inquiries from Meta Ads run in the law firm's own ad account
+
+## Guides
+
+- [How to find hidden Facebook interests](https://www.scalewithads.us/blog/find-hidden-facebook-interests): step-by-step workflow for finding, filtering and testing less-contested Meta Ads interests
+- [Low-ticket offer funnel](https://www.scalewithads.us/blog/low-ticket-offer-funnel): how the funnel works, with numbers from an $847K Meta Ads case study
+- [VSL script structure](https://www.scalewithads.us/blog/vsl-script-structure): an 8-part framework and fill-in template for high-ticket VSLs
 - [Shorts and video library](https://www.scalewithads.us/medialibrary): short-form ad creatives produced for clients
 
 ## Frequently asked questions

@@ -10,9 +10,9 @@ import Link from "next/link";
 import { ArrowRight, Sparkles, Target, Zap, Award } from "lucide-react";
 
 export const metadata: Metadata = pageMeta({
-  title: "About Scale With Ads™ | Team & Philosophy",
+  title: "About Scale With Ads™ | Meta Ads Agency Team",
   description:
-    "Meet the team behind Scale With Ads™, led by founders Vaishali Kapoor and Gaurav Kapoor, and the performance marketing philosophy behind our done-for-you client acquisition system.",
+    "Meet the Scale With Ads™ team, led by founders Vaishali Kapoor and Gaurav Kapoor, and the performance-first approach behind our client acquisition system.",
   path: "/about",
 });
 

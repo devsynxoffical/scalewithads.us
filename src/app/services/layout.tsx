@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/seo";
 
 // This route's page is a client component, so its metadata lives here.
 export const metadata: Metadata = pageMeta({
-  title: "Services | Meta Ads, Creatives, Funnels & CRM | Scale With Ads™",
+  title: "Meta Ads Management, Creatives & Funnels | Scale With Ads™",
   description:
-    "Our core client acquisition services: Meta Ads management, ad creatives, VSL scripting, sales funnels, CRM setup, AI follow-up automations and lead qualification.",
+    "Done-for-you Meta Ads management, video ad creatives, VSL scripts, sales funnels, CRM setup and AI follow-up, built to turn ad spend into booked sales calls.",
   path: "/services",
 });
 

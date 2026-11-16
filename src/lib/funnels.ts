@@ -26,9 +26,9 @@ export type FunnelConfig = {
 
 export const LEADPILOT_FUNNEL: FunnelConfig = {
   slug: "leadpilot",
-  metaTitle: "Lead Pilot | Done-For-You Ads That Sell | Scale with Ads",
+  metaTitle: "Lead Pilot: Done-For-You Meta Ads That Sell | Scale With Ads™",
   metaDescription:
-    "Done-for-you Meta ads across all industries. $10K minimum. We double your revenue in 90 days, everything in the agreement. $50M+ Meta spend. 12 years experience.",
+    "Done-for-you Meta Ads for $10K+/month businesses in any industry, from a team with $50M+ in Meta spend. Double your revenue in 90 days, in writing.",
   eyebrow: "Lead Pilot · done-for-you ads that sell",
   title: "Sick of agencies that promise leads and deliver excuses?",
   titleAccent: "We run ads that sell",
@@ -66,9 +66,9 @@ export const LEADPILOT_FUNNEL: FunnelConfig = {
 export const MASTERMIND_FUNNEL: FunnelConfig = {
   slug: "privatemastermind",
   metaTitle:
-    "Private Mastermind | Train Media Agencies to Get Clients | Scale with Ads",
+    "Private Meta Ads Mastermind for Agencies | Scale With Ads™",
   metaDescription:
-    "Private mastermind for media agencies and operators, how to get clients with Meta ads across all industries. Hidden Facebook Interest framework.",
+    "A private 1:1 mastermind for agencies and operators: win clients with Meta Ads, use our hidden Facebook interest framework and install the 8 core growth pillars.",
   eyebrow: "Private mastermind · media agencies + operators",
   title: "We train media agencies on how to",
   titleAccent: "get clients with ads",
@@ -106,9 +106,9 @@ export const MASTERMIND_FUNNEL: FunnelConfig = {
 export const METADS_FUNNEL: FunnelConfig = {
   slug: "metads",
   metaTitle:
-    "LTO Meta Ads VSL | Ads That Sell Across Industries | Scale with Ads",
+    "Meta Ads for Any Industry: Done-For-You | Scale With Ads™",
   metaDescription:
-    "LTO Meta Ads training from a team with $50M+ Meta spend and 12 years experience. Double revenue in 90 days. $10K minimum. Everything in the agreement.",
+    "Turn Meta Ads into a predictable sales engine with VSL-led campaigns from a team with 12 years and $50M+ in Meta spend. 90-day double-revenue guarantee.",
   eyebrow: "LTO Meta Ads VSL · ads that sell",
   title: "Turn Meta Ads into a",
   titleAccent: "cash cow machine",

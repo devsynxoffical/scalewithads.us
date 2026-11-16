@@ -11,9 +11,9 @@ import { Crown, ArrowRight, ShieldCheck, Sparkles, CheckCircle2, TrendingUp, Bar
 import Link from "next/link";
 
 export const metadata: Metadata = pageMeta({
-  title: "Paid Pilot Trial | 90-Day Guaranteed | Scale With Ads™",
+  title: "7-Day Meta Ads Paid Pilot | Scale With Ads™",
   description:
-    "A 90-day guaranteed paid pilot trial of the Scale With Ads™ client acquisition system for agency owners, coaches and high-ticket service founders.",
+    "Test our client acquisition system with a 7-day paid pilot before committing: campaign launch, creatives and tracking set up, with results you can see.",
   path: "/paidpilot",
 });
 

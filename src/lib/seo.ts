@@ -128,13 +128,28 @@ export const SITEMAP_ROUTES: Route[] = [
   { path: "/medialibrary", changeFrequency: "weekly", priority: 0.8 },
   { path: "/privatemastermind", changeFrequency: "monthly", priority: 0.8 },
   { path: "/mvaleadgeneration", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/personal-injury-lead-generation", changeFrequency: "monthly", priority: 0.9 },
   { path: "/metalto", changeFrequency: "monthly", priority: 0.7 },
   { path: "/paidpilot", changeFrequency: "monthly", priority: 0.7 },
   { path: "/metads", changeFrequency: "monthly", priority: 0.7 },
   { path: "/leadpilot", changeFrequency: "monthly", priority: 0.7 },
   { path: "/features", changeFrequency: "monthly", priority: 0.6 },
-  { path: "/portfolio", changeFrequency: "monthly", priority: 0.6 },
   { path: "/privatemastermind/coaching", changeFrequency: "monthly", priority: 0.6 },
   { path: "/about", changeFrequency: "yearly", priority: 0.5 },
   { path: "/blog", changeFrequency: "weekly", priority: 0.5 },
 ];
+
+/** BreadcrumbList structured data. `items` are [name, path] pairs, starting after Home. */
+export function breadcrumbJsonLd(items: [string, string][]) {
+  const all: [string, string][] = [["Home", "/"], ...items];
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: all.map(([name, path], i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name,
+      item: `${SITE_URL}${path === "/" ? "" : path}`,
+    })),
+  };
+}

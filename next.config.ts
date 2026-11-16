@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
     return [
       // Old slug of the MVA Lead Generation page; keeps shared links working.
       { source: "/snipermethod", destination: "/mvaleadgeneration", permanent: true },
+      // /medialibrary renders the same page; keep one indexable URL.
+      { source: "/portfolio", destination: "/medialibrary", permanent: true },
     ];
   },
   async headers() {
