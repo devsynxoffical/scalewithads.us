@@ -25,9 +25,9 @@ import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 
 export const metadata: Metadata = pageMeta({
-  title: "MVA Lead Generation: The Sniper Method | Hidden Facebook Audiences for Personal Injury",
+  title: "MVA Lead Generation: Hidden Facebook Audiences for PI",
   description:
-    "A 1-hour 33-minute mastermind on the Sniper Method for finding hidden Facebook audiences that help personal injury law firms and agencies get more qualified MVA cases at up to 50% lower ad costs.",
+    "A 1 hr 33 min mastermind on the Sniper Method: find hidden Facebook audiences for car, truck, motorcycle and rideshare accident cases at lower ad costs.",
   path: "/mvaleadgeneration",
 });
 
@@ -338,6 +338,13 @@ export default function MvaLeadGenerationPage() {
             <span>Let&apos;s Discuss Your Campaigns</span>
             <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
           </Link>
+          <p className="mt-5 text-sm font-bold text-stone-600">
+            See how we run{" "}
+            <Link href="/personal-injury-lead-generation" className="text-purple-700 underline underline-offset-4">
+              personal injury lead generation campaigns
+            </Link>{" "}
+            for law firms.
+          </p>
         </div>
       </section>
 

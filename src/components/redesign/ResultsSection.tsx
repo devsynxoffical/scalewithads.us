@@ -89,7 +89,8 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
   ];
 
   // Helper to build encoded image src
-  const getImgSrc = (file: string) => `/workproof/${encodeURIComponent(file)}`;
+  // Served as optimized WebP (converted from the original PNG screenshots).
+  const getImgSrc = (file: string) => `/workproof/${encodeURIComponent(file.replace(/\.png$/i, ".webp"))}`;
 
   // Split images into 2 continuous scrolling rows for the marquee
   const row1 = proofFiles.slice(0, 20);
@@ -139,6 +140,8 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
               {/* Image Frame */}
               <div className="relative w-full h-[240px] sm:h-[270px] rounded-2xl overflow-hidden bg-stone-900 border border-stone-200">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src={getImgSrc(file)}
                   alt={`Verified Client Proof ${idx + 1}`}
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
@@ -207,6 +210,8 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
                   className="w-[260px] sm:w-[320px] h-[170px] sm:h-[200px] rounded-xl overflow-hidden border border-stone-800 bg-stone-900 shrink-0 cursor-pointer group hover:border-purple-500 transition-all duration-300 relative"
                 >
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src={getImgSrc(file)}
                     alt="Client Proof Screenshot"
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
@@ -233,6 +238,8 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
                   className="w-[260px] sm:w-[320px] h-[170px] sm:h-[200px] rounded-xl overflow-hidden border border-stone-800 bg-stone-900 shrink-0 cursor-pointer group hover:border-purple-500 transition-all duration-300 relative"
                 >
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src={getImgSrc(file)}
                     alt="Client Proof Screenshot"
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
@@ -259,6 +266,8 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
                   className="w-[260px] sm:w-[320px] h-[170px] sm:h-[200px] rounded-xl overflow-hidden border border-stone-800 bg-stone-900 shrink-0 cursor-pointer group hover:border-purple-500 transition-all duration-300 relative"
                 >
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src={getImgSrc(file)}
                     alt="Client Proof Screenshot"
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
@@ -322,6 +331,8 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
               {/* Lightbox Image View */}
               <div className="p-4 sm:p-6 overflow-auto max-h-[80vh] flex items-center justify-center bg-black">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src={getImgSrc(selectedImg)}
                   alt="Full-size Client Proof"
                   className="max-w-full max-h-[75vh] object-contain rounded-xl shadow-2xl border border-stone-800"

@@ -44,7 +44,7 @@ export function MeetTheTeamSection() {
       id: "05",
       name: "Syed Hassan Ali Shah",
       role: "Web Developer",
-      img: "/team/hassan.png",
+      img: "/team/hassan.webp",
       zIndex: 50,
     },
   ];

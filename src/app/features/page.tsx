@@ -9,9 +9,9 @@ import Link from "next/link";
 import { ArrowRight, BarChart3, ShieldCheck, Zap, Layers, Sparkles, Database } from "lucide-react";
 
 export const metadata: Metadata = pageMeta({
-  title: "Features & Acquisition OS | Scale With Ads™",
+  title: "Client Acquisition OS: Tracking & Attribution | Scale With Ads™",
   description:
-    "The proprietary Scale With Ads™ operating system: live dashboard tracking, attribution, CRM automation and lead qualification tools.",
+    "Inside the Scale With Ads™ acquisition OS: live dashboards, server-side attribution, CRM automation and lead qualification that show what your ads really earn.",
   path: "/features",
 });
 

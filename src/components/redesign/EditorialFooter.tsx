@@ -58,6 +58,12 @@ export function EditorialFooter() {
                 <Link href="/work" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Proven Results
                 </Link>
+                <Link href="/blog" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Blog
+                </Link>
+                <Link href="/about" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  About Us
+                </Link>
                 <Link href="/contact" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Contact Us
                 </Link>
@@ -68,6 +74,9 @@ export function EditorialFooter() {
                 <p className="text-xs font-mono font-bold uppercase tracking-widest text-purple-700">
                   SERVICES
                 </p>
+                <Link href="/personal-injury-lead-generation" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  PI Lead Generation
+                </Link>
                 <Link href="/services" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Meta Ads Scale
                 </Link>
@@ -139,9 +148,9 @@ export function EditorialFooter() {
 
         {/* Clean Statement Brand Typography */}
         <div className="w-full text-center overflow-hidden py-4 select-none">
-          <h1 className="text-[7.5vw] sm:text-[8.2vw] lg:text-[8.8vw] font-black text-stone-950 leading-none tracking-tight uppercase font-hero block w-full whitespace-nowrap">
+          <p aria-hidden="true" className="text-[7.5vw] sm:text-[8.2vw] lg:text-[8.8vw] font-black text-stone-950 leading-none tracking-tight uppercase font-hero block w-full whitespace-nowrap">
             SCALEWITHADS™
-          </h1>
+          </p>
         </div>
 
         {/* Minimal Copyright Legal Bar */}

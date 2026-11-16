@@ -11,9 +11,9 @@ import { BookOpen, ArrowRight, ShieldCheck, Download, Sparkles, CheckCircle2, Al
 import Link from "next/link";
 
 export const metadata: Metadata = pageMeta({
-  title: "How We Scaled an LTO Funnel to $847K | Meta Ads Case Study | Scale With Ads™",
+  title: "$847K Low-Ticket Funnel Case Study (3.32x ROAS)",
   description:
-    "Case study: how we scaled a low-ticket offer funnel to $847K in revenue with $255K in Meta ad spend, a 3.32x ROAS and 13,630+ sales, plus the SOPs and VSL scripts behind it.",
+    "How a low-ticket offer funnel turned $255K of Meta ad spend into $847K in revenue and 13,630+ sales: offer, VSL, CAPI, upsells and scaling, phase by phase.",
   path: "/metalto",
 });
 

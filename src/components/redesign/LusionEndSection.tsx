@@ -548,14 +548,14 @@ export function LusionEndSection() {
             {/* Title with Heavy Underlines */}
             <div id="end-section-title" className="inline-block group cursor-pointer pointer-events-auto">
               <Link href="/contact" className="block">
-                <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[115px] font-black text-purple-600 tracking-tight leading-[0.92] uppercase font-hero">
+                <p className="text-6xl sm:text-8xl md:text-9xl lg:text-[115px] font-black text-purple-600 tracking-tight leading-[0.92] uppercase font-hero">
                   <span className="block border-b-6 sm:border-b-8 md:border-b-[10px] border-purple-600 pb-2 sm:pb-4 group-hover:text-purple-800 group-hover:border-purple-800 transition-colors">
                     LET&apos;S WORK
                   </span>
                   <span className="block border-b-6 sm:border-b-8 md:border-b-[10px] border-purple-600 pt-2 pb-2 sm:pb-4 group-hover:text-purple-800 group-hover:border-purple-800 transition-colors">
                     TOGETHER!
                   </span>
-                </h1>
+                </p>
               </Link>
             </div>
 

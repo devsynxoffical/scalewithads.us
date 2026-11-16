@@ -8,9 +8,9 @@ import { Zap, ArrowRight, ShieldCheck, Play, CheckCircle2, AlertTriangle } from 
 import Link from "next/link";
 
 export const metadata: Metadata = pageMeta({
-  title: "Lead Pilot DFY Ads | 1-on-1 Growth Coaching | Scale With Ads™",
+  title: "1-on-1 Meta Ads Growth Coaching | Scale With Ads™",
   description:
-    "Done-for-you Meta ads across all industries for $10K+/month businesses. We double your revenue in 90 days, written in the agreement.",
+    "Work directly with our team on your Meta Ads: offer, creatives, targeting and scaling, for businesses spending to grow. Watch the overview, then book a call.",
   path: "/privatemastermind/coaching",
 });
 
