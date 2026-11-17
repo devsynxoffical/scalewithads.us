@@ -15,7 +15,10 @@ interface TrainingItem {
   statLabel: string;
   initialTilt: number;
   poster: string;
-  videoUrl: string;
+  /** Self-hosted mp4. */
+  videoUrl?: string;
+  /** Facebook video/reel ID, played in Facebook's embedded player. */
+  fbVideoId?: string;
   client: string;
   metric1: string;
   metric1Val: string;
@@ -87,6 +90,8 @@ function StraighteningCard({
             <img
               src={item.poster}
               alt={item.title}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
@@ -192,6 +197,57 @@ export function SelectedWorkShowcase() {
       metric2: "Ad ROAS",
       metric2Val: "6.1x",
     },
+    {
+      id: "04",
+      badge: "🎬 CLIENT BREAKDOWN",
+      badgeBg: "bg-rose-100 text-rose-900 border-rose-300",
+      title: "$256 → $4K in Deals: Agency Client Behind-the-Scenes",
+      desc: "Watch how an agency client used our system to help their own client close high-ticket sales from just $256 in ad spend, without wasting budget.",
+      duration: "Reel",
+      statLabel: "Ad Spend → Closed Deals",
+      initialTilt: 16,
+      poster: "/media/training/fb-1995024387691487-poster.webp",
+      fbVideoId: "1995024387691487",
+      client: "Agency Owner Results",
+      metric1: "Ad Spend → Deals",
+      metric1Val: "$256 → $4K",
+      metric2: "",
+      metric2Val: "",
+    },
+    {
+      id: "05",
+      badge: "⚖️ MVA & LEGAL",
+      badgeBg: "bg-indigo-100 text-indigo-900 border-indigo-300",
+      title: "Ad Copy Framework for MVA & Personal Injury Attorneys",
+      desc: "For agencies in the legal space: our pain-point and adversity-based ad copy framework for motor vehicle accident attorneys, and the client's reaction to it.",
+      duration: "Video",
+      statLabel: "Legal & MVA Advertising",
+      initialTilt: -16,
+      poster: "/media/training/fb-1641037794231685-poster.webp",
+      fbVideoId: "1641037794231685",
+      client: "MVA Agency Session",
+      metric1: "Niche",
+      metric1Val: "MVA Ads",
+      metric2: "",
+      metric2Val: "",
+    },
+    {
+      id: "06",
+      badge: "🎯 TARGETING METHOD",
+      badgeBg: "bg-emerald-100 text-emerald-900 border-emerald-300",
+      title: "The Targeting Method That Lands High-Ticket Clients",
+      desc: "A 40-second clip from a 1hr 30min deep-dive with a brand-new done-with-you agency client: the exact moment the targeting method clicked.",
+      duration: "0:40",
+      statLabel: "Clip from a 1hr 30min Session",
+      initialTilt: 16,
+      poster: "/media/training/fb-756498846711495-poster.webp",
+      fbVideoId: "756498846711495",
+      client: "DWY Agency Deep-Dive",
+      metric1: "Clip Length",
+      metric1Val: "0:40 Clip",
+      metric2: "",
+      metric2Val: "",
+    },
   ];
 
   return (
@@ -273,17 +329,30 @@ export function SelectedWorkShowcase() {
               </div>
 
               <div className="relative aspect-video bg-black flex items-center justify-center">
-                <video
-                  key={activeVideo.id}
-                  controls
-                  autoPlay
-                  playsInline
-                  preload="auto"
-                  className="w-full h-full object-contain"
-                >
-                  <source src={activeVideo.videoUrl} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                {activeVideo.fbVideoId ? (
+                  <iframe
+                    key={activeVideo.id}
+                    src={`https://www.facebook.com/plugins/video.php?show_text=false&autoplay=true&href=${encodeURIComponent(
+                      `https://www.facebook.com/reel/${activeVideo.fbVideoId}/`,
+                    )}`}
+                    title={activeVideo.title}
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="w-full h-full border-0 bg-black"
+                  />
+                ) : (
+                  <video
+                    key={activeVideo.id}
+                    controls
+                    autoPlay
+                    playsInline
+                    preload="auto"
+                    className="w-full h-full object-contain"
+                  >
+                    <source src={activeVideo.videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
               </div>
             </motion.div>
           </motion.div>
