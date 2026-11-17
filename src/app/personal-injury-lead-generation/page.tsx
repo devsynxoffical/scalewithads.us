@@ -3,11 +3,14 @@ import Link from "next/link";
 import {
   ArrowRight,
   BadgeCheck,
+  Bell,
   Bike,
+  Building2,
   Car,
   CheckCircle2,
   Crosshair,
   Filter,
+  Megaphone,
   MessageSquare,
   Play,
   Scale,
@@ -17,6 +20,10 @@ import {
   XCircle,
 } from "lucide-react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
+import { TrustBarSection } from "@/components/redesign/TrustBarSection";
+import { ResultsSection } from "@/components/redesign/ResultsSection";
+import { ClientTestimonialsSection } from "@/components/redesign/ClientTestimonialsSection";
+import { FaqSection } from "@/components/redesign/FaqSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -33,11 +40,11 @@ export const metadata: Metadata = pageMeta({
 });
 
 const caseTypes = [
-  { icon: Car, label: "Car accidents" },
-  { icon: Bike, label: "Motorcycle accidents" },
-  { icon: Truck, label: "18-wheeler & truck accidents" },
-  { icon: Users, label: "Rideshare accidents" },
-  { icon: Scale, label: "Other personal injury cases" },
+  { icon: Car, label: "Car accidents", desc: "Campaigns built around everyday drivers and commuters." },
+  { icon: Bike, label: "Motorcycle accidents", desc: "Audiences shaped by riding communities and interests." },
+  { icon: Truck, label: "18-wheeler & truck", desc: "Separate creative and pages for commercial vehicle cases." },
+  { icon: Users, label: "Rideshare accidents", desc: "Messaging for passengers and drivers of rideshare trips." },
+  { icon: Scale, label: "Other PI cases", desc: "Additional case types mapped to your firm's practice areas." },
 ];
 
 const steps = [
@@ -47,7 +54,7 @@ const steps = [
     desc: "We map hidden Facebook audiences around each case type instead of bidding on the same legal and insurance interests every other firm targets.",
   },
   {
-    icon: Play,
+    icon: Megaphone,
     title: "Ads and landing pages",
     desc: "Video and image ads plus case-specific landing pages that speak to one accident type at a time, reviewed with your firm before anything goes live.",
   },
@@ -95,6 +102,49 @@ const faqs: Faq[] = [
   },
 ];
 
+/** Hero illustration: how one inquiry moves through the system (no real data). */
+function InquiryFlow() {
+  const rows = [
+    { icon: Megaphone, title: "Facebook / Instagram ad", sub: "Car accident campaign" },
+    { icon: Filter, title: "3 qualifying questions", sub: "Accident date · injuries · represented?" },
+    { icon: Bell, title: "Instant SMS + email reply", sub: "Sent the moment they submit" },
+    { icon: Building2, title: "Lands in your CRM", sub: "Tagged by case type, ready for intake" },
+  ];
+  return (
+    <div className="relative">
+      <div className="pointer-events-none absolute -inset-6 bg-gradient-to-br from-purple-500/25 via-fuchsia-400/15 to-amber-300/10 rounded-[40px] blur-2xl" />
+      <div className="relative rounded-[28px] border-2 border-stone-950 bg-white p-5 sm:p-6 shadow-2xl rotate-1">
+        <div className="flex items-center justify-between pb-4 border-b border-stone-100">
+          <div className="flex items-center gap-1.5">
+            <span className="h-2.5 w-2.5 rounded-full bg-[#FF5F56]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#FFBD2E]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#27C93F]" />
+          </div>
+          <span className="font-mono text-[10px] font-black uppercase tracking-widest text-stone-400">How an inquiry flows</span>
+        </div>
+        <ol className="mt-4 space-y-3">
+          {rows.map(({ icon: Icon, title, sub }, i) => (
+            <li key={title} className="relative flex items-center gap-3 rounded-2xl border border-stone-200 bg-[#FDFBF7] p-3.5">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-purple-100 border border-purple-200 text-purple-700">
+                <Icon className="w-5 h-5" />
+              </span>
+              <div className="min-w-0">
+                <p className="text-sm font-black text-stone-950">{title}</p>
+                <p className="text-xs font-medium text-stone-500 truncate">{sub}</p>
+              </div>
+              <span className="ml-auto font-mono text-[10px] font-black text-purple-600">0{i + 1}</span>
+            </li>
+          ))}
+        </ol>
+        <div className="mt-4 flex items-center justify-between rounded-2xl bg-stone-950 px-4 py-3 text-white">
+          <span className="flex items-center gap-2 text-sm font-black"><CheckCircle2 className="w-5 h-5 text-emerald-400" /> Qualified inquiry</span>
+          <span className="rounded-full bg-emerald-400/15 border border-emerald-400/40 px-2.5 py-0.5 font-mono text-[10px] font-black uppercase tracking-wider text-emerald-300">Exclusive to you</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function PersonalInjuryLeadGenerationPage() {
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-stone-900 font-sans selection:bg-purple-200 selection:text-purple-950">
@@ -116,60 +166,99 @@ export default function PersonalInjuryLeadGenerationPage() {
       <JsonLd data={breadcrumbJsonLd([["Personal Injury Lead Generation", PATH]])} />
       <FloatingNavbar />
 
-      {/* Hero */}
-      <section className="pt-28 sm:pt-36 pb-16 sm:pb-20 px-4 md:px-8 bg-white border-b border-stone-200 relative overflow-hidden">
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-gradient-to-tr from-purple-200/40 via-purple-100/20 to-amber-100/10 rounded-full blur-3xl pointer-events-none -z-10" />
-        <div className="max-w-5xl mx-auto text-center flex flex-col items-center">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100 border border-purple-200 text-purple-900 font-extrabold text-[11px] tracking-widest uppercase mb-5 shadow-sm">
-            <Scale className="w-3.5 h-3.5 text-purple-700" />
-            For personal injury law firms
-          </span>
-          <h1 className="max-w-4xl text-3xl sm:text-5xl md:text-[52px] font-black text-stone-950 tracking-tight uppercase font-hero leading-[1.1]">
-            Personal Injury Lead Generation With{" "}
-            <span className="animate-purple-gradient font-hero tracking-tight">Facebook & Instagram Ads</span>
-          </h1>
-          <p className="mt-6 text-base sm:text-lg font-medium text-stone-700 max-w-3xl leading-relaxed">
-            We build and run Meta Ads campaigns that bring your firm <strong className="text-stone-950">exclusive MVA and personal injury case inquiries</strong>, generated in your own ad account, qualified and followed up before they reach your intake team.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center gap-3">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-3 px-9 py-4 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-base uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 border-2 border-purple-500/40"
-            >
-              Book a free strategy call <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link
-              href="/mvaleadgeneration"
-              className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full border-2 border-stone-950 bg-white hover:bg-purple-50 text-stone-950 font-black text-sm uppercase tracking-wider transition-colors"
-            >
-              <Play className="w-4 h-4" /> Watch the Sniper Method mastermind
-            </Link>
+      {/* 1. Hero */}
+      <section className="relative overflow-hidden pt-32 sm:pt-40 pb-16 sm:pb-24 px-4 md:px-8 bg-white">
+        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[600px] bg-gradient-to-tr from-purple-200/45 via-purple-100/20 to-amber-100/15 rounded-full blur-3xl" />
+        <div className="relative max-w-6xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
+          <div className="text-center lg:text-left">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100 border border-purple-200 text-purple-900 font-extrabold text-[11px] tracking-widest uppercase shadow-sm">
+              <Scale className="w-3.5 h-3.5 text-purple-700" /> For personal injury law firms
+            </span>
+            <h1 className="mt-5 text-3xl sm:text-5xl lg:text-[56px] font-black text-stone-950 tracking-tight uppercase font-hero leading-[1.05]">
+              Personal Injury Lead Generation With{" "}
+              <span className="animate-purple-gradient font-hero tracking-tight">Facebook & Instagram Ads</span>
+            </h1>
+            <p className="mt-6 text-[16px] sm:text-lg font-medium text-stone-700 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              We build and run Meta Ads campaigns that bring your firm <strong className="text-stone-950">exclusive MVA and personal injury case inquiries</strong>, generated in your own ad account, qualified and followed up before they reach your intake team.
+            </p>
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+              <Link
+                href="/contact"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-sm sm:text-[16px] uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 border-2 border-purple-500/40"
+              >
+                Book a free strategy call <ArrowRight className="w-5 h-5" />
+              </Link>
+              <Link
+                href="/mvaleadgeneration"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full border-2 border-stone-950 bg-white hover:bg-purple-50 text-stone-950 font-black text-xs sm:text-sm uppercase tracking-wider transition-colors"
+              >
+                <Play className="w-4 h-4" /> Watch the mastermind
+              </Link>
+            </div>
+            <ul className="mt-8 grid sm:grid-cols-3 gap-3 text-left max-w-2xl mx-auto lg:mx-0">
+              {["Exclusive to your firm", "You own every asset", "Live in 14–21 days"].map((t) => (
+                <li key={t} className="flex items-center gap-2 rounded-xl border border-stone-200 bg-white/80 px-3 py-2.5 text-sm font-bold text-stone-800">
+                  <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0" /> {t}
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
-            {caseTypes.map(({ icon: Icon, label }) => (
-              <span key={label} className="inline-flex items-center gap-1.5 rounded-full border-2 border-stone-950 bg-white px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider text-stone-900">
-                <Icon className="w-3.5 h-3.5 text-purple-700" /> {label}
-              </span>
+          <InquiryFlow />
+        </div>
+      </section>
+
+      {/* 2. Trust bar */}
+      <TrustBarSection />
+
+      {/* 3. Case types */}
+      <section className="py-20 sm:py-24 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2">
+              <Sparkles className="w-3.5 h-3.5" /> Case types
+            </span>
+            <h2 className="mt-4 text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight uppercase leading-tight">
+              One Campaign Per <span className="animate-purple-gradient font-hero">Case Type</span>
+            </h2>
+            <p className="mt-4 text-stone-600 text-[16px] sm:text-lg font-medium">
+              Each accident type gets its own audiences, ads and landing page, so every message speaks to one situation.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
+            {caseTypes.map(({ icon: Icon, label, desc }, i) => (
+              <div
+                key={label}
+                className={`group rounded-3xl border-2 border-stone-950 bg-white p-5 sm:p-6 shadow-md hover:-translate-y-1.5 hover:border-purple-600 hover:shadow-[0_20px_45px_rgba(147,51,234,0.18)] transition-all duration-300 ${i === caseTypes.length - 1 ? "col-span-2 lg:col-span-1" : ""}`}
+              >
+                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-100 border border-purple-200 text-purple-700 group-hover:bg-purple-700 group-hover:text-white transition-colors">
+                  <Icon className="w-6 h-6" />
+                </span>
+                <h3 className="mt-4 sm:mt-5 text-base sm:text-lg font-black text-stone-950 tracking-tight leading-snug">{label}</h3>
+                <p className="mt-2 text-sm font-medium text-stone-600 leading-relaxed">{desc}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Exclusive vs shared */}
-      <section className="py-20 sm:py-24 px-4 md:px-8">
+      {/* 4. Exclusive vs shared */}
+      <section className="py-20 sm:py-24 px-4 md:px-8 bg-white border-y border-stone-200">
         <div className="max-w-5xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight uppercase leading-tight">
               Exclusive Leads vs. <span className="animate-purple-gradient font-hero">Buying Shared MVA Leads</span>
             </h2>
-            <p className="mt-4 text-stone-600 text-base sm:text-lg font-medium">
+            <p className="mt-4 text-stone-600 text-[16px] sm:text-lg font-medium">
               Many firms start by buying MVA leads. Here&apos;s what changes when the campaigns run for your firm alone.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="rounded-3xl border-2 border-stone-300 bg-white p-7">
+          <div className="relative grid md:grid-cols-2 gap-6 md:gap-10">
+            <span className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 h-14 w-14 items-center justify-center rounded-full border-2 border-stone-950 bg-[#FDFBF7] font-hero text-lg font-black text-stone-950 shadow-lg">
+              VS
+            </span>
+            <div className="rounded-3xl border-2 border-stone-300 bg-stone-50 p-7 sm:p-8">
               <p className="text-sm font-black uppercase tracking-wider text-stone-500">Typical bought leads</p>
-              <ul className="mt-4 space-y-3 text-stone-700 font-medium">
+              <ul className="mt-5 space-y-4 text-stone-600 font-medium">
                 {[
                   "Often shared with several firms competing for the same caller",
                   "No control over the ads, targeting or what was promised",
@@ -180,9 +269,9 @@ export default function PersonalInjuryLeadGenerationPage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-3xl border-2 border-stone-950 bg-white p-7 shadow-xl">
+            <div className="rounded-3xl border-2 border-stone-950 bg-white p-7 sm:p-8 shadow-[0_20px_50px_rgba(147,51,234,0.18)]">
               <p className="text-sm font-black uppercase tracking-wider text-purple-700">Our campaigns for your firm</p>
-              <ul className="mt-4 space-y-3 text-stone-800 font-medium">
+              <ul className="mt-5 space-y-4 text-stone-800 font-semibold">
                 {[
                   "Exclusive inquiries generated only for your firm",
                   "You approve the ads, landing pages and messaging",
@@ -197,87 +286,126 @@ export default function PersonalInjuryLeadGenerationPage() {
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="py-20 sm:py-24 px-4 md:px-8 bg-white border-y border-stone-200">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2">
-              <Sparkles className="w-3.5 h-3.5" /> How it works
+      {/* 5. How it works (dark band) */}
+      <section className="relative overflow-hidden bg-stone-950 text-white py-24 sm:py-28 px-4 md:px-8">
+        <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full bg-purple-700/25 blur-3xl" />
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+            maskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)",
+            WebkitMaskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)",
+          }}
+        />
+        <div className="relative max-w-6xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-200 bg-purple-500/15 border border-purple-400/30 px-4 py-2 rounded-full inline-flex items-center gap-2">
+              <Sparkles className="w-3.5 h-3.5 text-purple-300" /> How it works
             </span>
-            <h2 className="mt-4 text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight uppercase leading-tight">
-              From Facebook Ad to <span className="animate-purple-gradient font-hero">Signed Case</span>
+            <h2 className="mt-5 text-3xl sm:text-5xl font-black font-hero tracking-tight uppercase leading-tight">
+              From Facebook Ad to{" "}
+              <span className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-purple-400 bg-clip-text text-transparent">Signed Case</span>
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {steps.map(({ icon: Icon, title, desc }, i) => (
-              <div key={title} className="rounded-3xl border-2 border-stone-950 bg-[#FDFBF7] p-7 shadow-lg">
-                <div className="flex items-center gap-3">
-                  <span className="w-11 h-11 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700"><Icon className="w-5 h-5" /></span>
-                  <span className="font-mono text-xs font-black text-purple-700">STEP 0{i + 1}</span>
-                </div>
-                <h3 className="mt-5 text-xl font-black text-stone-950 tracking-tight">{title}</h3>
-                <p className="mt-2 text-stone-600 text-sm font-medium leading-relaxed">{desc}</p>
+              <div
+                key={title}
+                className={`group relative overflow-hidden rounded-3xl p-7 border transition-all duration-300 hover:-translate-y-1.5 ${
+                  i === 0
+                    ? "bg-gradient-to-br from-purple-600 to-purple-900 border-purple-400/50 shadow-[0_20px_60px_rgba(147,51,234,0.35)]"
+                    : "bg-white/[0.04] border-white/10 hover:border-purple-400/60 hover:bg-white/[0.07]"
+                }`}
+              >
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute -right-2 -top-6 font-hero text-[110px] font-black leading-none text-transparent select-none"
+                  style={{ WebkitTextStroke: i === 0 ? "1.5px rgba(255,255,255,0.22)" : "1.5px rgba(192,132,252,0.18)" }}
+                >
+                  0{i + 1}
+                </span>
+                <span className={`relative flex h-12 w-12 items-center justify-center rounded-2xl ${i === 0 ? "bg-white text-purple-700" : "bg-purple-500/15 border border-purple-400/30 text-purple-300"}`}>
+                  <Icon className="w-5 h-5" />
+                </span>
+                <p className={`relative mt-5 font-mono text-[11px] font-black uppercase tracking-widest ${i === 0 ? "text-purple-100" : "text-purple-300"}`}>Step 0{i + 1}</p>
+                <h3 className="relative mt-2 text-xl font-black tracking-tight">{title}</h3>
+                <p className={`relative mt-2 text-sm font-medium leading-relaxed ${i === 0 ? "text-purple-50" : "text-stone-300"}`}>{desc}</p>
               </div>
             ))}
-            <div className="rounded-3xl border-2 border-dashed border-purple-300 bg-purple-50 p-7 flex flex-col justify-center">
-              <p className="text-stone-800 font-bold leading-relaxed">
-                Want the audience research in depth? Read our guide to{" "}
-                <Link href="/blog/find-hidden-facebook-interests" className="text-purple-700 underline underline-offset-4">finding hidden Facebook interests</Link>.
-              </p>
+            <div className="rounded-3xl border-2 border-dashed border-purple-400/40 bg-purple-500/10 p-7 flex flex-col justify-center">
+              <p className="font-mono text-[11px] font-black uppercase tracking-widest text-purple-300">Go deeper</p>
+              <p className="mt-2 text-lg font-black leading-snug">How we find audiences other firms miss</p>
+              <Link
+                href="/blog/find-hidden-facebook-interests"
+                className="mt-5 inline-flex items-center gap-2 self-start rounded-full bg-white text-stone-950 hover:bg-purple-100 px-5 py-2.5 text-xs font-black uppercase tracking-wider transition-colors"
+              >
+                Read the guide <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
-          <p className="mt-10 text-center text-sm text-stone-500 font-medium max-w-3xl mx-auto">
+          <p className="mt-12 text-center text-sm text-stone-400 font-medium max-w-3xl mx-auto">
             Attorney advertising rules vary by state. Ads and landing pages are reviewed with your firm before launch so they fit your bar&apos;s requirements.
           </p>
         </div>
       </section>
 
-      {/* Who it's for */}
-      <section className="py-20 px-4 md:px-8">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
-          <div className="rounded-3xl border-2 border-stone-950 bg-white p-8 shadow-lg">
-            <h2 className="text-2xl font-black text-stone-950 tracking-tight">Personal injury law firms</h2>
-            <p className="mt-3 text-stone-600 font-medium leading-relaxed">
-              Firms that want a steady, predictable flow of car, truck, motorcycle and rideshare accident inquiries without relying on shared lead vendors.
-            </p>
-          </div>
-          <div className="rounded-3xl border-2 border-stone-950 bg-white p-8 shadow-lg">
-            <h2 className="text-2xl font-black text-stone-950 tracking-tight">Agencies advertising for attorneys</h2>
-            <p className="mt-3 text-stone-600 font-medium leading-relaxed">
-              Agencies that run Facebook ads for PI firms and want fresher audiences. Start with the{" "}
-              <Link href="/mvaleadgeneration" className="font-bold text-purple-700 underline underline-offset-4">Sniper Method mastermind</Link>, or partner with our team.
-            </p>
+      {/* 6. Who it's for */}
+      <section className="py-20 sm:py-24 px-4 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-center text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight uppercase leading-tight">
+            Who It&apos;s <span className="animate-purple-gradient font-hero">For</span>
+          </h2>
+          <div className="mt-12 grid md:grid-cols-2 gap-6">
+            <div className="rounded-3xl border-2 border-stone-950 bg-white p-8 shadow-lg">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-stone-950 text-white"><Scale className="w-6 h-6" /></span>
+              <h3 className="mt-5 text-2xl font-black text-stone-950 tracking-tight">Personal injury law firms</h3>
+              <p className="mt-3 text-stone-600 font-medium leading-relaxed">
+                Firms that want a steady, predictable flow of car, truck, motorcycle and rideshare accident inquiries without relying on shared lead vendors.
+              </p>
+              <Link href="/contact" className="mt-6 inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
+                Book a strategy call <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+            <div className="rounded-3xl border-2 border-stone-950 bg-white p-8 shadow-lg">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-700 text-white"><Users className="w-6 h-6" /></span>
+              <h3 className="mt-5 text-2xl font-black text-stone-950 tracking-tight">Agencies advertising for attorneys</h3>
+              <p className="mt-3 text-stone-600 font-medium leading-relaxed">
+                Agencies that run Facebook ads for PI firms and want fresher audiences. Learn the process in the mastermind, or partner with our team.
+              </p>
+              <Link href="/mvaleadgeneration" className="mt-6 inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
+                Watch the Sniper Method mastermind <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
         </div>
-        <p className="mt-10 text-center font-bold text-stone-700">
-          See our verified client results on the <Link href="/work" className="text-purple-700 underline underline-offset-4">results page</Link>.
-        </p>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20 px-4 md:px-8 bg-white border-t border-stone-200">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight uppercase leading-tight text-center">
-            Personal Injury Lead Generation <span className="animate-purple-gradient font-hero">FAQ</span>
-          </h2>
-          <div className="mt-12 space-y-5">
-            {faqs.map((f) => (
-              <div key={f.q} className="rounded-3xl border-2 border-stone-950 bg-[#FDFBF7] p-6 sm:p-7">
-                <h3 className="text-lg sm:text-xl font-black text-stone-950 tracking-tight">{f.q}</h3>
-                <p className="mt-2 text-stone-600 font-medium leading-relaxed">{f.a}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-3 px-9 py-4 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-base uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] border-2 border-purple-500/40"
-            >
-              Get exclusive PI leads for your firm <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* 7. Proof */}
+      <ResultsSection
+        eyebrow="OUR RESULTS"
+        title={
+          <>
+            Real Campaigns. <br />
+            <span className="font-serif italic lowercase animate-purple-gradient">real, verified results.</span>
+          </>
+        }
+        subtitle="Live dashboards and revenue screenshots from client campaigns across industries."
+        hideFeaturedProof
+      />
+      <ClientTestimonialsSection />
+
+      {/* 8. FAQ (accordion, same as the home page) */}
+      <FaqSection
+        faqs={faqs}
+        eyebrow="PI lead generation FAQ"
+        title={
+          <>
+            Questions From <span className="font-serif italic lowercase animate-purple-gradient">law firms.</span>
+          </>
+        }
+      />
 
       <LusionEndSection />
       <EditorialFooter />

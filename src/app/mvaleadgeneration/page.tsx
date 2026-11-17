@@ -128,7 +128,7 @@ export default function MvaLeadGenerationPage() {
             />
           </div>
 
-          <p className="mt-6 text-base sm:text-lg font-medium text-stone-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-6 text-[16px] sm:text-lg font-medium text-stone-700 max-w-3xl mx-auto leading-relaxed">
             Whether you&apos;re targeting car accidents, motorcycle accidents, 18-wheeler accidents, rideshare accidents, or
             other personal injury cases, discover our exclusive <strong className="text-purple-700">Sniper Method</strong> to
             uncover untapped Facebook audiences.
@@ -156,7 +156,7 @@ export default function MvaLeadGenerationPage() {
           <div className="mt-8 flex flex-col items-center gap-3">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-3 px-9 py-4 sm:px-12 sm:py-5 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-base sm:text-xl uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 active:scale-95 border-2 border-purple-500/40"
+              className="inline-flex items-center justify-center gap-3 px-9 py-4 sm:px-12 sm:py-5 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-[16px] sm:text-xl uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 active:scale-95 border-2 border-purple-500/40"
             >
               <span>Book Your Call</span>
               <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
@@ -277,7 +277,7 @@ export default function MvaLeadGenerationPage() {
               Stop Targeting the Same Audiences as{" "}
               <span className="animate-purple-gradient font-hero tracking-tight">Every Other PI Agency.</span>
             </h2>
-            <p className="mt-6 text-base sm:text-lg font-medium text-stone-700 leading-relaxed">
+            <p className="mt-6 text-[16px] sm:text-lg font-medium text-stone-700 leading-relaxed">
               Whether you operate a personal injury law firm or manage Facebook Ads for attorneys, finding untapped audience
               opportunities can help you:
             </p>
@@ -290,7 +290,7 @@ export default function MvaLeadGenerationPage() {
                 className="flex items-start gap-4 rounded-2xl border-2 border-stone-950 bg-[#FDFBF7] p-5 shadow-md hover:border-purple-600 transition-colors"
               >
                 <CheckCircle2 className="w-6 h-6 text-purple-700 shrink-0 mt-0.5" />
-                <span className="text-base sm:text-lg font-bold text-stone-900">{b}</span>
+                <span className="text-[16px] sm:text-lg font-bold text-stone-900">{b}</span>
               </li>
             ))}
           </ul>
@@ -324,16 +324,16 @@ export default function MvaLeadGenerationPage() {
             Want Our Team to Generate{" "}
             <span className="animate-purple-gradient font-hero tracking-tight">Qualified Personal Injury Leads</span> for You?
           </h2>
-          <p className="mt-6 text-base sm:text-lg font-medium text-stone-700 leading-relaxed">
+          <p className="mt-6 text-[16px] sm:text-lg font-medium text-stone-700 leading-relaxed">
             If you&apos;d rather have experts handle your Facebook Ads, audience research, and campaign optimization, our team
             can help.
           </p>
-          <p className="mt-3 text-base sm:text-lg font-bold text-stone-900 leading-relaxed">
+          <p className="mt-3 text-[16px] sm:text-lg font-bold text-stone-900 leading-relaxed">
             Let us take care of your advertising while you focus on growing your law firm or agency.
           </p>
           <Link
             href="/contact"
-            className="mt-8 inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-base sm:text-xl uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 active:scale-95 border-2 border-purple-500/40"
+            className="mt-8 inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-[16px] sm:text-xl uppercase tracking-wider transition-all duration-300 shadow-[0_15px_40px_rgba(147,51,234,0.35)] hover:scale-105 active:scale-95 border-2 border-purple-500/40"
           >
             <span>Let&apos;s Discuss Your Campaigns</span>
             <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />

@@ -2,12 +2,18 @@
 
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { HOME_FAQS } from "@/lib/faqs";
+import { HOME_FAQS, type Faq } from "@/lib/faqs";
 
-export function FaqSection() {
+type FaqSectionProps = {
+  /** Questions to show (defaults to the home page FAQ). */
+  faqs?: Faq[];
+  eyebrow?: string;
+  /** Optional replacement for the heading content. */
+  title?: React.ReactNode;
+};
+
+export function FaqSection({ faqs = HOME_FAQS, eyebrow = "Answers & Clarification", title }: FaqSectionProps = {}) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const faqs = HOME_FAQS;
 
   return (
     <section className="py-24 px-4 md:px-8 bg-white text-stone-900 border-b border-stone-200">
@@ -16,10 +22,14 @@ export function FaqSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-mono font-bold uppercase tracking-widest text-purple-700 bg-purple-100 px-3.5 py-1.5 rounded-full inline-block mb-4">
-            Answers & Clarification
+            {eyebrow}
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-black leading-tight font-hero uppercase">
-            Frequently Asked <span className="font-serif italic lowercase animate-purple-gradient">questions.</span>
+            {title ?? (
+              <>
+                Frequently Asked <span className="font-serif italic lowercase animate-purple-gradient">questions.</span>
+              </>
+            )}
           </h2>
         </div>
 
