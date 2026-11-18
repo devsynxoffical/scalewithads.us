@@ -161,7 +161,9 @@ export function StickyContentScroll() {
                 <button
                   key={s.id}
                   onClick={() => setActiveIdx(idx)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
+                  aria-label={`Show step ${idx + 1}`}
+                  aria-current={activeIdx === idx ? "step" : undefined}
+                  className={`relative h-2 rounded-full transition-all duration-300 before:absolute before:-inset-3 before:content-[''] ${
                     activeIdx === idx
                       ? "w-12 bg-purple-700"
                       : "w-3 bg-stone-300 hover:bg-stone-400"

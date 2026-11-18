@@ -221,7 +221,8 @@ export default function PersonalInjuryLeadGenerationPage() {
               One Campaign Per <span className="animate-purple-gradient font-hero">Case Type</span>
             </h2>
             <p className="mt-4 text-stone-600 text-[16px] sm:text-lg font-medium">
-              Each accident type gets its own audiences, ads and landing page, so every message speaks to one situation.
+              Each accident type gets its own audiences, ads and landing page, so every message speaks to one situation. (Running a home-services business instead? See our{" "}
+              <Link href="/facebook-ads-for-roofing-companies" className="font-bold text-purple-700 underline underline-offset-4">Facebook ads for roofing companies</Link>.)
             </p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">

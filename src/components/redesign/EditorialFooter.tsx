@@ -77,6 +77,9 @@ export function EditorialFooter() {
                 <Link href="/personal-injury-lead-generation" className="text-stone-600 hover:text-purple-700 transition-colors">
                   PI Lead Generation
                 </Link>
+                <Link href="/facebook-ads-for-roofing-companies" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Roofing Ads
+                </Link>
                 <Link href="/services" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Meta Ads Scale
                 </Link>

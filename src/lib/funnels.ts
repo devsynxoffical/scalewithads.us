@@ -106,9 +106,9 @@ export const MASTERMIND_FUNNEL: FunnelConfig = {
 export const METADS_FUNNEL: FunnelConfig = {
   slug: "metads",
   metaTitle:
-    "Meta Ads for Any Industry: Done-For-You | Scale With Ads™",
+    "Meta Ads VSL Funnels for Any Industry | Scale With Ads™",
   metaDescription:
-    "Turn Meta Ads into a predictable sales engine with VSL-led campaigns from a team with 12 years and $50M+ in Meta spend. 90-day double-revenue guarantee.",
+    "Done-for-you Meta Ads VSL funnels: video sales letter scripts, ads and landing pages from a team with 12 years and $50M+ in Meta spend. 90-day guarantee.",
   eyebrow: "LTO Meta Ads VSL · ads that sell",
   title: "Turn Meta Ads into a",
   titleAccent: "cash cow machine",
