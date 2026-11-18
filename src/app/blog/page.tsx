@@ -159,10 +159,10 @@ export default function BlogPage() {
             href: "/facebook-ads-for-roofing-companies",
           },
           {
-            kind: "Service",
-            title: "Meta Ads VSL funnels",
-            text: "Video sales letter scripts, ads and landing pages built and run by our team.",
-            href: "/metads",
+            kind: "Case study",
+            title: "$847K low-ticket funnel",
+            text: "How one Meta Ads funnel turned $255K in ad spend into $847K at a 3.32x ROAS.",
+            href: "/metalto",
           },
         ]}
       />

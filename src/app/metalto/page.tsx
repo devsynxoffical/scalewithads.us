@@ -294,9 +294,9 @@ export default function MetaLTOPage() {
           },
           {
             kind: "Service",
-            title: "Meta Ads VSL funnels",
-            text: "Have our team script, produce and run a VSL funnel for your offer.",
-            href: "/metads",
+            title: "Done-for-you Meta Ads services",
+            text: "Have our team script, produce and run the ads, VSL and funnel for your offer.",
+            href: "/services",
           },
         ]}
       />

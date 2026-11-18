@@ -147,7 +147,6 @@ export const SITEMAP_ROUTES: Route[] = [
   { path: "/facebook-ads-for-roofing-companies", changeFrequency: "monthly", priority: 0.9 },
   { path: "/metalto", changeFrequency: "monthly", priority: 0.7 },
   { path: "/paidpilot", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/metads", changeFrequency: "monthly", priority: 0.7 },
   { path: "/leadpilot", changeFrequency: "monthly", priority: 0.7 },
   { path: "/features", changeFrequency: "monthly", priority: 0.6 },
   { path: "/privatemastermind/coaching", changeFrequency: "monthly", priority: 0.6 },

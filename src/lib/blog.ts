@@ -197,7 +197,7 @@ export const POSTS: Post[] = [
         type: "ol",
         items: [
           "Ad: a hook-led video or image ad on Meta that speaks to one specific problem.",
-          "Sales page or VSL: a short page or video that sells the low-ticket offer. (See our guide to [VSL script structure](/blog/vsl-script-structure), or have us build one with our [Meta Ads VSL funnels](/metads).)",
+          "Sales page or VSL: a short page or video that sells the low-ticket offer. (See our guide to [VSL script structure](/blog/vsl-script-structure), or have our team build one as part of our [done-for-you services](/services).)",
           "Order bump: a small add-on offered on the checkout page with one click.",
           "One-click upsell: a higher-priced, related offer shown right after purchase.",
           "Backend: follow-up by email, SMS and calls that invites the best buyers to a high-ticket program or done-for-you service.",
@@ -364,7 +364,7 @@ export const POSTS: Post[] = [
       },
       {
         type: "p",
-        text: "VSL scripting and ad creative production are part of our [done-for-you services](/services), and our [Meta Ads VSL funnels](/metads) package covers the script, ads and landing page together. For an example of a VSL-led funnel at scale, see the [$847K low-ticket funnel case study](/metalto), and for the funnel side, our guide to the [low-ticket offer funnel](/blog/low-ticket-offer-funnel).",
+        text: "VSL scripting, ad creative and landing pages are all part of our [done-for-you services](/services). For an example of a VSL-led funnel at scale, see the [$847K low-ticket funnel case study](/metalto), and for the funnel side, our guide to the [low-ticket offer funnel](/blog/low-ticket-offer-funnel).",
       },
     ],
   },

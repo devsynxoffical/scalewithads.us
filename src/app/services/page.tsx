@@ -534,9 +534,9 @@ export default function ServicesPage() {
           },
           {
             kind: "Service",
-            title: "Meta Ads VSL funnels",
-            text: "Video sales letter scripts, ads and landing pages for any industry.",
-            href: "/metads",
+            title: "MVA Lead Generation mastermind",
+            text: "Training that walks through our full MVA campaign build for personal injury.",
+            href: "/mvaleadgeneration",
           },
           {
             kind: "Case study",
