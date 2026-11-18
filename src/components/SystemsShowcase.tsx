@@ -13,7 +13,7 @@ import { Play, ArrowRight, CheckCircle2, Sparkles, Zap } from "lucide-react";
 const systems = [
   {
     slug: "metads",
-    href: "/metads",
+    href: "/services",
     cover: "/media/covers/cover-mastermind.jpeg",
     videoSrc: "/media/videos/metads.mp4",
     tag: "META ADS SYSTEM",

@@ -13,7 +13,6 @@ const navLinks = [
 ];
 
 const pageLinks = [
-  { href: "/metads", label: "Meta Ads System" },
   { href: "/leadpilot", label: "Lead Pilot DFY" },
   { href: "/privatemastermind", label: "Private Mastermind" },
   { href: BOOKING_PATH, label: "Apply Now" },

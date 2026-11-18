@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
       { source: "/snipermethod", destination: "/mvaleadgeneration", permanent: true },
       // /medialibrary renders the same page; keep one indexable URL.
       { source: "/portfolio", destination: "/medialibrary", permanent: true },
+      // /metads page removed; it was indexed, so send visitors and search engines to services.
+      { source: "/metads", destination: "/services", permanent: true },
       // Old WordPress-era URLs; /book still receives search clicks.
       { source: "/book", destination: "/contact", permanent: true },
       { source: "/book-a-call", destination: "/contact", permanent: true },

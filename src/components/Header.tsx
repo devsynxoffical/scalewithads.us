@@ -16,7 +16,7 @@ const links = [
 
 const mastermindLinks = [
   { href: "/privatemastermind", label: "Private Mastermind" },
-  { href: "/metads", label: "Meta Ads Training" },
+  { href: "/services", label: "Meta Ads Training" },
   { href: "/leadpilot", label: "Lead Pilot" },
 ];
 

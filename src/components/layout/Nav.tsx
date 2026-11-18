@@ -15,7 +15,7 @@ const mastermindLinks = [
   {
     label: "Meta Ads Mastery",
     sub: "Done-for-you ads system for reliable lead flow",
-    href: "/metads",
+    href: "/services",
   },
   {
     label: "LeadPilot",
