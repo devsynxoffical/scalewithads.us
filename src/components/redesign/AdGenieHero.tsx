@@ -35,8 +35,9 @@ export function AdGenieHero() {
         </motion.div>
 
         {/* 1. TOP SUB-TEXT (Above Giant Headline) */}
+        {/* Largest Contentful Paint element: visible from the first paint (no opacity fade) so LCP isn't delayed. */}
         <motion.p
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 1, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4, delay: 0.15, ease: silkEase }}
           className="text-lg sm:text-2xl md:text-3xl font-extrabold text-stone-900 tracking-tight font-sans max-w-3xl leading-snug"

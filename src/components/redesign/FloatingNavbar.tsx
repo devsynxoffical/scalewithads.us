@@ -162,6 +162,8 @@ export function FloatingNavbar() {
         <div className="flex md:hidden items-center pr-1">
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
             className="p-2 text-stone-900 hover:text-purple-600 transition-colors"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

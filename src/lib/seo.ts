@@ -46,8 +46,21 @@ export const SITE_JSONLD = {
       image: `${SITE_URL}${OG_IMAGE}`,
       description: SITE_DESCRIPTION,
       founder: [
-        { "@type": "Person", name: "Vaishali Kapoor", jobTitle: "Founder" },
-        { "@type": "Person", name: "Gaurav Kapoor", jobTitle: "Co-Founder" },
+        { "@type": "Person", "@id": `${SITE_URL}/#vaishali-kapoor`, name: "Vaishali Kapoor", jobTitle: "Founder", image: `${SITE_URL}/team/vaishali.jpeg` },
+        {
+          "@type": "Person",
+          "@id": `${SITE_URL}/#gaurav-kapoor`,
+          name: "Gaurav Kapoor",
+          jobTitle: "Co-Founder",
+          image: `${SITE_URL}/team/gaurav.jpeg`,
+          sameAs: ["https://www.facebook.com/gaurav.kapoor.3994"],
+        },
+      ],
+      // Team as shown in the "Meet the Team" section.
+      employee: [
+        { "@type": "Person", name: "Ali Jawed", jobTitle: "Video Editor" },
+        { "@type": "Person", name: "Taqi Jafar", jobTitle: "Graphic Designer" },
+        { "@type": "Person", name: "Syed Hassan Ali Shah", jobTitle: "Web Developer" },
       ],
       knowsAbout: [
         "Meta Ads",
@@ -58,6 +71,8 @@ export const SITE_JSONLD = {
         "Video sales letters",
         "CRM automation",
         "Personal injury lead generation",
+        "Roofing lead generation",
+        "Facebook ads for roofing companies",
       ],
       sameAs: ["https://www.facebook.com/groups/milliondollarmedia"],
       contactPoint: {
@@ -129,6 +144,7 @@ export const SITEMAP_ROUTES: Route[] = [
   { path: "/privatemastermind", changeFrequency: "monthly", priority: 0.8 },
   { path: "/mvaleadgeneration", changeFrequency: "monthly", priority: 0.8 },
   { path: "/personal-injury-lead-generation", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/facebook-ads-for-roofing-companies", changeFrequency: "monthly", priority: 0.9 },
   { path: "/metalto", changeFrequency: "monthly", priority: 0.7 },
   { path: "/paidpilot", changeFrequency: "monthly", priority: 0.7 },
   { path: "/metads", changeFrequency: "monthly", priority: 0.7 },

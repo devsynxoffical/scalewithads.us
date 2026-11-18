@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { pageMeta } from "@/lib/seo";
+import { faqJsonLd, pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { ResultsSection } from "@/components/redesign/ResultsSection";
@@ -106,6 +107,8 @@ export default function MetaLTOPage() {
 
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-stone-900 font-sans selection:bg-purple-200 selection:text-purple-950">
+      {/* FAQPage structured data from the FAQ shown on this page */}
+      <JsonLd data={faqJsonLd(faqs)} />
       <FloatingNavbar />
 
       {/* Hero Header Section */}
