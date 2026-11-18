@@ -17,7 +17,7 @@ export const videos: VideoItem[] = [
     role: "High-ticket sales client",
     result: "Client results walkthrough",
     src: `${CDN}/69624f63f8a93b76e0751a55.mp4`,
-    poster: "/media/reviews/poster-edgar.png",
+    poster: "/media/reviews/poster-edgar.webp",
     aspect: "portrait",
   },
   {
@@ -26,7 +26,7 @@ export const videos: VideoItem[] = [
     role: "Agency operator",
     result: "System case study",
     src: `${CDN}/69624f62f8a93b0480751a4e.mp4`,
-    poster: "/media/reviews/poster-ibam.png",
+    poster: "/media/reviews/poster-ibam.webp",
     aspect: "portrait",
   },
   {
@@ -35,7 +35,7 @@ export const videos: VideoItem[] = [
     role: "High-ticket sales client",
     result: "What changed once ads were live",
     src: `${CDN}/6978f116d560857126a4804c.mp4`,
-    poster: "/media/reviews/poster-edgar-2.png",
+    poster: "/media/reviews/poster-edgar-2.webp",
     aspect: "portrait",
   },
 ];

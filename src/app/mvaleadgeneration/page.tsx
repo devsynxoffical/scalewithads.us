@@ -23,6 +23,7 @@ import UFSquareMarquee from "@/components/redesign/UFSquareMarquee";
 import { MacbookScroll } from "@/components/ui/MacbookScroll";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 
 export const metadata: Metadata = pageMeta({
   title: "MVA Lead Generation: Hidden Facebook Audiences for PI",
@@ -347,6 +348,29 @@ export default function MvaLeadGenerationPage() {
           </p>
         </div>
       </section>
+
+      <RelatedResources
+        items={[
+          {
+            kind: "Guide",
+            title: "How to find hidden Facebook interests",
+            text: "The written, step-by-step version of the targeting method taught in this mastermind.",
+            href: "/blog/find-hidden-facebook-interests",
+          },
+          {
+            kind: "Service",
+            title: "Personal injury lead generation",
+            text: "Prefer it done for you? We build and run exclusive MVA campaigns for law firms.",
+            href: "/personal-injury-lead-generation",
+          },
+          {
+            kind: "Service",
+            title: "Facebook ads for roofing companies",
+            text: "The same system applied to roofing contractors, with published client results.",
+            href: "/facebook-ads-for-roofing-companies",
+          },
+        ]}
+      />
 
       <LusionEndSection />
       <EditorialFooter />

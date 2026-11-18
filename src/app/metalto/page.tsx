@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { faqJsonLd, pageMeta } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { ResultsSection } from "@/components/redesign/ResultsSection";
@@ -276,6 +277,29 @@ export default function MetaLTOPage() {
           ))}
         </div>
       </section>
+
+      <RelatedResources
+        items={[
+          {
+            kind: "Guide",
+            title: "Low-ticket offer funnel: how it works",
+            text: "The funnel structure behind this case study, from ad and order bump to upsell and high-ticket backend.",
+            href: "/blog/low-ticket-offer-funnel",
+          },
+          {
+            kind: "Guide",
+            title: "VSL script structure: 8-part framework",
+            text: "The script framework we use for sales videos, with a fill-in template.",
+            href: "/blog/vsl-script-structure",
+          },
+          {
+            kind: "Service",
+            title: "Meta Ads VSL funnels",
+            text: "Have our team script, produce and run a VSL funnel for your offer.",
+            href: "/metads",
+          },
+        ]}
+      />
 
       <LusionEndSection />
       <EditorialFooter />
