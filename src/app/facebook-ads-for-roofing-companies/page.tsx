@@ -155,9 +155,9 @@ const RELATED: RelatedItem[] = [
   },
   {
     kind: "Case study",
-    title: "50+ verified client dashboards",
-    text: "Screenshots of real campaign results across roofing, legal, coaching and e-commerce.",
-    href: "/work",
+    title: "$546K in 67 days for a roofing agency",
+    text: "How a roofing marketing agency closed 152 deals from its Meta Ads pipeline.",
+    href: "/case-studies/roofing-marketing-agency-546k-revenue",
   },
 ];
 

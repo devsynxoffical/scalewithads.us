@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { caseStudyByFile } from "@/lib/caseStudies";
 import {
   ArrowRight,
   TrendingUp,
@@ -10,8 +11,6 @@ import {
   CheckCircle2,
   Maximize2,
   X,
-  Sparkles,
-  ExternalLink,
 } from "lucide-react";
 
 type ResultsSectionProps = {
@@ -130,11 +129,12 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
         {/* FEATURED PROOF CARDS GRID (Top Highlights) */}
         {!hideFeaturedProof && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {featuredProof.map((file, idx) => (
+          {featuredProof.map((file, idx) => {
+            const cs = caseStudyByFile(file);
+            return (
+            <Link key={idx} href={cs ? `/case-studies/${cs.slug}` : "/work"} aria-label={cs ? `Read case study: ${cs.cardTitle}` : undefined} className="block">
             <motion.div
-              key={idx}
               whileHover={{ y: -8, scale: 1.02 }}
-              onClick={() => setSelectedImg(file)}
               className="group relative rounded-3xl bg-white border-2 border-stone-200/90 hover:border-purple-600 shadow-lg hover:shadow-2xl transition-all duration-300 p-3 overflow-hidden cursor-pointer flex flex-col justify-between"
             >
               {/* Image Frame */}
@@ -143,7 +143,7 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
                   loading="lazy"
                   decoding="async"
                   src={getImgSrc(file)}
-                  alt={`Verified Client Proof ${idx + 1}`}
+                  alt={cs ? `${cs.cardTitle}: client dashboard` : `Verified client proof ${idx + 1}`}
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
 
@@ -156,8 +156,8 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
                 {/* Expand Hover Badge */}
                 <div className="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-xs">
                   <div className="px-4 py-2 rounded-full bg-white text-stone-950 font-bold text-xs flex items-center gap-2 shadow-xl">
-                    <Maximize2 className="w-4 h-4 text-purple-700" />
-                    <span>Click to Expand</span>
+                    <ArrowRight className="w-4 h-4 text-purple-700" />
+                    <span>Read the Case Study</span>
                   </div>
                 </div>
               </div>
@@ -165,19 +165,21 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
               {/* Bottom Card Title */}
               <div className="p-3 flex items-center justify-between">
                 <div>
-                  <span className="text-xs font-mono font-bold text-stone-950 block uppercase tracking-wider">
-                    Client Telemetry & ROI
+                  <span className="text-[13px] font-black text-stone-950 block leading-snug">
+                    {cs ? cs.cardTitle : "Client Telemetry & ROI"}
                   </span>
-                  <span className="text-[11px] font-medium text-emerald-600 flex items-center gap-1 mt-0.5">
-                    <TrendingUp className="w-3.5 h-3.5" /> Verified Revenue Growth
+                  <span className="text-[11px] font-bold text-purple-700 flex items-center gap-1 mt-1 uppercase tracking-wider">
+                    <TrendingUp className="w-3.5 h-3.5" /> Read case study
                   </span>
                 </div>
                 <div className="w-8 h-8 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center group-hover:bg-purple-700 group-hover:text-white transition-colors">
-                  <ExternalLink className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
             </motion.div>
-          ))}
+            </Link>
+            );
+          })}
         </div>
         )}
 

@@ -38,6 +38,17 @@ Clients own 100% of every asset we build. Onboarding and system build take rough
 - [Facebook ads for roofing companies](https://www.scalewithads.us/facebook-ads-for-roofing-companies): roofing offers, video ads, lead qualification and follow-up; published results include $127,500 in roofing installs in 63 days (Dallas) and $77,000 closed in 30 days (Texas)
 - [Personal injury lead generation](https://www.scalewithads.us/personal-injury-lead-generation): exclusive MVA and personal injury case inquiries from Meta Ads run in the law firm's own ad account
 
+## Case studies
+
+Each page is built from a client result we published, with the original dashboard screenshot.
+
+- [25 roofing leads at $3.75 each](https://www.scalewithads.us/case-studies/roofing-leads-3-75-cost-per-lead): $93.82 spent in one day, six ads on $8 daily budgets
+- [664 leads in 8 days for a roofing marketing agency](https://www.scalewithads.us/case-studies/roofing-marketing-agency-664-leads): $2,996 spent, $4.51 per lead
+- [227 roofing leads at $14 CPL in 28 days](https://www.scalewithads.us/case-studies/227-roofing-leads-14-cpl): $3,215 spent, $14.16 per lead
+- [280 Florida roofing, gutter and solar leads in 15 days](https://www.scalewithads.us/case-studies/florida-roofing-solar-280-leads): $3,197 spent, $11.42 per lead
+- [$546K won revenue in 67 days for a roofing marketing agency](https://www.scalewithads.us/case-studies/roofing-marketing-agency-546k-revenue): 152 deals won, 13.49% conversion rate
+- [154 roofing leads in 15 days](https://www.scalewithads.us/case-studies/roofing-leads-154-in-15-days): $2,245 spent, $14.58 per lead
+
 ## Guides
 
 - [How to find hidden Facebook interests](https://www.scalewithads.us/blog/find-hidden-facebook-interests): step-by-step workflow for finding, filtering and testing less-contested Meta Ads interests
