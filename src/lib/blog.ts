@@ -22,6 +22,8 @@ export type Post = {
   dateModified: string;
   primaryKeyword: string;
   related: { label: string; href: string };
+  /** Shown as a visible FAQ section and marked up as FAQPage. Answers must match the article. */
+  faqs: { q: string; a: string }[];
   body: Block[];
 };
 
@@ -36,9 +38,27 @@ export const POSTS: Post[] = [
       "A practical workflow for finding hidden Facebook interests in Ads Manager, building tighter interest stacks and testing them without wasting budget.",
     category: "Meta Ads Targeting",
     datePublished: "2026-11-16",
-    dateModified: "2026-11-16",
+    dateModified: "2026-11-18",
     primaryKeyword: "hidden facebook interests",
-    related: { label: "Watch the Sniper Method mastermind", href: "/mvaleadgeneration" },
+    related: { label: "Watch the MVA Lead Generation mastermind", href: "/mvaleadgeneration" },
+    faqs: [
+      {
+        q: "What are hidden Facebook interests?",
+        a: "They are real, relevant interests in Meta's detailed targeting that sit one or two steps away from the obvious ones for your niche, such as publications, tools, job titles and life situations your buyers share. Fewer competitors target them, so they are often less contested.",
+      },
+      {
+        q: "Is Facebook Audience Insights still available?",
+        a: "No. Meta retired the standalone Audience Insights tool in 2021 and removed many sensitive detailed targeting options in 2022. Use the Suggestions and Browse features in Ads Manager instead, and confirm every interest still exists before you use it.",
+      },
+      {
+        q: "How do you test Facebook interest stacks?",
+        a: "Group interests into a few themed ad sets, run each with the same creative so the audience is the only variable, give each enough budget to exit the learning phase, and judge them on qualified leads and revenue rather than cost per click.",
+      },
+      {
+        q: "Does Advantage+ audience ignore my interests?",
+        a: "Meta treats your interests as suggestions when Advantage+ audience is on and may show ads beyond them. For a clean read on an interest stack, compare it against a test with that option turned off.",
+      },
+    ],
     body: [
       {
         type: "p",
@@ -46,7 +66,7 @@ export const POSTS: Post[] = [
       },
       {
         type: "p",
-        text: "This guide walks through the workflow our team uses to find them, filter out the irrelevant ones and test them properly. It's the written companion to our [Sniper Method mastermind](/mvaleadgeneration), which applies the same process to personal injury campaigns.",
+        text: "This guide walks through the workflow our team uses to find them, filter out the irrelevant ones and test them properly. It's the written companion to our [MVA Lead Generation mastermind](/mvaleadgeneration), which applies the same process to personal injury campaigns.",
       },
       { type: "h2", text: "What counts as a hidden Facebook interest?" },
       {
@@ -119,7 +139,7 @@ export const POSTS: Post[] = [
       { type: "h2", text: "Example: personal injury campaigns" },
       {
         type: "p",
-        text: "Personal injury is a crowded category on Meta, and most firms and agencies target the same legal and insurance interests. The Sniper Method applies the workflow above to accident case types, such as car, motorcycle, 18-wheeler and rideshare accidents, to find adjacent audiences that are more specific and less contested. If you work in that space, our [personal injury lead generation](/personal-injury-lead-generation) page explains how we run those campaigns for firms. Always check your state bar's attorney-advertising rules before launching.",
+        text: "Personal injury is a crowded category on Meta, and most firms and agencies target the same legal and insurance interests. Our MVA campaigns apply the workflow above to accident case types, such as car, motorcycle, 18-wheeler and rideshare accidents, to find adjacent audiences that are more specific and less contested. If you work in that space, our [personal injury lead generation](/personal-injury-lead-generation) page explains how we run those campaigns for firms. Always check your state bar's attorney-advertising rules before launching. The same approach works for home services: see how we use it in [Facebook ads for roofing companies](/facebook-ads-for-roofing-companies).",
       },
       { type: "h2", text: "Key takeaways" },
       {
@@ -141,9 +161,27 @@ export const POSTS: Post[] = [
       "How a low-ticket offer funnel works, from ad to order bump, upsell and high-ticket backend, plus the numbers from our $847K Meta Ads case study.",
     category: "Funnels",
     datePublished: "2026-11-16",
-    dateModified: "2026-11-16",
+    dateModified: "2026-11-18",
     primaryKeyword: "low ticket offer funnel",
     related: { label: "Read the full $847K case study", href: "/metalto" },
+    faqs: [
+      {
+        q: "What is a low-ticket offer funnel?",
+        a: "A funnel that sells a small, inexpensive product to cold traffic first, then offers order bumps, upsells and a high-ticket backend to the people who buy. The front end turns ad spend into customers; the backend produces most of the profit.",
+      },
+      {
+        q: "What are the steps of a low-ticket funnel?",
+        a: "Ad, sales page or VSL, order bump, one-click upsell, and backend follow-up by email, SMS and calls that invites the best buyers to a high-ticket offer.",
+      },
+      {
+        q: "Does a low-ticket funnel need to be profitable on the front end?",
+        a: "Not necessarily. A front end that roughly pays back ad spend lets you scale traffic, and a front-end ROAS below break-even can still work if the backend converts.",
+      },
+      {
+        q: "When is a low-ticket funnel the wrong choice?",
+        a: "When you have no natural high-ticket backend, or when buyers need a consultation before they will spend anything. A lead-generation funnel that books calls directly is usually a better fit then.",
+      },
+    ],
     body: [
       {
         type: "p",
@@ -159,7 +197,7 @@ export const POSTS: Post[] = [
         type: "ol",
         items: [
           "Ad: a hook-led video or image ad on Meta that speaks to one specific problem.",
-          "Sales page or VSL: a short page or video that sells the low-ticket offer. (See our guide to [VSL script structure](/blog/vsl-script-structure).)",
+          "Sales page or VSL: a short page or video that sells the low-ticket offer. (See our guide to [VSL script structure](/blog/vsl-script-structure), or have us build one with our [Meta Ads VSL funnels](/metads).)",
           "Order bump: a small add-on offered on the checkout page with one click.",
           "One-click upsell: a higher-priced, related offer shown right after purchase.",
           "Backend: follow-up by email, SMS and calls that invites the best buyers to a high-ticket program or done-for-you service.",
@@ -228,9 +266,27 @@ export const POSTS: Post[] = [
       "The 8-part VSL script structure we use for high-ticket offers, with a fill-in template and tips for shorter VSLs that run as Meta ads.",
     category: "Creative",
     datePublished: "2026-11-16",
-    dateModified: "2026-11-16",
+    dateModified: "2026-11-18",
     primaryKeyword: "vsl script structure",
     related: { label: "See our creative and VSL services", href: "/services" },
+    faqs: [
+      {
+        q: "What is a VSL?",
+        a: "A video sales letter: a sales letter delivered as one continuous video that takes the viewer from interest to taking the next step, such as booking a call.",
+      },
+      {
+        q: "What is the structure of a VSL script?",
+        a: "Hook, problem, story and credibility, unique mechanism, proof, offer, risk reversal and call to action.",
+      },
+      {
+        q: "How long should a VSL be?",
+        a: "There is no single right length. Higher-priced offers usually need more explanation and proof, so test lengths. A practical approach is a long VSL on the landing page and shorter cut-downs running as ads.",
+      },
+      {
+        q: "Can you use a VSL as a Meta ad?",
+        a: "Yes. Cut several hooks, the mechanism and proof sections into short captioned ads, and send viewers to a page that continues the same argument.",
+      },
+    ],
     body: [
       {
         type: "p",
@@ -308,7 +364,7 @@ export const POSTS: Post[] = [
       },
       {
         type: "p",
-        text: "VSL scripting and ad creative production are part of our [done-for-you services](/services). For an example of a VSL-led funnel at scale, see the [$847K low-ticket funnel case study](/metalto), and for the funnel side, our guide to the [low-ticket offer funnel](/blog/low-ticket-offer-funnel).",
+        text: "VSL scripting and ad creative production are part of our [done-for-you services](/services), and our [Meta Ads VSL funnels](/metads) package covers the script, ads and landing page together. For an example of a VSL-led funnel at scale, see the [$847K low-ticket funnel case study](/metalto), and for the funnel side, our guide to the [low-ticket offer funnel](/blog/low-ticket-offer-funnel).",
       },
     ],
   },

@@ -21,6 +21,7 @@ import { FaqSection } from "@/components/redesign/FaqSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Breadcrumbs, RelatedResources, type RelatedItem } from "@/components/seo/RelatedResources";
 import type { Faq } from "@/lib/faqs";
 import { SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 
@@ -139,6 +140,27 @@ const faqs: Faq[] = [
   },
 ];
 
+const RELATED: RelatedItem[] = [
+  {
+    kind: "Guide",
+    title: "How to find hidden Facebook interests",
+    text: "The step-by-step targeting workflow we use to reach homeowners competitors miss, without wasting budget.",
+    href: "/blog/find-hidden-facebook-interests",
+  },
+  {
+    kind: "Service",
+    title: "Personal injury lead generation",
+    text: "The same exclusive-lead system, built for personal injury and MVA law firms.",
+    href: "/personal-injury-lead-generation",
+  },
+  {
+    kind: "Case study",
+    title: "50+ verified client dashboards",
+    text: "Screenshots of real campaign results across roofing, legal, coaching and e-commerce.",
+    href: "/work",
+  },
+];
+
 export default function RoofingPage() {
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-stone-900 font-sans selection:bg-purple-200 selection:text-purple-950">
@@ -157,7 +179,7 @@ export default function RoofingPage() {
         }}
       />
       <JsonLd data={faqJsonLd(faqs)} />
-      <JsonLd data={breadcrumbJsonLd([["Facebook Ads for Roofing Companies", PATH]])} />
+      <JsonLd data={breadcrumbJsonLd([["Services", "/services"], ["Facebook Ads for Roofing Companies", PATH]])} />
       <FloatingNavbar />
 
       {/* 1. Hero */}
@@ -165,6 +187,7 @@ export default function RoofingPage() {
         <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[600px] bg-gradient-to-tr from-purple-200/45 via-purple-100/20 to-amber-100/20 rounded-full blur-3xl" />
         <div className="relative max-w-6xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
+            <Breadcrumbs items={[["Home", "/"], ["Services", "/services"], ["Facebook Ads for Roofing Companies"]]} className="mb-5 flex justify-center lg:justify-start" />
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100 border border-purple-200 text-purple-900 font-extrabold text-[11px] tracking-widest uppercase shadow-sm">
               <Home className="w-3.5 h-3.5 text-purple-700" /> For roofing companies & roofing agencies
             </span>
@@ -404,6 +427,8 @@ export default function RoofingPage() {
           </>
         }
       />
+
+      <RelatedResources items={RELATED} />
 
       <LusionEndSection />
       <EditorialFooter />

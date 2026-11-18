@@ -27,6 +27,7 @@ import { FaqSection } from "@/components/redesign/FaqSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Breadcrumbs, RelatedResources, type RelatedItem } from "@/components/seo/RelatedResources";
 import type { Faq } from "@/lib/faqs";
 import { SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 
@@ -145,6 +146,27 @@ function InquiryFlow() {
   );
 }
 
+const RELATED: RelatedItem[] = [
+  {
+    kind: "Guide",
+    title: "How to find hidden Facebook interests",
+    text: "The targeting workflow behind our accident campaigns, written up step by step.",
+    href: "/blog/find-hidden-facebook-interests",
+  },
+  {
+    kind: "Service",
+    title: "MVA Lead Generation mastermind",
+    text: "Watch the training that walks through the full MVA campaign build.",
+    href: "/mvaleadgeneration",
+  },
+  {
+    kind: "Service",
+    title: "Facebook ads for roofing companies",
+    text: "The same exclusive-lead system applied to roofing contractors and roofing agencies.",
+    href: "/facebook-ads-for-roofing-companies",
+  },
+];
+
 export default function PersonalInjuryLeadGenerationPage() {
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-stone-900 font-sans selection:bg-purple-200 selection:text-purple-950">
@@ -163,7 +185,7 @@ export default function PersonalInjuryLeadGenerationPage() {
         }}
       />
       <JsonLd data={faqJsonLd(faqs)} />
-      <JsonLd data={breadcrumbJsonLd([["Personal Injury Lead Generation", PATH]])} />
+      <JsonLd data={breadcrumbJsonLd([["Services", "/services"], ["Personal Injury Lead Generation", PATH]])} />
       <FloatingNavbar />
 
       {/* 1. Hero */}
@@ -171,6 +193,7 @@ export default function PersonalInjuryLeadGenerationPage() {
         <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[600px] bg-gradient-to-tr from-purple-200/45 via-purple-100/20 to-amber-100/15 rounded-full blur-3xl" />
         <div className="relative max-w-6xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
+            <Breadcrumbs items={[["Home", "/"], ["Services", "/services"], ["Personal Injury Lead Generation"]]} className="mb-5 flex justify-center lg:justify-start" />
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100 border border-purple-200 text-purple-900 font-extrabold text-[11px] tracking-widest uppercase shadow-sm">
               <Scale className="w-3.5 h-3.5 text-purple-700" /> For personal injury law firms
             </span>
@@ -407,6 +430,8 @@ export default function PersonalInjuryLeadGenerationPage() {
           </>
         }
       />
+
+      <RelatedResources items={RELATED} />
 
       <LusionEndSection />
       <EditorialFooter />

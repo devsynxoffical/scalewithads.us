@@ -6,6 +6,7 @@ import { MarqueeTicker } from "@/components/redesign/MarqueeTicker";
 import { CreativeCtaSection } from "@/components/redesign/CreativeCtaSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -514,6 +515,50 @@ export default function ServicesPage() {
       </section>
 
       <CreativeCtaSection />
+      <RelatedResources
+        eyebrow="Industries & guides"
+        title="Built for your"
+        accent="industry"
+        items={[
+          {
+            kind: "Service",
+            title: "Personal injury lead generation",
+            text: "Exclusive MVA and personal injury case inquiries from campaigns run for your firm.",
+            href: "/personal-injury-lead-generation",
+          },
+          {
+            kind: "Service",
+            title: "Facebook ads for roofing companies",
+            text: "Roofing offers, video ads, qualification and instant follow-up that book inspections.",
+            href: "/facebook-ads-for-roofing-companies",
+          },
+          {
+            kind: "Service",
+            title: "Meta Ads VSL funnels",
+            text: "Video sales letter scripts, ads and landing pages for any industry.",
+            href: "/metads",
+          },
+          {
+            kind: "Case study",
+            title: "$847K low-ticket funnel",
+            text: "How one funnel turned $255K in Meta spend into $847K at a 3.32x ROAS.",
+            href: "/metalto",
+          },
+          {
+            kind: "Guide",
+            title: "VSL script structure",
+            text: "Our 8-part framework and fill-in template for high-ticket sales videos.",
+            href: "/blog/vsl-script-structure",
+          },
+          {
+            kind: "Guide",
+            title: "How to find hidden Facebook interests",
+            text: "A step-by-step targeting workflow for audiences competitors aren't bidding on.",
+            href: "/blog/find-hidden-facebook-interests",
+          },
+        ]}
+      />
+
       <LusionEndSection />
       <EditorialFooter />
     </main>

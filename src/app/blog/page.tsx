@@ -4,6 +4,7 @@ import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { CreativeCtaSection } from "@/components/redesign/CreativeCtaSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Calendar, Clock, Sparkles, User } from "lucide-react";
 import { BLOG_AUTHOR, POSTS, readingMinutes, type Post } from "@/lib/blog";
@@ -139,6 +140,32 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      <RelatedResources
+        eyebrow="Prefer it done for you?"
+        title="Our done-for-you"
+        accent="services"
+        items={[
+          {
+            kind: "Service",
+            title: "Personal injury lead generation",
+            text: "Exclusive MVA and personal injury case inquiries from Meta Ads run for your firm.",
+            href: "/personal-injury-lead-generation",
+          },
+          {
+            kind: "Service",
+            title: "Facebook ads for roofing companies",
+            text: "Roofing offers, video ads and instant follow-up that turn ad spend into booked inspections.",
+            href: "/facebook-ads-for-roofing-companies",
+          },
+          {
+            kind: "Service",
+            title: "Meta Ads VSL funnels",
+            text: "Video sales letter scripts, ads and landing pages built and run by our team.",
+            href: "/metads",
+          },
+        ]}
+      />
 
       <CreativeCtaSection />
       <EditorialFooter />

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, Calendar, CheckCircle2, Clock, ListOrdered, Sparkles, User } from "lucide-react";
+import { ArrowRight, Calendar, CheckCircle2, ChevronDown, Clock, HelpCircle, ListOrdered, RefreshCw, Sparkles, User } from "lucide-react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { RichText } from "@/components/seo/RichText";
 import { PostCover } from "@/components/blog/PostCover";
 import { BLOG_AUTHOR, POSTS, getPost, readingMinutes, type Block } from "@/lib/blog";
-import { OG_IMAGE, SITE_NAME, SITE_URL, breadcrumbJsonLd, pageMeta } from "@/lib/seo";
+import { OG_IMAGE, SITE_NAME, SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 
 export function generateStaticParams() {
   return POSTS.map((p) => ({ slug: p.slug }));
@@ -134,15 +134,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) notFound();
 
   const url = `${SITE_URL}/blog/${post.slug}`;
-  const date = new Date(post.datePublished + "T00:00:00Z").toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    timeZone: "UTC",
-  });
+  const fmt = (d: string) =>
+    new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+  const date = fmt(post.datePublished);
+  const updated = post.dateModified !== post.datePublished ? fmt(post.dateModified) : null;
   const toc = post.body
     .filter((b): b is Extract<Block, { type: "h2" }> => b.type === "h2")
     .map((b) => ({ text: b.text, id: isTakeaways(b) ? "key-takeaways" : slugify(b.text) }));
+  if (post.faqs.length) toc.push({ text: "Frequently asked questions", id: "faq" });
   const others = POSTS.filter((p) => p.slug !== post.slug);
 
 
@@ -166,6 +165,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           publisher: { "@id": `${SITE_URL}/#organization` },
         }}
       />
+      {post.faqs.length > 0 && <JsonLd data={faqJsonLd(post.faqs)} />}
       <JsonLd data={breadcrumbJsonLd([["Blog", "/blog"], [post.title, `/blog/${post.slug}`]])} />
       <FloatingNavbar />
 
@@ -193,6 +193,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   {BLOG_AUTHOR}
                 </span>
                 <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /><time dateTime={post.datePublished}>{date}</time></span>
+                {updated && (
+                  <span className="flex items-center gap-1.5"><RefreshCw className="w-4 h-4" />Updated <time dateTime={post.dateModified}>{updated}</time></span>
+                )}
                 <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" />{readingMinutes(post)} min read</span>
               </div>
             </div>
@@ -218,6 +221,26 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 {post.body.map((b, i) => (
                   <BlockView key={i} block={b} prev={post.body[i - 1]} />
                 ))}
+
+                {/* FAQ */}
+                {post.faqs.length > 0 && (
+                  <section aria-labelledby="faq" className="mt-16">
+                    <h2 id="faq" className="scroll-mt-32 flex items-center gap-3 text-2xl sm:text-[32px] font-black text-stone-950 tracking-tight leading-tight font-hero">
+                      <HelpCircle className="w-7 h-7 text-purple-600 shrink-0" /> Frequently asked questions
+                    </h2>
+                    <div className="mt-6 space-y-3">
+                      {post.faqs.map((f, i) => (
+                        <details key={f.q} open={i === 0} className="group rounded-2xl border-2 border-stone-200 bg-white open:border-purple-300 open:shadow-[0_12px_30px_rgba(147,51,234,0.10)] transition-colors">
+                          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-black text-stone-950 text-[16px] sm:text-[17px] [&::-webkit-details-marker]:hidden">
+                            {f.q}
+                            <ChevronDown className="w-5 h-5 shrink-0 text-purple-600 transition-transform group-open:rotate-180" />
+                          </summary>
+                          <p className="px-5 pb-5 -mt-1 text-stone-700 text-[16px] leading-relaxed">{f.a}</p>
+                        </details>
+                      ))}
+                    </div>
+                  </section>
+                )}
 
                 {/* Author box */}
                 <div className="mt-14 flex gap-4 rounded-3xl border-2 border-stone-200 bg-white p-6">
@@ -259,6 +282,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   </p>
                   <div className="mt-3"><TocList toc={toc} /></div>
                 </div>
+                <Link href={post.related.href} className="group block rounded-3xl border-2 border-purple-200 bg-purple-50 p-5 hover:border-purple-500 transition-colors">
+                  <p className="font-mono text-[11px] font-black uppercase tracking-widest text-purple-700">Related</p>
+                  <p className="mt-1.5 font-black text-stone-950 leading-snug group-hover:text-purple-700 transition-colors">{post.related.label}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-xs font-black uppercase tracking-wider text-purple-700">
+                    Open <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Link>
                 <div className="rounded-3xl border-2 border-stone-950 bg-stone-950 p-6 text-white">
                   <p className="font-mono text-[11px] font-black uppercase tracking-widest text-purple-300">Free strategy call</p>
                   <p className="mt-2 text-lg font-black leading-snug">Get a 90-day Meta Ads plan for your business.</p>

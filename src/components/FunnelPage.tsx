@@ -1,12 +1,19 @@
 import Link from "next/link";
+import type React from "react";
+import type { ReactNode } from "react";
 import type { FunnelConfig } from "../lib/funnels";
 import { Footer } from "./Footer";
 import { Reviews } from "./Reviews";
 import { VideoPlayer } from "./VideoPlayer";
 
-export function FunnelPage({ funnel }: { funnel: FunnelConfig }) {
+export function FunnelPage({ funnel, children }: { funnel: FunnelConfig; children?: ReactNode }) {
   return (
-    <main className="bg-[var(--bg)]">
+    <main
+      className="bg-[var(--bg)]"
+      // This layout was designed over a dark page background; on the current light
+      // site the translucent bands looked grey, so make them solid here.
+      style={{ "--band": "#0c0c0f", "--band-2": "#141418" } as React.CSSProperties}
+    >
       {/* Hero */}
       <section className="hero-dark relative overflow-hidden pt-20 md:pt-24">
         <div className="studio-grid-dark absolute inset-0" />
@@ -116,6 +123,8 @@ export function FunnelPage({ funnel }: { funnel: FunnelConfig }) {
       </section>
 
       <Reviews />
+
+      {children}
 
       {/* Final CTA */}
       <section className="section-shell bg-[var(--bg)]">
