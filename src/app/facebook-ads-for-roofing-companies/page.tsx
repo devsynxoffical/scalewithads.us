@@ -142,10 +142,10 @@ const faqs: Faq[] = [
 
 const RELATED: RelatedItem[] = [
   {
-    kind: "Guide",
-    title: "How to find hidden Facebook interests",
-    text: "The step-by-step targeting workflow we use to reach homeowners competitors miss, without wasting budget.",
-    href: "/blog/find-hidden-facebook-interests",
+    kind: "Service",
+    title: "Exclusive roofing leads",
+    text: "Roofing leads only your company gets, with a budget-to-inspections estimator.",
+    href: "/roofing-leads",
   },
   {
     kind: "Service",

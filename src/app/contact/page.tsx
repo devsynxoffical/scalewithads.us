@@ -8,6 +8,7 @@ import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { GoogleBookingCalendar } from "@/components/redesign/GoogleBookingCalendar";
 import { CheckCircle2 } from "lucide-react";
+import { LeadForm } from "@/components/leads/LeadForm";
 
 export const metadata: Metadata = pageMeta({
   title: "Book a Free Meta Ads Strategy Call | Scale With Ads™",
@@ -53,6 +54,15 @@ export default function ContactPage() {
           </div>
 
           <GoogleBookingCalendar />
+
+          <div className="mt-16 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] items-center">
+            <div className="text-center lg:text-left">
+              <p className="font-mono text-xs font-black uppercase tracking-widest text-purple-700">Not ready to book?</p>
+              <h2 className="mt-3 text-3xl sm:text-4xl font-black text-stone-950 tracking-tight uppercase font-hero leading-tight">Send us your details instead</h2>
+              <p className="mt-4 text-[16px] text-stone-600 leading-relaxed">Tell us about your business and we&apos;ll reply within one business day with next steps. No call needed.</p>
+            </div>
+            <LeadForm industry="General" title="Send your details" submitLabel="Send" />
+          </div>
         </div>
       </section>
 

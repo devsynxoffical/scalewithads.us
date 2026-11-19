@@ -74,6 +74,12 @@ export function EditorialFooter() {
                 <p className="text-xs font-mono font-bold uppercase tracking-widest text-purple-700">
                   SERVICES
                 </p>
+                <Link href="/exclusive-mva-leads" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Exclusive MVA Leads
+                </Link>
+                <Link href="/roofing-leads" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Roofing Leads
+                </Link>
                 <Link href="/personal-injury-lead-generation" className="text-stone-600 hover:text-purple-700 transition-colors">
                   PI Lead Generation
                 </Link>

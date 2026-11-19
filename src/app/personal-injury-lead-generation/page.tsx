@@ -34,9 +34,9 @@ import { SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 const PATH = "/personal-injury-lead-generation";
 
 export const metadata: Metadata = pageMeta({
-  title: "Personal Injury Lead Generation: Exclusive MVA Leads",
+  title: "Personal Injury Lead Generation With Facebook Ads",
   description:
-    "Exclusive personal injury and MVA leads from Facebook and Instagram ads we run in your own ad account, qualified and followed up before they reach intake.",
+    "Done-for-you personal injury lead generation: Facebook and Instagram ads in your own account, case-type landing pages, qualification and instant follow-up.",
   path: PATH,
 });
 
@@ -152,6 +152,12 @@ function InquiryFlow() {
 
 const RELATED: RelatedItem[] = [
   {
+    kind: "Service",
+    title: "Exclusive MVA leads",
+    text: "Car, truck and motorcycle accident leads only your firm gets, with a cost-per-case calculator.",
+    href: "/exclusive-mva-leads",
+  },
+  {
     kind: "Guide",
     title: "How to find hidden Facebook interests",
     text: "The targeting workflow behind our accident campaigns, written up step by step.",
@@ -162,12 +168,6 @@ const RELATED: RelatedItem[] = [
     title: "MVA Lead Generation mastermind",
     text: "Watch the training that walks through the full MVA campaign build.",
     href: "/mvaleadgeneration",
-  },
-  {
-    kind: "Service",
-    title: "Facebook ads for roofing companies",
-    text: "The same exclusive-lead system applied to roofing contractors and roofing agencies.",
-    href: "/facebook-ads-for-roofing-companies",
   },
 ];
 
