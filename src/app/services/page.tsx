@@ -522,6 +522,18 @@ export default function ServicesPage() {
         items={[
           {
             kind: "Service",
+            title: "Exclusive MVA leads",
+            text: "Car, truck and motorcycle accident leads only your firm gets.",
+            href: "/exclusive-mva-leads",
+          },
+          {
+            kind: "Service",
+            title: "Exclusive roofing leads",
+            text: "Homeowner roofing leads from ads in your own account, not shared lists.",
+            href: "/roofing-leads",
+          },
+          {
+            kind: "Service",
             title: "Personal injury lead generation",
             text: "Exclusive MVA and personal injury case inquiries from campaigns run for your firm.",
             href: "/personal-injury-lead-generation",

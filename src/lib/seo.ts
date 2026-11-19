@@ -145,6 +145,8 @@ export const SITEMAP_ROUTES: Route[] = [
   { path: "/mvaleadgeneration", changeFrequency: "monthly", priority: 0.8 },
   { path: "/personal-injury-lead-generation", changeFrequency: "monthly", priority: 0.9 },
   { path: "/facebook-ads-for-roofing-companies", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/exclusive-mva-leads", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/roofing-leads", changeFrequency: "monthly", priority: 0.9 },
   { path: "/metalto", changeFrequency: "monthly", priority: 0.7 },
   { path: "/paidpilot", changeFrequency: "monthly", priority: 0.7 },
   { path: "/leadpilot", changeFrequency: "monthly", priority: 0.7 },
