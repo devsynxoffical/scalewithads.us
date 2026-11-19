@@ -4,6 +4,7 @@ import { ScrollToTop } from "../components/ScrollToTop";
 import { WhatsAppButton } from "../components/redesign/WhatsAppButton";
 import { OG_IMAGE, SITE_JSONLD, SITE_URL } from "@/lib/seo";
 import { JsonLd } from "../components/seo/JsonLd";
+import { Analytics } from "../components/analytics/Analytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -61,6 +62,7 @@ export default function RootLayout({
           {children}
         </SmoothScroll>
         <WhatsAppButton />
+        <Analytics />
       </body>
     </html>
   );
