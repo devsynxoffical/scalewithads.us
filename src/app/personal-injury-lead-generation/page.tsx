@@ -78,6 +78,10 @@ const steps = [
 
 const faqs: Faq[] = [
   {
+    q: "What are MVA leads?",
+    a: "MVA leads are inquiries from people who were injured in a motor vehicle accident, such as a car, motorcycle, truck or rideshare crash, and want to speak to a personal injury lawyer. We generate them for your firm with Facebook and Instagram ads in your own ad account, so they are exclusive to you rather than bought from a vendor and shared.",
+  },
+  {
     q: "Are the personal injury leads exclusive?",
     a: "Yes. The campaigns run in your own ad account and send inquiries straight to your intake, so every lead is generated for your firm alone and is never resold to another firm.",
   },
