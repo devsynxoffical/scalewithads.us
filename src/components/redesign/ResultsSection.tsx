@@ -132,7 +132,7 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
           {featuredProof.map((file, idx) => {
             const cs = caseStudyByFile(file);
             return (
-            <Link key={idx} href={cs ? `/case-studies/${cs.slug}` : "/work"} aria-label={cs ? `Read case study: ${cs.cardTitle}` : undefined} className="block">
+            <a key={idx} href={cs ? cs.url : "/work"} target={cs ? "_blank" : undefined} rel={cs ? "noopener" : undefined} aria-label={cs ? `Read case study: ${cs.cardTitle} (opens roofingsystems.co)` : undefined} className="block">
             <motion.div
               whileHover={{ y: -8, scale: 1.02 }}
               className="group relative rounded-3xl bg-white border-2 border-stone-200/90 hover:border-purple-600 shadow-lg hover:shadow-2xl transition-all duration-300 p-3 overflow-hidden cursor-pointer flex flex-col justify-between"
@@ -177,7 +177,7 @@ export function ResultsSection({ eyebrow, title, subtitle, hideFeaturedProof = f
                 </div>
               </div>
             </motion.div>
-            </Link>
+            </a>
             );
           })}
         </div>
