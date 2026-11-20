@@ -25,15 +25,6 @@ export function ClientTestimonialsSection() {
   const testimonials: TestimonialCard[] = [
     {
       id: "01",
-      clientName: "Marcus Filly",
-      title: "Marcus Filly (1.1M Followers), Founder of Functional Bodybuilding, on Working With ScaleWithAds",
-      subtitle: "Client Video Testimonial",
-      vimeoId: "1246210855",
-      poster: "/images/clients/marcus-filly.webp",
-      aspectRatio: "aspect-[16/10]",
-    },
-    {
-      id: "02",
       clientName: "Edgar",
       title: "How Edgar Landed High-Ticket Clients Using Our ScaleWithAds Client Acquisition System",
       subtitle: "High-Ticket Client Acquisition Walkthrough",
@@ -42,7 +33,7 @@ export function ClientTestimonialsSection() {
       aspectRatio: "aspect-[16/10]",
     },
     {
-      id: "03",
+      id: "02",
       clientName: "Marie Grace Berg",
       title: "Generated 2,000+ High-Ticket Registrations & Sales for Mary Grace Berg Summit",
       subtitle: "2,000+ Summit Registrations Case Study",
@@ -51,7 +42,7 @@ export function ClientTestimonialsSection() {
       aspectRatio: "aspect-[16/10]",
     },
     {
-      id: "04",
+      id: "03",
       clientName: "Edgar & Jeremi",
       title: "How Edgar & Jeremi Are Getting High-Ticket Clients Using Our Million Dollar Funnel™ System",
       subtitle: "$4,500 MRR Deal at $7 CPL Walkthrough",
@@ -85,7 +76,7 @@ export function ClientTestimonialsSection() {
         </div>
 
         {/* Video Cards Grid (Sleek White Cards with Black Border & Hover Glow) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch max-w-6xl mx-auto">
           {testimonials.map((item) => (
             <motion.div
               key={item.id}
