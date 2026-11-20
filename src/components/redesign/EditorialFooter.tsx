@@ -77,14 +77,20 @@ export function EditorialFooter() {
                 <Link href="/exclusive-mva-leads" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Exclusive MVA Leads
                 </Link>
-                <Link href="/roofing-leads" className="text-stone-600 hover:text-purple-700 transition-colors">
-                  Roofing Leads
+                <Link href="/car-accident-leads" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Car Accident Leads
                 </Link>
                 <Link href="/personal-injury-lead-generation" className="text-stone-600 hover:text-purple-700 transition-colors">
                   PI Lead Generation
                 </Link>
-                <Link href="/facebook-ads-for-roofing-companies" className="text-stone-600 hover:text-purple-700 transition-colors">
-                  Roofing Ads
+                <Link href="/facebook-ads-for-lawyers" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Facebook Ads for Lawyers
+                </Link>
+                <Link href="/workers-comp-leads" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Workers Comp Leads
+                </Link>
+                <Link href="/mass-tort-leads" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Mass Tort Leads
                 </Link>
                 <Link href="/services" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Meta Ads Scale

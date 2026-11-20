@@ -28,6 +28,7 @@ import { FaqSection } from "@/components/redesign/FaqSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { LegalProofSection } from "@/components/leads/LegalProofSection";
 import { Breadcrumbs, RelatedResources } from "@/components/seo/RelatedResources";
 import { LeadForm } from "@/components/leads/LeadForm";
 import { CaseCostCalculator } from "@/components/leads/Calculators";
@@ -98,7 +99,7 @@ const faqs: Faq[] = [
   },
   {
     q: "How much do MVA leads cost?",
-    a: "Vendor prices vary widely by state, case type and exclusivity. With your own campaigns you pay Meta for the ad spend plus our fee, and cost per lead depends on your market and offer. The more useful number is cost per signed case, which the calculator on this page helps you estimate with your own figures.",
+    a: "Vendor prices vary widely by state, case type and exclusivity. With your own campaigns you pay Meta for the ad spend plus our fee. Our published MVA campaigns ran at $17.13 to $18.69 per lead, and a Texas personal injury firm at $26.93. The more useful number is cost per signed case, which the calculator on this page helps you estimate with your own figures.",
   },
   {
     q: "Do the ads follow attorney advertising rules?",
@@ -168,6 +169,8 @@ export default function ExclusiveMvaLeadsPage() {
 
       <TrustBarSection />
 
+      <LegalProofSection />
+
       {/* What are MVA leads + lead types */}
       <section className="py-20 sm:py-24 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
@@ -177,7 +180,8 @@ export default function ExclusiveMvaLeadsPage() {
               Three ways to get <span className="animate-purple-gradient font-hero">MVA leads</span>
             </h2>
             <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">
-              MVA leads are inquiries from people injured in a motor vehicle accident who want to speak to a lawyer. How you get them decides who else is calling them, and who owns the data.
+              MVA leads are inquiries from people injured in a motor vehicle accident who want to speak to a lawyer. How you get them decides who else is calling them, and who owns the data. Focused on car crashes? See{" "}
+              <Link href="/car-accident-leads" className="font-bold text-purple-700 underline underline-offset-4">car accident leads</Link>.
             </p>
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">

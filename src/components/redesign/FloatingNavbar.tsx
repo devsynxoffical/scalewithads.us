@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, ArrowRight, Menu, X, ChevronDown, Crown, Users, BookOpen, Zap, Crosshair, Scale, Home, Layers } from "lucide-react";
+import { Sparkles, ArrowRight, Menu, X, ChevronDown, Crown, Users, BookOpen, Zap, Crosshair, Scale, Layers } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -33,7 +33,7 @@ export function FloatingNavbar() {
       rotate: 3,
       dropdown: [
         { label: "Exclusive MVA Leads", href: "/exclusive-mva-leads", icon: Scale, desc: "Car accident leads only your firm gets" },
-        { label: "Exclusive Roofing Leads", href: "/roofing-leads", icon: Home, desc: "Homeowner leads from ads in your account" },
+        { label: "Facebook Ads for Lawyers", href: "/facebook-ads-for-lawyers", icon: Users, desc: "PI, workers comp and mass tort campaigns" },
         { label: "PI Lead Generation", href: "/personal-injury-lead-generation", icon: Crosshair, desc: "Done-for-you Meta Ads for PI law firms" },
         { label: "All Services", href: "/services", icon: Layers, desc: "Meta Ads, creatives, funnels and CRM" },
       ],

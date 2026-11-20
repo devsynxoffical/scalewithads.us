@@ -6,7 +6,7 @@ import { HOME_FAQS } from "@/lib/faqs";
 import { HOME_SERVICE_JSONLD, faqJsonLd, pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
-  title: "Done-For-You Meta Ads & Client Acquisition | Scale With Ads™",
+  title: "Facebook Ads Agency for Client Acquisition | Scale With Ads™",
   description:
     "Done-for-you Meta Ads, creatives, funnels, CRM and AI follow-up for $10K+/month businesses. Double your revenue in 90 days, guaranteed in writing.",
   path: "/",

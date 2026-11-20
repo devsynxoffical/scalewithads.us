@@ -129,7 +129,7 @@ export default function ServicesPage() {
             <span>CORE ACQUISITION SERVICES WE OFFER</span>
           </span>
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-stone-950 tracking-tight leading-tight uppercase font-hero">
-            CORE <span className="font-serif italic lowercase animate-purple-gradient">services.</span>
+            META ADS AGENCY <span className="font-serif italic lowercase animate-purple-gradient">services.</span>
           </h1>
           <p className="mt-4 text-stone-600 font-medium text-lg sm:text-xl max-w-3xl mx-auto font-sans">
             We build and manage the 5 essential pillars of your client acquisition engine: Creatives Creation, Funnels, Media Buying, Trainings, and Mastermind.
@@ -528,9 +528,9 @@ export default function ServicesPage() {
           },
           {
             kind: "Service",
-            title: "Exclusive roofing leads",
-            text: "Homeowner roofing leads from ads in your own account, not shared lists.",
-            href: "/roofing-leads",
+            title: "Facebook ads for lawyers",
+            text: "Meta Ads for personal injury, workers' comp and mass tort practices.",
+            href: "/facebook-ads-for-lawyers",
           },
           {
             kind: "Service",
@@ -540,9 +540,9 @@ export default function ServicesPage() {
           },
           {
             kind: "Service",
-            title: "Facebook ads for roofing companies",
-            text: "Roofing offers, video ads, qualification and instant follow-up that book inspections.",
-            href: "/facebook-ads-for-roofing-companies",
+            title: "Car accident leads",
+            text: "Auto accident leads screened for fault, injury and representation.",
+            href: "/car-accident-leads",
           },
           {
             kind: "Service",

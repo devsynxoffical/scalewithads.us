@@ -199,8 +199,8 @@ export default function PrivateMastermindPage() {
           {/* 2. CENTER GIANT HEADLINE WITH MOVING ANIMATED GRADIENT */}
           <div className="overflow-hidden py-4 my-2 max-w-6xl">
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[96px] font-black tracking-tighter uppercase leading-[0.98] font-hero animate-purple-gradient select-none drop-shadow-sm">
-              Double Your Revenue <br />
-              Within The Next 90 Days
+              The Private Meta Ads <br />
+              Mastermind For Agencies
             </h1>
           </div>
 

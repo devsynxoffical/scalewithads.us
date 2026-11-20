@@ -27,6 +27,7 @@ import { FaqSection } from "@/components/redesign/FaqSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { LegalProofSection } from "@/components/leads/LegalProofSection";
 import { Breadcrumbs, RelatedResources, type RelatedItem } from "@/components/seo/RelatedResources";
 import type { Faq } from "@/lib/faqs";
 import { SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
@@ -36,7 +37,7 @@ const PATH = "/personal-injury-lead-generation";
 export const metadata: Metadata = pageMeta({
   title: "Personal Injury Lead Generation With Facebook Ads",
   description:
-    "Done-for-you personal injury lead generation: Facebook and Instagram ads in your own account, case-type landing pages, qualification and instant follow-up.",
+    "Personal injury lead generation and exclusive personal injury leads from Facebook and Instagram ads in your own account, qualified and followed up instantly.",
   path: PATH,
 });
 
@@ -237,6 +238,8 @@ export default function PersonalInjuryLeadGenerationPage() {
       {/* 2. Trust bar */}
       <TrustBarSection />
 
+      <LegalProofSection />
+
       {/* 3. Case types */}
       <section className="py-20 sm:py-24 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
@@ -248,8 +251,10 @@ export default function PersonalInjuryLeadGenerationPage() {
               One Campaign Per <span className="animate-purple-gradient font-hero">Case Type</span>
             </h2>
             <p className="mt-4 text-stone-600 text-[16px] sm:text-lg font-medium">
-              Each accident type gets its own audiences, ads and landing page, so every message speaks to one situation. (Running a home-services business instead? See our{" "}
-              <Link href="/facebook-ads-for-roofing-companies" className="font-bold text-purple-700 underline underline-offset-4">Facebook ads for roofing companies</Link>.)
+              Each accident type gets its own audiences, ads and landing page, so every message speaks to one situation. Also see{" "}
+              <Link href="/car-accident-leads" className="font-bold text-purple-700 underline underline-offset-4">car accident leads</Link>,{" "}
+              <Link href="/workers-comp-leads" className="font-bold text-purple-700 underline underline-offset-4">workers comp leads</Link> and{" "}
+              <Link href="/mass-tort-leads" className="font-bold text-purple-700 underline underline-offset-4">mass tort leads</Link>.
             </p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
