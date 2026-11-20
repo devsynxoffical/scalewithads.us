@@ -55,9 +55,9 @@ export default function GrowthCoachingPage() {
             <span>Lead Pilot · Done-For-You Ads That Sell</span>
           </span>
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-stone-950 uppercase font-hero leading-tight">
-            Sick of agencies that promise leads and deliver excuses?{" "}
-            <span className="font-serif italic lowercase text-purple-700">We run ads that sell</span>{" "}
-            across every industry.
+            1-on-1 Meta Ads coaching{" "}
+            <span className="font-serif italic lowercase text-purple-700">to run ads that sell</span>{" "}
+            in any industry.
           </h1>
           <p className="mt-6 text-stone-600 text-base sm:text-xl max-w-3xl mx-auto font-medium leading-relaxed font-sans">
             Scale with Ads is specifically for ads, done-for-you media that sells. All industries. $10K minimum. We double your revenue in 90 days, and everything is written in the agreement.
