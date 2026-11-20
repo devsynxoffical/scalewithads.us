@@ -1,9 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { ArrowRight, Bell, CheckCircle2, ClipboardList, Megaphone, MessageSquare, UserCheck } from "lucide-react";
-import { CASE_STUDIES, proofImageSrc } from "@/lib/caseStudies";
+import { Bell, ClipboardList, Megaphone, MessageSquare, UserCheck } from "lucide-react";
 
 const FLOW = [
   {
@@ -107,63 +105,6 @@ export function InquiryFlowTabs() {
       <div className="relative rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-10">
         <div className="pointer-events-none absolute -top-10 -right-10 h-40 w-40 rounded-full bg-purple-600/30 blur-3xl" />
         <div className="relative mx-auto max-w-sm" role="tabpanel">{step.mock}</div>
-      </div>
-    </div>
-  );
-}
-
-const ROOFING = CASE_STUDIES.filter((c) => /roof/i.test(c.industry) || /roof/i.test(c.title));
-
-/** Roofing page: clickable gallery of real roofing results with their dashboards. */
-export function RoofingProofGallery() {
-  const [active, setActive] = useState(0);
-  const cs = ROOFING[active];
-  return (
-    <div className="grid gap-6 lg:grid-cols-[1.25fr_0.75fr]">
-      <div className="overflow-hidden rounded-3xl border-2 border-stone-950 bg-white shadow-[0_25px_60px_rgba(147,51,234,0.2)]">
-        <div className="flex items-center gap-1.5 border-b border-stone-200 px-4 py-3">
-          <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
-          <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
-          <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
-          <span className="ml-auto font-mono text-[10px] font-bold uppercase tracking-widest text-stone-400">Client dashboard · {cs.period}</span>
-        </div>
-        <img src={proofImageSrc(cs.file)} alt={`${cs.cardTitle}: client dashboard`} width={1360} height={1000} className="w-full h-auto" loading="lazy" />
-        <div className="grid grid-cols-2 sm:grid-cols-4 border-t-2 border-stone-950">
-          {cs.stats.map((s) => (
-            <div key={s.label} className="border-r border-stone-200 last:border-r-0 p-4 text-center">
-              <p className="text-xl font-black text-stone-950 font-hero">{s.value}</p>
-              <p className="text-[11px] font-bold uppercase tracking-wider text-stone-500">{s.label}</p>
-            </div>
-          ))}
-        </div>
-        <div className="flex flex-wrap items-center justify-between gap-3 border-t border-stone-200 p-4">
-          <p className="font-black text-stone-950">{cs.cardTitle}</p>
-          <Link href={`/case-studies/${cs.slug}`} className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
-            Read the case study <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-      </div>
-      <div className="grid grid-cols-2 gap-3 lg:grid-cols-1 content-start" role="tablist" aria-label="Roofing results">
-        {ROOFING.map((c, i) => (
-          <button
-            key={c.slug}
-            role="tab"
-            aria-selected={i === active}
-            onClick={() => setActive(i)}
-            className={`flex items-center gap-3 rounded-2xl border-2 p-3 text-left transition-all ${
-              i === active ? "border-purple-600 bg-purple-50 shadow-md" : "border-stone-200 bg-white hover:border-stone-400"
-            }`}
-          >
-            <span className="relative h-12 w-16 shrink-0 overflow-hidden rounded-lg border border-stone-200">
-              <img src={proofImageSrc(c.file)} alt="" className="h-full w-full object-cover object-top" loading="lazy" />
-            </span>
-            <span className="min-w-0">
-              <span className="block text-lg font-black text-stone-950 leading-none font-hero">{c.headline.value}</span>
-              <span className="mt-1 block truncate text-xs font-bold text-stone-500">{c.headline.label}</span>
-            </span>
-            {i === active && <CheckCircle2 className="ml-auto hidden h-5 w-5 shrink-0 text-purple-700 sm:block" />}
-          </button>
-        ))}
       </div>
     </div>
   );

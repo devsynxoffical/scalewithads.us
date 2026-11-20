@@ -154,9 +154,9 @@ export default function BlogPage() {
           },
           {
             kind: "Service",
-            title: "Facebook ads for roofing companies",
-            text: "Roofing offers, video ads and instant follow-up that turn ad spend into booked inspections.",
-            href: "/facebook-ads-for-roofing-companies",
+            title: "Facebook ads for lawyers",
+            text: "Done-for-you Meta Ads for personal injury, workers' comp and mass tort firms.",
+            href: "/facebook-ads-for-lawyers",
           },
           {
             kind: "Case study",

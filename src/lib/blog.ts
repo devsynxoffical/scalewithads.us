@@ -139,7 +139,7 @@ export const POSTS: Post[] = [
       { type: "h2", text: "Example: personal injury campaigns" },
       {
         type: "p",
-        text: "Personal injury is a crowded category on Meta, and most firms and agencies target the same legal and insurance interests. Our MVA campaigns apply the workflow above to accident case types, such as car, motorcycle, 18-wheeler and rideshare accidents, to find adjacent audiences that are more specific and less contested. If you work in that space, our [personal injury lead generation](/personal-injury-lead-generation) page explains how we run those campaigns for firms. Always check your state bar's attorney-advertising rules before launching. The same approach works for home services: see how we use it in [Facebook ads for roofing companies](/facebook-ads-for-roofing-companies).",
+        text: "Personal injury is a crowded category on Meta, and most firms and agencies target the same legal and insurance interests. Our MVA campaigns apply the workflow above to accident case types, such as car, motorcycle, 18-wheeler and rideshare accidents, to find adjacent audiences that are more specific and less contested. If you work in that space, our [personal injury lead generation](/personal-injury-lead-generation) page explains how we run those campaigns for firms. Always check your state bar's attorney-advertising rules before launching. For car crashes specifically, see our [car accident leads](/car-accident-leads) page.",
       },
       { type: "h2", text: "Key takeaways" },
       {

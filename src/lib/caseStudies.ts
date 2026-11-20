@@ -7,6 +7,8 @@
  */
 export type CaseStudy = {
   slug: string;
+  /** The case study now lives on roofingsystems.co (roofing is owned there); proof cards link here. */
+  url: string;
   /** Screenshot file name in /public/workproof (PNG name; served as .webp). */
   file: string;
   /** Short label used on proof cards. */
@@ -39,6 +41,7 @@ export const PLATFORM = "Meta Ads (Facebook & Instagram)";
 export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "roofing-leads-3-75-cost-per-lead",
+    url: "https://www.roofingsystems.co/case-studies/roofing-25-leads-one-day-3-75",
     file: "Screenshot 2026-08-17 at 5.46.06 PM.png",
     cardTitle: "25 roofing leads at $3.75 each",
     title: "Roofing Leads at $3.75 Each: 25 Form Leads From $93.82 in One Day",
@@ -108,6 +111,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     slug: "roofing-marketing-agency-664-leads",
+    url: "https://www.roofingsystems.co/case-studies/roofing-agency-664-leads-4-51",
     file: "Screenshot 2026-08-17 at 5.54.23 PM.png",
     cardTitle: "664 leads in 8 days for a roofing agency",
     title: "664 Leads in 8 Days for a Roofing Marketing Agency at $4.51 Each",
@@ -179,6 +183,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     slug: "227-roofing-leads-14-cpl",
+    url: "https://www.roofingsystems.co/case-studies/roofing-227-leads-14-cpl-28-days",
     file: "Screenshot 2026-08-17 at 5.55.25 PM.png",
     cardTitle: "227 roofing leads at $14 CPL",
     title: "227 Verified Roofing Leads at $14 Cost per Lead in 28 Days",
@@ -246,6 +251,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     slug: "florida-roofing-solar-280-leads",
+    url: "https://www.roofingsystems.co/case-studies/florida-home-services-280-leads-15-days",
     file: "Screenshot 2026-08-17 at 5.56.26 PM.png",
     cardTitle: "280 Florida home-service leads in 15 days",
     title: "280 Qualified Roofing, Gutter and Solar Leads in Florida in 15 Days",
@@ -315,6 +321,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     slug: "roofing-marketing-agency-546k-revenue",
+    url: "https://www.roofingsystems.co/case-studies/roofing-agency-546k-67-days",
     file: "Screenshot 2026-08-17 at 5.57.01 PM.png",
     cardTitle: "$546K won for a roofing agency in 67 days",
     title: "$546,000 in Won Revenue in 67 Days for a Roofing Marketing Agency",
@@ -381,6 +388,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     slug: "roofing-leads-154-in-15-days",
+    url: "https://www.roofingsystems.co/case-studies/roofing-154-leads-14-58-cpl",
     file: "Screenshot 2026-08-17 at 5.57.38 PM.png",
     cardTitle: "154 roofing leads at $14.58",
     title: "154 Roofing Leads in 15 Days at $14.58 per Lead",
