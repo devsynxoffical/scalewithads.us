@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   // Google Search Console ownership: renders <meta name="google-site-verification" ...>
   verification: {
-    google: ["z0F900_Qf7pNqEC16VvMjYKnK1M5MZmOmmLSURZChsg", "ow-uRkRVDMTxQLxoTwnWQBp3QL_QCYy79XF7CYSfXfU"],
+    google: "z0F900_Qf7pNqEC16VvMjYKnK1M5MZmOmmLSURZChsg",
   },
 };
 
