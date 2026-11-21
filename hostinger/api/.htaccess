@@ -1,0 +1,4 @@
+# Keep the lead log and settings private.
+<FilesMatch "\.(log)$|^config(\.sample)?\.php$">
+  Require all denied
+</FilesMatch>

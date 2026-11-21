@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 import type { MetadataRoute } from "next";
 import { SITE_URL, SITEMAP_ROUTES } from "@/lib/seo";
 import { POSTS } from "@/lib/blog";
