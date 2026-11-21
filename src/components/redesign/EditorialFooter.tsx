@@ -3,6 +3,7 @@
 import React from "react";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { PreferredSourceButton } from "@/components/seo/PreferredSourceButton";
 import Image from "next/image";
 
 export function EditorialFooter() {
@@ -166,6 +167,11 @@ export function EditorialFooter() {
           <p aria-hidden="true" className="text-[7.5vw] sm:text-[8.2vw] lg:text-[8.8vw] font-black text-stone-950 leading-none tracking-tight uppercase font-hero block w-full whitespace-nowrap">
             SCALEWITHADS™
           </p>
+        </div>
+
+        {/* Google "Preferred sources" follow button */}
+        <div className="flex justify-center pb-6">
+          <PreferredSourceButton />
         </div>
 
         {/* Minimal Copyright Legal Bar */}
