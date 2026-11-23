@@ -79,15 +79,15 @@ const steps = [
 
 const faqs: Faq[] = [
   {
-    q: "What are MVA leads?",
-    a: "MVA leads are inquiries from people who were injured in a motor vehicle accident, such as a car, motorcycle, truck or rideshare crash, and want to speak to a personal injury lawyer. We generate them for your firm with Facebook and Instagram ads in your own ad account, so they are exclusive to you rather than bought from a vendor and shared.",
+    q: "What are personal injury leads?",
+    a: "Personal injury leads are inquiries from people who were hurt in an accident and want to speak to a personal injury lawyer. We generate them for your firm with Facebook and Instagram ads in your own ad account, so they are exclusive to you rather than bought from a vendor and shared. For motor vehicle accident cases specifically, see our exclusive MVA leads page.",
   },
   {
     q: "Are the personal injury leads exclusive?",
     a: "Yes. The campaigns run in your own ad account and send inquiries straight to your intake, so every lead is generated for your firm alone and is never resold to another firm.",
   },
   {
-    q: "How is this different from buying MVA leads?",
+    q: "How is this different from buying personal injury leads?",
     a: "Lead vendors often sell shared leads to several firms, and you don't control the ads, targeting or follow-up. With our system you own the ad account, creatives, landing pages and data, and you can see exactly where every inquiry came from.",
   },
   {

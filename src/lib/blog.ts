@@ -368,6 +368,99 @@ export const POSTS: Post[] = [
       },
     ],
   },
+  {
+    slug: "how-much-do-mva-leads-cost",
+    title: "How Much Do MVA Leads Cost? Pricing Models and Real Campaign Numbers",
+    metaTitle: "How Much Do MVA Leads Cost? Pricing & Real Numbers",
+    description:
+      "What MVA leads cost under each pricing model, what drives the price, our published Meta Ads cost per lead, and how to work out your real cost per signed case.",
+    category: "Legal Marketing",
+    datePublished: "2026-11-23",
+    dateModified: "2026-11-23",
+    primaryKeyword: "how much do mva leads cost",
+    related: { label: "Get exclusive MVA leads", href: "/exclusive-mva-leads" },
+    faqs: [
+      {
+        q: "How much do MVA leads cost?",
+        a: "It depends on the pricing model, state, case type and how exclusive and verified the lead is. In our own published Meta Ads campaigns, MVA and personal injury leads cost $17.13 to $26.93 each. The number that matters more is your cost per signed case.",
+      },
+      {
+        q: "Are cheaper MVA leads worse?",
+        a: "Not always, but very cheap leads are often shared with several firms or loosely qualified, which lowers your sign rate. Compare offers on cost per signed case, not price per lead.",
+      },
+      {
+        q: "How do I calculate cost per signed case?",
+        a: "Divide what you spend on leads by the number of cases you sign. For example, 50 leads at $100 each that produce 3.5 signed cases cost about $1,429 per case. These are example numbers; use your own.",
+      },
+      {
+        q: "Is it cheaper to generate MVA leads yourself?",
+        a: "Running ads in your own account means you pay the ad platform directly and own the data, but it takes setup, creative, qualification and fast follow-up to work. Many firms use an agency to build and run it.",
+      },
+    ],
+    body: [
+      { type: "p", text: "MVA leads are inquiries from people injured in a motor vehicle accident who want to speak to a lawyer. What you pay for them depends less on a single market price and more on how they are generated, who else receives them and how well they are qualified." },
+      { type: "h2", text: "The four ways firms pay for MVA leads" },
+      { type: "ol", items: ["Shared pay-per-lead: you pay per lead, and the same person may be sold to several firms.", "Exclusive pay-per-lead: the vendor sells each lead to one firm only, usually at a higher price.", "Pay per signed case or retainer: you only pay when the client signs, at a much higher price per case.", "Generating your own: you run ads in your own account, pay the platform directly and own every lead and the data."] },
+      { type: "h2", text: "What drives the price of an MVA lead" },
+      { type: "ul", items: ["State and city: competitive legal markets cost more to advertise in.", "Case type: car, truck, motorcycle and rideshare cases are priced differently.", "Exclusivity: a lead no other firm is calling is worth more than a shared one.", "Qualification: leads screened for injury, fault and representation cost more but sign more often.", "Speed of follow-up: a lead called within minutes is worth more than one called the next day."] },
+      { type: "h2", text: "Our published Meta Ads numbers" },
+      { type: "p", text: "These come from client dashboards we have published, each with a date and screenshot on our [results page](/work):" },
+      { type: "ul", items: ["76 MVA leads in 5 days at $17.13 per lead ($1,301.63 spent, Jul 27 to Jul 31, 2026).", "203 MVA leads in 21 days at $18.69 per lead across 5 campaigns ($3,793.86 spent, Jul 1 to Jul 21, 2026).", "530 leads in 7 days at $26.93 per lead for a Texas personal injury firm ($14,270 spent, Jun 1 to Jun 7, 2026)."] },
+      { type: "callout", title: "Past results, not a quote", text: "These are lead costs from specific campaigns in specific markets. Your cost will depend on your state, case types, offer and how fast your intake team follows up." },
+      { type: "h2", text: "Why cost per signed case matters more than cost per lead" },
+      { type: "p", text: "A cheap lead that never signs is expensive. Divide your total lead spend by the cases you actually sign. As an example, 50 leads at $100 each with a 7% sign rate produce 3.5 cases, about $1,429 per signed case. If exclusive leads called instantly signed at 12% instead, the same spend would cost about $833 per case. You can try your own numbers with the calculator on our [exclusive MVA leads](/exclusive-mva-leads) page." },
+      { type: "h2", text: "Questions to ask before you buy MVA leads" },
+      { type: "ul", items: ["Is each lead sold to my firm only, or to several firms?", "How is each lead verified, and what questions does the form ask?", "How fast is the lead delivered, and in what format?", "Do I own the data and the ads if I stop?", "Can you show results with dates and dashboards, not just testimonials?"] },
+      { type: "h2", text: "Key takeaways" },
+      { type: "ul", items: ["MVA lead prices depend on the model, market, case type, exclusivity and qualification.", "Our published Meta Ads campaigns ran at $17.13 to $26.93 per lead.", "Judge every source on cost per signed case, not price per lead.", "Exclusive, qualified leads that your team calls within minutes usually sign at a higher rate. For car crash campaigns specifically, see [car accident leads](/car-accident-leads)."] },
+    ],
+  },
+  {
+    slug: "how-to-get-workers-comp-leads",
+    title: "How to Get Workers' Comp Leads: A Practical Guide for Attorneys",
+    metaTitle: "How to Get Workers' Comp Leads: Guide for Attorneys",
+    description:
+      "Where workers' compensation leads come from, how to reach injured workers with Meta Ads, the qualifying questions to ask and the mistakes that waste budget.",
+    category: "Legal Marketing",
+    datePublished: "2026-11-23",
+    dateModified: "2026-11-23",
+    primaryKeyword: "workers comp leads",
+    related: { label: "Get workers comp leads", href: "/workers-comp-leads" },
+    faqs: [
+      {
+        q: "What are workers' comp leads?",
+        a: "Inquiries from people injured on the job who want help with a workers' compensation claim, often after a claim was denied, delayed or reduced.",
+      },
+      {
+        q: "Can you target injured workers on Facebook?",
+        a: "Meta removed many sensitive targeting options, including health-related ones, so you cannot target people by injury. Instead, campaigns reach workers by job, industry and location, and the ad and form do the qualifying.",
+      },
+      {
+        q: "What questions should a workers' comp lead form ask?",
+        a: "Whether the injury happened at work, whether it was reported to the employer, the status of the claim, whether the person is getting treatment and whether they already have a lawyer.",
+      },
+      {
+        q: "Are workers' comp ads subject to bar rules?",
+        a: "Yes. Attorney advertising is regulated by each state bar, so every ad and landing page should be reviewed against your state's rules before launch.",
+      },
+    ],
+    body: [
+      { type: "p", text: "Workers' compensation cases come from people who were hurt on the job and are now dealing with an employer's insurer. Many only look for a lawyer after a claim is denied, delayed or cut off. This guide covers where those leads come from and how to generate them yourself." },
+      { type: "h2", text: "Where workers' comp leads come from" },
+      { type: "ul", items: ["Referrals from past clients, doctors and other attorneys.", "Search: people searching for a workers' comp lawyer after a problem with their claim.", "Social ads: reaching workers in high-injury jobs before they search.", "Lead vendors: buying leads, often shared with other firms."] },
+      { type: "h2", text: "Reaching injured workers with Meta Ads" },
+      { type: "p", text: "You cannot target people by injury or medical condition on Meta, and you should not try. Instead, campaigns reach workers by the jobs and industries where injuries are common, such as construction, warehouses, delivery and healthcare, in the areas you practice. The ad speaks to a situation the worker recognizes, and the form confirms whether they actually have a claim." },
+      { type: "h2", text: "The questions that qualify a workers' comp lead" },
+      { type: "ol", items: ["Were you injured while working?", "Have you reported the injury to your employer?", "Has your claim been denied, delayed or reduced?", "Are you receiving medical treatment?", "Do you already have a lawyer?"] },
+      { type: "p", text: "Short, specific questions keep form completion high while filtering out people your intake team cannot help." },
+      { type: "h2", text: "Follow-up and tracking" },
+      { type: "p", text: "Injured workers often contact more than one firm. An instant text and email, and a call within minutes, make a large difference. Track every lead from first contact to signed case, so budget moves toward the audiences and ads that produce cases, not just form fills." },
+      { type: "h2", text: "Common mistakes" },
+      { type: "ul", items: ["Running one generic ad for every industry instead of separate campaigns.", "Forms with no qualifying questions, which flood intake with unusable leads.", "Slow follow-up, so the worker signs with the firm that called first.", "Judging campaigns on cost per lead instead of cost per signed case.", "Skipping the state bar review of ads and landing pages."] },
+      { type: "h2", text: "Key takeaways" },
+      { type: "ul", items: ["Reach workers by job, industry and location, and let the form qualify the claim.", "Ask about the work injury, reporting, claim status, treatment and representation.", "Follow up within minutes and track every lead to a signed case.", "See how we run these campaigns on our [workers comp leads](/workers-comp-leads) page, and our approach to [mass tort leads](/mass-tort-leads)."] },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
