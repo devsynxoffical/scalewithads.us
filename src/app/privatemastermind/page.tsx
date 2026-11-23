@@ -10,6 +10,7 @@ import { FaqSection } from "@/components/redesign/FaqSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { MASTERMIND_FUNNEL } from "@/lib/funnels";
+import { ProgramJourney } from "@/components/mastermind/ProgramJourney";
 
 export const metadata: Metadata = pageMeta({
   title: MASTERMIND_FUNNEL.metaTitle,
@@ -192,18 +193,33 @@ export default function PrivateMastermindPage() {
       </section>
 
       {/* Program introduction */}
-      <section className="py-24 px-4 md:px-8 border-t border-stone-200">
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2 shadow-sm">Program introduction</span>
-          <h2 className="text-4xl sm:text-6xl font-black text-stone-950 font-hero tracking-tight mt-4 leading-tight">
-            Not just another <span className="animate-purple-gradient">advertising course.</span>
-          </h2>
-          <p className="mt-6 text-stone-700 text-base sm:text-lg font-medium leading-relaxed">
-            The AI Client Acquisition Mastermind is a hands-on implementation mastermind designed to help you understand the complete client acquisition ecosystem, improve lead quality, optimize conversion rates and build a repeatable acquisition process.
-          </p>
-          <p className="mt-4 text-stone-600 text-base sm:text-lg font-medium leading-relaxed">
-            Over six weeks you move from audience and creative research, through AI-assisted ad production, tracking and launch, to advanced scaling, retargeting and profitability, applying each class to your own campaigns.
-          </p>
+      <section className="relative overflow-hidden py-20 sm:py-28 px-4 md:px-8 border-t border-stone-200">
+        <div className="pointer-events-none absolute -top-32 -left-32 w-[520px] h-[520px] rounded-full bg-purple-200/30 blur-3xl" />
+        <div className="relative max-w-6xl mx-auto grid gap-12 lg:grid-cols-[1fr_1.05fr] items-center">
+          <div className="text-center lg:text-left">
+            <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2 shadow-sm"><Sparkles className="w-3.5 h-3.5" /> Program introduction</span>
+            <h2 className="mt-5 text-4xl sm:text-6xl font-black text-stone-950 font-hero tracking-tight leading-[1.02]">
+              Not just another <span className="animate-purple-gradient">advertising course.</span>
+            </h2>
+            <p className="mt-6 text-stone-700 text-base sm:text-lg font-medium leading-relaxed">
+              The <strong className="text-stone-950">AI Client Acquisition Mastermind</strong> is a hands-on implementation mastermind designed to help you understand the complete client acquisition ecosystem, improve lead quality, optimize conversion rates and build a repeatable acquisition process.
+            </p>
+            <p className="mt-4 text-stone-600 text-base sm:text-lg font-medium leading-relaxed">
+              Over six weeks you move from audience and creative research, through AI-assisted ad production, tracking and launch, to advanced scaling, retargeting and profitability, applying each class to your own campaigns.
+            </p>
+            <div className="mt-8 grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0">
+              {[["6", "Weeks"], ["12", "Live classes"], ["14", "Resources"]].map(([v, l]) => (
+                <div key={l} className="rounded-2xl border-2 border-stone-950 bg-white px-3 py-3 text-center shadow-sm hover:-translate-y-1 hover:border-purple-600 transition-all">
+                  <p className="text-3xl font-black text-purple-700 font-hero">{v}</p>
+                  <p className="text-[10px] font-black uppercase tracking-wider text-stone-500">{l}</p>
+                </div>
+              ))}
+            </div>
+            <Link href="/contact" className="mt-8 inline-flex items-center gap-2 rounded-full bg-stone-950 hover:bg-purple-700 px-7 py-3.5 text-xs font-black uppercase tracking-wider text-white transition-colors shadow-lg">
+              Apply for the Mastermind <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+          <ProgramJourney weeks={CURRICULUM} />
         </div>
       </section>
 
