@@ -198,7 +198,7 @@ export default function PrivateMastermindPage() {
         <div className="relative max-w-6xl mx-auto grid gap-12 lg:grid-cols-[1fr_1.05fr] items-center">
           <div className="text-center lg:text-left">
             <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2 shadow-sm"><Sparkles className="w-3.5 h-3.5" /> Program introduction</span>
-            <h2 className="mt-5 text-4xl sm:text-6xl font-black text-stone-950 font-hero tracking-tight leading-[1.02]">
+            <h2 className="mt-5 text-4xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight leading-[1.02] uppercase">
               Not just another <span className="animate-purple-gradient">advertising course.</span>
             </h2>
             <p className="mt-6 text-stone-700 text-base sm:text-lg font-medium leading-relaxed">
@@ -228,7 +228,7 @@ export default function PrivateMastermindPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2 shadow-sm">Core benefits</span>
-            <h2 className="text-4xl sm:text-6xl font-black text-stone-950 font-hero tracking-tight mt-4 leading-tight">
+            <h2 className="text-4xl sm:text-6xl font-black text-stone-950 font-hero tracking-tight mt-4 leading-tight uppercase">
               What you&apos;ll be able to do <span className="animate-purple-gradient">after six weeks.</span>
             </h2>
           </div>
@@ -249,7 +249,7 @@ export default function PrivateMastermindPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2 shadow-sm"><Layers className="w-3.5 h-3.5" /> The complete 6-week curriculum</span>
-            <h2 className="text-4xl sm:text-6xl font-black text-stone-950 font-hero tracking-tight mt-4 leading-tight">
+            <h2 className="text-4xl sm:text-6xl font-black text-stone-950 font-hero tracking-tight mt-4 leading-tight uppercase">
               What you will master, <span className="animate-purple-gradient">week by week.</span>
             </h2>
             <p className="mt-4 text-stone-600 text-base sm:text-lg font-medium">Twelve live classes, two a week, each applied to your own campaigns.</p>
@@ -294,7 +294,7 @@ export default function PrivateMastermindPage() {
         <div className="relative overflow-hidden max-w-6xl mx-auto rounded-[32px] bg-gradient-to-br from-purple-800 via-purple-900 to-stone-950 p-8 sm:p-14 text-center text-white">
           <div className="pointer-events-none absolute -top-24 -right-24 w-96 h-96 rounded-full bg-fuchsia-400/25 blur-3xl" />
           <p className="relative font-mono text-xs font-black uppercase tracking-widest text-purple-200">Seats are limited</p>
-          <h2 className="relative mt-3 text-3xl sm:text-5xl font-black font-hero tracking-tight">Twelve classes. Your own campaigns.</h2>
+          <h2 className="relative mt-3 text-3xl sm:text-5xl font-black font-hero tracking-tight uppercase">Twelve classes. Your own campaigns.</h2>
           <p className="relative mt-4 max-w-2xl mx-auto text-purple-100 text-base sm:text-lg">Apply for the AI Client Acquisition Mastermind and build your acquisition system with live support.</p>
           <Link href="/contact" className="relative mt-8 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-black uppercase tracking-wider text-stone-950 hover:bg-purple-100 transition-colors">
             Apply for the Mastermind <ArrowRight className="w-4 h-4" />
@@ -308,7 +308,7 @@ export default function PrivateMastermindPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2 shadow-sm">What makes this mastermind different</span>
-            <h2 className="text-4xl sm:text-6xl font-black text-stone-950 font-hero tracking-tight mt-4 leading-tight">
+            <h2 className="text-4xl sm:text-6xl font-black text-stone-950 font-hero tracking-tight mt-4 leading-tight uppercase">
               Built around your campaigns, <span className="animate-purple-gradient">not slides.</span>
             </h2>
           </div>
@@ -329,7 +329,7 @@ export default function PrivateMastermindPage() {
         <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-2">
           <div className="rounded-[28px] border-2 border-stone-950 bg-white p-6 sm:p-8 shadow-lg">
             <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2 shadow-sm">Implementation resources</span>
-            <h2 className="mt-4 text-3xl sm:text-4xl font-black text-stone-950 font-hero tracking-tight">Premium resources you keep using.</h2>
+            <h2 className="mt-4 text-3xl sm:text-4xl font-black text-stone-950 font-hero tracking-tight uppercase">Premium resources you keep using.</h2>
             <p className="mt-3 text-stone-600 font-medium leading-relaxed">SOPs, checklists, playbooks and templates for every stage of the system, plus weekly assignments that turn each class into action on your own account.</p>
             <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
               {RESOURCES.map((r) => (
@@ -339,7 +339,7 @@ export default function PrivateMastermindPage() {
           </div>
           <div className="rounded-[28px] border-2 border-stone-950 bg-stone-950 p-6 sm:p-8 text-white shadow-lg">
             <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-200 bg-white/10 border border-white/15 px-4 py-2 rounded-full inline-flex">Who is this mastermind for?</span>
-            <h2 className="mt-4 text-3xl sm:text-4xl font-black font-hero tracking-tight">For people who run, or rely on, paid acquisition.</h2>
+            <h2 className="mt-4 text-3xl sm:text-4xl font-black font-hero tracking-tight uppercase">For people who run, or rely on, paid acquisition.</h2>
             <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
               {AUDIENCE.map((a) => (
                 <li key={a} className="flex gap-2.5 text-sm font-bold text-stone-100"><Users className="mt-0.5 h-4 w-4 shrink-0 text-purple-300" />{a}</li>
@@ -359,7 +359,7 @@ export default function PrivateMastermindPage() {
         <div className="max-w-4xl mx-auto text-center rounded-[28px] border-2 border-purple-200 bg-purple-50 p-8 sm:p-12">
           <GraduationCap className="mx-auto w-10 h-10 text-purple-700" />
           <p className="mt-4 font-mono text-xs font-black uppercase tracking-widest text-purple-700">Graduate support program</p>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-black text-stone-950 font-hero tracking-tight">You don&apos;t graduate alone.</h2>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-black text-stone-950 font-hero tracking-tight uppercase">You don&apos;t graduate alone.</h2>
           <p className="mt-4 text-stone-700 text-base sm:text-lg font-medium leading-relaxed">
             The final class ends with a live review of your campaigns, an optimization roadmap and individual implementation guidance, so you leave with a clear plan for your own account. Details of support after graduation are covered on your application call.
           </p>

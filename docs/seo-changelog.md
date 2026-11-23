@@ -52,3 +52,4 @@ Checks after the build: each page has 1 H1, a unique title under 60 characters a
 | Before | After |
 |---|---|
 | Centered heading and 2 paragraphs | Two-column layout: heading, intro, 6 / 12 / 14 stat tiles (weeks, live classes, resources) and an apply button, next to a clickable 6-week journey (week tabs, progress bar, each week's theme and classes, link to the full curriculum). Same copy, no new claims. |
+- Section headings on /privatemastermind set to uppercase to match the rest of the site (font check).
