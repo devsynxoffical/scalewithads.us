@@ -5,7 +5,6 @@ import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { ClientTestimonialsSection } from "@/components/redesign/ClientTestimonialsSection";
 import { SelectedWorkShowcase } from "@/components/redesign/SelectedWorkShowcase";
-import { ResultsSection } from "@/components/redesign/ResultsSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { MASTERMIND_FUNNEL } from "@/lib/funnels";
@@ -442,8 +441,6 @@ export default function PrivateMastermindPage() {
         </div>
       </section>
 
-      {/* Verified Results & Track Record Showcase */}
-      <ResultsSection />
 
       {/* System Training Library Section (Home Page Component) */}
       <SelectedWorkShowcase />

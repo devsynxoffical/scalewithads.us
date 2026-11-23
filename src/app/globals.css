@@ -72,6 +72,8 @@
   }
 
   html {
+    /* clip (not hidden) keeps position: sticky working */
+    overflow-x: clip;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--accent) #09090b;
