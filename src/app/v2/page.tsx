@@ -19,6 +19,7 @@ import { ProcessSection } from "@/components/redesign/ProcessSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import UFSquareMarquee from "@/components/redesign/UFSquareMarquee";
+import { LegalLeadsSection } from "@/components/redesign/LegalLeadsSection";
 
 export const metadata = {
   title: "Scale With Ads™ | Proprietary Client Acquisition System",
@@ -57,6 +58,9 @@ export default function RedesignPage() {
       <div id="results">
         <ResultsSection />
       </div>
+
+      {/* Legal lead generation pages (keyword plan focus) */}
+      <LegalLeadsSection />
 
       {/* 8. Selected Work Showcase (Lunvoro Layout: Sticky Left Header + 3D Un-tilting Scroll Cards) */}
       <div id="work">

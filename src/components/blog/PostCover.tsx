@@ -1,10 +1,11 @@
-import { Clapperboard, Crosshair, Filter, type LucideIcon } from "lucide-react";
+import { Clapperboard, Crosshair, Filter, Scale, type LucideIcon } from "lucide-react";
 
 /** Visual identity per blog category: gradient, accent and icon. */
 const THEMES: Record<string, { from: string; to: string; ring: string; icon: LucideIcon }> = {
   "Meta Ads Targeting": { from: "from-purple-700", to: "to-fuchsia-500", ring: "ring-fuchsia-300/40", icon: Crosshair },
   Funnels: { from: "from-stone-950", to: "to-purple-800", ring: "ring-purple-300/40", icon: Filter },
   Creative: { from: "from-indigo-700", to: "to-purple-500", ring: "ring-indigo-300/40", icon: Clapperboard },
+  "Legal Marketing": { from: "from-stone-900", to: "to-indigo-700", ring: "ring-indigo-300/40", icon: Scale },
 };
 
 const FALLBACK = THEMES["Meta Ads Targeting"];

@@ -7,6 +7,9 @@ import { CreativeCtaSection } from "@/components/redesign/CreativeCtaSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { FaqSection } from "@/components/redesign/FaqSection";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { faqJsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -27,6 +30,29 @@ import {
   Users,
   Settings,
 } from "lucide-react";
+
+const SERVICES_FAQS = [
+  {
+    q: "What is a Meta VSL ad?",
+    a: "A Meta VSL ad is a video sales letter, or a short cut-down of one, run as a Facebook or Instagram ad. It hooks the right viewer, explains the problem and your approach, and sends them to a landing page that continues the same argument and books a call.",
+  },
+  {
+    q: "How do you run VSL ads on Meta?",
+    a: "We script the VSL, cut several hooks and short versions from it to test as ads, send viewers to a VSL landing page, and follow up every lead instantly through the CRM. Budget moves to the hooks and audiences that produce booked calls, not just clicks.",
+  },
+  {
+    q: "What does a Meta ads agency do?",
+    a: "A Meta ads agency plans, builds and manages Facebook and Instagram advertising: offer and angle, creatives, audiences, landing pages, tracking and optimization. We also connect the ads to your CRM and follow-up so leads turn into booked calls.",
+  },
+  {
+    q: "Are you a paid ads agency for any industry?",
+    a: "We focus on Meta Ads (Facebook and Instagram) and have run campaigns for law firms, home services, coaches, webinars, mortgage, agencies and e-commerce. See results by industry on our results page.",
+  },
+  {
+    q: "Who owns the ad account, creatives and data?",
+    a: "You do. Campaigns run in your own ad account, and every ad, landing page and lead stays with your business.",
+  },
+];
 
 export default function ServicesPage() {
   const serviceCards = [
@@ -369,7 +395,7 @@ export default function ServicesPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-amber-600 stroke-[3]" />
-                  <span>100% Asset Ownership — Zero Lock-In Contracts</span>
+                  <span>100% Asset Ownership: Zero Lock-In Contracts</span>
                 </li>
               </ul>
 
@@ -514,6 +540,57 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Meta VSL ads ("meta vsl" / "vsl meta ads" land here via the /metads redirect) */}
+      <section id="meta-vsl-ads" aria-labelledby="meta-vsl-heading" className="py-20 sm:py-24 px-4 md:px-8 bg-white border-y border-stone-200">
+        <div className="max-w-6xl mx-auto grid gap-12 lg:grid-cols-2 items-center">
+          <div>
+            <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-100 border border-purple-200 text-purple-900 font-mono font-black text-[11px] tracking-widest uppercase">VSL ads</span>
+            <h2 id="meta-vsl-heading" className="mt-5 text-3xl sm:text-5xl font-black text-stone-950 tracking-tight uppercase font-hero leading-[1.05]">
+              Meta VSL ads that <span className="animate-purple-gradient font-hero">book calls</span>
+            </h2>
+            <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">
+              A VSL (video sales letter) does the selling before the call. We script it, cut the strongest hooks into short Facebook and Instagram ads, and send viewers to a VSL page that continues the same story and books the appointment.
+            </p>
+            <p className="mt-4 text-[16px] text-stone-600 leading-relaxed">
+              See the structure we use in our <Link href="/blog/vsl-script-structure" className="font-bold text-purple-700 underline underline-offset-4">VSL script guide</Link>.
+            </p>
+            <h3 className="mt-8 text-xl font-black text-stone-950">Example: a VSL-led Meta Ads funnel</h3>
+            <div className="mt-4 grid grid-cols-3 gap-3">
+              {[
+                ["$847K", "Revenue"],
+                ["3.32x", "Average ROAS"],
+                ["13,630+", "Offers sold"],
+              ].map(([v, l]) => (
+                <div key={l} className="rounded-2xl border-2 border-stone-950 bg-white p-3 text-center">
+                  <p className="text-xl sm:text-2xl font-black text-stone-950 font-hero">{v}</p>
+                  <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-stone-500">{l}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-3 text-sm text-stone-600">
+              From $255K in tracked Meta ad spend over 90 days. Full breakdown in the <Link href="/metalto" className="font-bold text-purple-700 underline underline-offset-4">$847K low-ticket funnel case study</Link>.
+            </p>
+          </div>
+          <ol className="grid gap-3">
+            {[
+              ["Script", "An 8-part VSL script built around one offer and one buyer."],
+              ["Cut-downs", "Several hooks and 30 to 90 second versions tested as separate ads."],
+              ["VSL page", "A landing page that continues the video's argument, with booking built in."],
+              ["Follow-up", "Instant SMS and email, and every lead tracked in the CRM."],
+              ["Optimize", "Budget moves to the hooks and audiences that book calls."],
+            ].map(([t, d], i) => (
+              <li key={t} className="flex gap-4 rounded-2xl border-2 border-stone-200 bg-[#FAF8F4] p-4">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-purple-100 border border-purple-200 font-mono text-sm font-black text-purple-700">{i + 1}</span>
+                <span><span className="block font-black text-stone-950">{t}</span><span className="text-sm text-stone-600">{d}</span></span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <JsonLd data={faqJsonLd(SERVICES_FAQS)} />
+      <FaqSection faqs={SERVICES_FAQS} eyebrow="Meta Ads agency FAQ" title={<>Questions about <span className="font-serif italic lowercase animate-purple-gradient">our services.</span></>} />
+
       <CreativeCtaSection />
       <RelatedResources
         eyebrow="Industries & guides"
@@ -546,9 +623,15 @@ export default function ServicesPage() {
           },
           {
             kind: "Service",
-            title: "MVA Lead Generation mastermind",
-            text: "Training that walks through our full MVA campaign build for personal injury.",
-            href: "/mvaleadgeneration",
+            title: "Workers comp leads",
+            text: "Injured workers screened for work injury, reporting and claim status.",
+            href: "/workers-comp-leads",
+          },
+          {
+            kind: "Service",
+            title: "Mass tort leads",
+            text: "Claimants screened against your tort criteria before intake.",
+            href: "/mass-tort-leads",
           },
           {
             kind: "Case study",
