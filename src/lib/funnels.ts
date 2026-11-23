@@ -68,7 +68,7 @@ export const MASTERMIND_FUNNEL: FunnelConfig = {
   metaTitle:
     "Private Meta Ads Mastermind for Agencies | Scale With Ads™",
   metaDescription:
-    "A private 1:1 mastermind for agencies and operators: win clients with Meta Ads, use our hidden Facebook interest framework and install the 8 core growth pillars.",
+    "A 6-week Meta Ads mastermind for agencies: 12 live classes on targeting, AI ads, tracking, scaling and profitability, applied to your own campaigns.",
   eyebrow: "Private mastermind · media agencies + operators",
   title: "We train media agencies on how to",
   titleAccent: "get clients with ads",
