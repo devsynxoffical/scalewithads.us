@@ -4,7 +4,7 @@ import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
-import { Zap, ArrowRight, ShieldCheck, Play, CheckCircle2, AlertTriangle } from "lucide-react";
+import { Users, ArrowRight, Play, AlertTriangle, Target, Clapperboard, Crosshair, LineChart, Gauge, MessagesSquare } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = pageMeta({
@@ -18,16 +18,17 @@ export default function GrowthCoachingPage() {
   const stats = [
     { value: "$50M+", label: "Meta Ads Spent" },
     { value: "12 YRS", label: "Experience" },
-    { value: "$10K+", label: "Minimum" },
-    { value: "90 DAYS", label: "Revenue Target" },
+    { value: "1-ON-1", label: "Direct access" },
+    { value: "ALL", label: "Industries" },
   ];
 
   const learnItems = [
-    "Ads built to sell, not vanity traffic across countless verticals",
-    "We write, target, and manage Meta campaigns that book revenue",
-    "Proven with $50M+ Meta ads spend and 12 years in the game",
-    "Same playbook used for brands, agencies, and operators worldwide",
-    "$10K minimum · We double your revenue in 90 days · Everything is written in the agreement",
+    { icon: Target, title: "Offer and angle", text: "Shape the offer and the message so the right buyers stop scrolling." },
+    { icon: Clapperboard, title: "Creatives and hooks", text: "Script and review ads with us, and learn how to test new hooks every week." },
+    { icon: Crosshair, title: "Targeting", text: "Find audiences your competitors are not bidding on, step by step." },
+    { icon: LineChart, title: "Scaling", text: "When to raise budgets, when to cut ads, and how to scale without losing results." },
+    { icon: Gauge, title: "Tracking", text: "Set up the pixel, Conversions API and reporting so you know what each sale costs." },
+    { icon: MessagesSquare, title: "Live reviews", text: "Bring your ad account to the call and get direct feedback on what to change." },
   ];
 
   return (
@@ -35,14 +36,14 @@ export default function GrowthCoachingPage() {
       <FloatingNavbar />
 
       {/* Top Warning Banner */}
-      <div className="pt-24 bg-stone-950 text-purple-200 text-xs font-mono py-2.5 px-4 overflow-hidden border-b border-stone-800 select-none">
+      <div className="pt-28 sm:pt-24 bg-stone-950 text-purple-200 text-xs font-mono py-2.5 px-4 overflow-hidden border-b border-stone-800 select-none">
         <div className="animate-marquee whitespace-nowrap flex items-center gap-8">
           <span className="flex items-center gap-2 text-amber-300 font-bold">
             <AlertTriangle className="w-3.5 h-3.5" />
             ⚠️ THIS IS ONLY FOR AGENCY OWNERS, COACHES, HIGH-TICKET SERVICE PROVIDERS & B2B FOUNDERS ALREADY GENERATING $10,000+/MONTH.
           </span>
           <span className="text-emerald-400 font-bold">
-            ⚡ CLICK TO BOOK YOUR FREE STRATEGY CALL — LIMITED SPOTS AVAILABLE.
+            ⚡ CLICK TO BOOK YOUR FREE STRATEGY CALL. LIMITED SPOTS AVAILABLE.
           </span>
         </div>
       </div>
@@ -51,16 +52,16 @@ export default function GrowthCoachingPage() {
       <section className="pt-16 pb-20 px-4 md:px-8 bg-white text-stone-900 border-b border-stone-200">
         <div className="max-w-5xl mx-auto text-center">
           <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full inline-flex items-center gap-2 mb-6">
-            <Zap className="w-4 h-4 text-purple-700" />
-            <span>Lead Pilot · Done-For-You Ads That Sell</span>
+            <Users className="w-4 h-4 text-purple-700" />
+            <span>1-on-1 Meta Ads Coaching</span>
           </span>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-stone-950 uppercase font-hero leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-stone-950 uppercase font-hero leading-[1.05] max-w-4xl mx-auto">
             1-on-1 Meta Ads coaching{" "}
             <span className="font-serif italic lowercase text-purple-700">to run ads that sell</span>{" "}
             in any industry.
           </h1>
           <p className="mt-6 text-stone-600 text-base sm:text-xl max-w-3xl mx-auto font-medium leading-relaxed font-sans">
-            Scale with Ads is specifically for ads, done-for-you media that sells. All industries. $10K minimum. We double your revenue in 90 days, and everything is written in the agreement.
+            Work directly with our team on your own Meta Ads: offer, creatives, targeting and scaling. You run the ads, and we show you what to change so they sell, in any industry.
           </p>
 
           {/* Stats Bar */}
@@ -78,11 +79,11 @@ export default function GrowthCoachingPage() {
               href="/contact"
               className="inline-flex items-center gap-2 px-9 py-4.5 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-sm uppercase tracking-wider transition-all shadow-xl active:scale-95"
             >
-              <span>GET MY ADS SELLING THIS WEEK</span>
+              <span>BOOK A COACHING CALL</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
             <span className="text-xs text-stone-500 font-mono">
-              $10K minimum · double revenue in 90 days · 100% Asset Ownership · Written Agreement · No Lock-ins
+              1-on-1 calls · Your own ad account · Any industry
             </span>
           </div>
         </div>
@@ -99,7 +100,7 @@ export default function GrowthCoachingPage() {
             Watch This Before You Book a Call
           </h2>
           <p className="mt-2 text-stone-600 text-sm font-medium">
-            Understand exactly what we install, how it works, and why it doubles revenue.
+            See how we run Meta Ads, then book a call to talk about your account.
           </p>
         </div>
 
@@ -117,37 +118,42 @@ export default function GrowthCoachingPage() {
             href="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-stone-950 hover:bg-purple-700 text-white font-black text-xs uppercase tracking-wider transition-colors shadow-xl"
           >
-            <span>BOOK APPLICATION CALL</span>
+            <span>BOOK A COACHING CALL</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>
 
-      {/* What DFY Ads Looks Like */}
-      <section className="py-20 px-4 md:px-8 max-w-5xl mx-auto border-t border-stone-200">
-        <div className="text-center mb-14">
-          <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full">
-            INSIDE THIS SYSTEM
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight mt-3">
-            What Done-For-You Ads Looks Like Here
-          </h2>
-        </div>
+      {/* What the coaching covers */}
+      <section className="py-20 px-4 md:px-8 border-t border-stone-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-xs font-mono font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-2 rounded-full">
+              Inside the coaching
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-black text-stone-950 font-hero tracking-tight mt-5">
+              What we cover in your <span className="whitespace-nowrap">1-on-1</span> calls
+            </h2>
+          </div>
 
-        <div className="space-y-4">
-          {learnItems.map((item, idx) => (
-            <div
-              key={idx}
-              className="p-6 rounded-3xl bg-white border-2 border-stone-950 shadow-lg flex items-start gap-4 text-stone-900"
-            >
-              <span className="w-10 h-10 rounded-xl bg-purple-700 text-white font-mono font-black text-sm flex items-center justify-center flex-shrink-0 mt-0.5">
-                0{idx + 1}
-              </span>
-              <p className="pt-1.5 text-base sm:text-lg font-extrabold font-sans text-stone-950 leading-relaxed">
-                {item}
-              </p>
-            </div>
-          ))}
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {learnItems.map((item, idx) => (
+              <div key={item.title} className="relative p-6 rounded-3xl bg-white border-2 border-stone-950 shadow-lg text-stone-900">
+                <span className="absolute right-5 top-4 font-mono text-xs font-black text-stone-300">0{idx + 1}</span>
+                <span className="w-11 h-11 rounded-2xl bg-purple-700 text-white flex items-center justify-center">
+                  <item.icon className="w-5 h-5" />
+                </span>
+                <h3 className="mt-4 text-lg font-black text-stone-950">{item.title}</h3>
+                <p className="mt-1.5 text-sm text-stone-600 leading-relaxed">{item.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-center text-sm text-stone-500">
+            Want us to run the ads for you instead? See{" "}
+            <Link href="/leadpilot" className="font-bold text-purple-700 underline underline-offset-4">Lead Pilot done-for-you ads</Link> or join the{" "}
+            <Link href="/privatemastermind" className="font-bold text-purple-700 underline underline-offset-4">private mastermind</Link>.
+          </p>
         </div>
       </section>
 

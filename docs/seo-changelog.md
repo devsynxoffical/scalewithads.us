@@ -30,3 +30,10 @@ Not changed: sitewide footer links to sister sites (none exist; the footer only 
 | Sitewide footer and CTA sections | | 3 em dashes | 0 |
 
 Checks after the build: each page has 1 H1, a unique title under 60 characters and description under 155, a canonical, valid Service + FAQPage JSON-LD that matches the visible FAQs word for word, no em dashes, no horizontal overflow at 390px.
+
+## 2026-11-23: /privatemastermind/coaching layout and copy fix
+
+| Before | After |
+|---|---|
+| H1 said "coaching" but the chip, intro, stats, buttons and list described Lead Pilot done-for-you ads ($10K minimum, revenue doubling) | The whole page is about 1-on-1 coaching: chip, intro, stats ($50M+ spent, 12 years, 1-on-1, all industries), buttons and a 6-card "What we cover in your 1-on-1 calls" grid |
+| Oversized H1 (4 lines on desktop), single-column list, banner text hidden under the menu on mobile, 1 em dash | Smaller H1, 3-column card grid, banner visible on mobile, 0 em dashes; links to /leadpilot and /privatemastermind |
