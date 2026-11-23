@@ -28,6 +28,7 @@ import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { LegalProofSection } from "@/components/leads/LegalProofSection";
+import { LEGAL_FORM_NOTE } from "@/components/leads/LegalLeadPage";
 import { Breadcrumbs, RelatedResources, type RelatedItem } from "@/components/seo/RelatedResources";
 import type { Faq } from "@/lib/faqs";
 import { SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
@@ -35,9 +36,9 @@ import { SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 const PATH = "/personal-injury-lead-generation";
 
 export const metadata: Metadata = pageMeta({
-  title: "Personal Injury Lead Generation With Facebook Ads",
+  title: "Personal Injury Leads From Facebook and Instagram",
   description:
-    "Personal injury lead generation and exclusive personal injury leads from Facebook and Instagram ads in your own account, qualified and followed up instantly.",
+    "Exclusive personal injury leads screened before intake. One campaign per case type, real results and a lead system your firm owns. Get a plan.",
   path: PATH,
 });
 
@@ -79,32 +80,24 @@ const steps = [
 
 const faqs: Faq[] = [
   {
-    q: "What are personal injury leads?",
-    a: "Personal injury leads are inquiries from people who were hurt in an accident and want to speak to a personal injury lawyer. We generate them for your firm with Facebook and Instagram ads in your own ad account, so they are exclusive to you rather than bought from a vendor and shared. For motor vehicle accident cases specifically, see our exclusive MVA leads page.",
+    q: "How do I get personal injury leads?",
+    a: "The main sources are referrals, SEO, Google Ads, TV and radio, lead vendors and social media ads. Facebook and Instagram campaigns in your own ad account are one of the fastest ways to get exclusive leads at a controllable cost.",
   },
   {
-    q: "Are the personal injury leads exclusive?",
-    a: "Yes. The campaigns run in your own ad account and send inquiries straight to your intake, so every lead is generated for your firm alone and is never resold to another firm.",
+    q: "What are exclusive personal injury leads?",
+    a: "They are leads generated only for your firm and never resold. Because no other firm is calling, contact and sign rates are higher than with shared leads.",
   },
   {
-    q: "How is this different from buying personal injury leads?",
-    a: "Lead vendors often sell shared leads to several firms, and you don't control the ads, targeting or follow-up. With our system you own the ad account, creatives, landing pages and data, and you can see exactly where every inquiry came from.",
+    q: "How are personal injury leads screened?",
+    a: "Each lead answers questions about accident date, injury type, medical treatment, fault and whether they already have an attorney. Numbers can be verified with a one-time code.",
   },
   {
-    q: "Which case types can you run campaigns for?",
-    a: "We build separate campaigns for car accidents, motorcycle accidents, 18-wheeler and truck accidents, rideshare accidents and other personal injury case types, so each ad and landing page speaks to one situation.",
+    q: "How much do personal injury leads cost?",
+    a: "Prices vary by state, case type and exclusivity. Shared leads cost less per lead but convert worse. Track cost per signed case to compare sources fairly.",
   },
   {
-    q: "Do we own the ad account, creatives and data?",
-    a: "Yes. Every asset we build, including ads, landing pages, CRM sequences and lead data, belongs 100% to your firm with no lock-in.",
-  },
-  {
-    q: "How long does it take to launch?",
-    a: "Onboarding and the system build typically take 14 to 21 days from the kickoff call to live campaigns.",
-  },
-  {
-    q: "Do you work with agencies that run ads for attorneys?",
-    a: "Yes. Agencies can work with us directly, or learn the audience research process in our Sniper Method mastermind for personal injury advertisers.",
+    q: "What makes a good personal injury lead generation company?",
+    a: "Exclusive leads, transparent reporting, campaigns in your own ad account, real screening, compliance with bar rules and published results.",
   },
 ];
 
@@ -204,7 +197,7 @@ export default function PersonalInjuryLeadGenerationPage() {
             </span>
             <h1 className="mt-5 text-3xl sm:text-5xl lg:text-[56px] font-black text-stone-950 tracking-tight uppercase font-hero leading-[1.05]">
               Personal Injury Lead Generation With{" "}
-              <span className="animate-purple-gradient font-hero tracking-tight">Facebook & Instagram Ads</span>
+              <span className="animate-purple-gradient font-hero tracking-tight">Facebook and Instagram</span>
             </h1>
             <p className="mt-6 text-[16px] sm:text-lg font-medium text-stone-700 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               We build and run Meta Ads campaigns that bring your firm <strong className="text-stone-950">exclusive MVA and personal injury case inquiries</strong>, generated in your own ad account, qualified and followed up before they reach your intake team.
@@ -238,7 +231,7 @@ export default function PersonalInjuryLeadGenerationPage() {
       {/* 2. Trust bar */}
       <TrustBarSection />
 
-      <LegalProofSection />
+      <LegalProofSection subtitle="530 leads in 7 days for a Texas PI firm, 76 MVA leads in 5 days and 203 MVA leads in 21 days, all from campaigns in the firm's own ad account. Click a result to see the Meta Ads dashboard it came from." />
 
       {/* 3. Case types */}
       <section className="py-20 sm:py-24 px-4 md:px-8">
@@ -251,7 +244,7 @@ export default function PersonalInjuryLeadGenerationPage() {
               One Campaign Per <span className="animate-purple-gradient font-hero">Case Type</span>
             </h2>
             <p className="mt-4 text-stone-600 text-[16px] sm:text-lg font-medium">
-              Each accident type gets its own audiences, ads and landing page, so every message speaks to one situation. Also see{" "}
+              Car accidents, truck accidents, slip and fall and workplace injuries each need a different ad and different screening questions. We run a separate campaign for each case type, so your intake team always knows exactly what kind of case is coming in. Also see{" "}
               <Link href="/car-accident-leads" className="font-bold text-purple-700 underline underline-offset-4">car accident leads</Link>,{" "}
               <Link href="/workers-comp-leads" className="font-bold text-purple-700 underline underline-offset-4">workers comp leads</Link> and{" "}
               <Link href="/mass-tort-leads" className="font-bold text-purple-700 underline underline-offset-4">mass tort leads</Link>.
@@ -282,7 +275,8 @@ export default function PersonalInjuryLeadGenerationPage() {
               Exclusive Leads vs. <span className="animate-purple-gradient font-hero">Buying Shared MVA Leads</span>
             </h2>
             <p className="mt-4 text-stone-600 text-[16px] sm:text-lg font-medium">
-              Many firms start by buying MVA leads. Here&apos;s what changes when the campaigns run for your firm alone.
+              Shared personal injury leads are sold to several firms at once, so the fastest caller wins. Exclusive leads come from your own campaigns, are sent only to you and give your team time to build trust with the client. For accident cases, see{" "}
+              <Link href="/exclusive-mva-leads" className="font-bold text-purple-700 underline underline-offset-4">exclusive MVA leads</Link> and <Link href="/blog/how-much-do-mva-leads-cost" className="font-bold text-purple-700 underline underline-offset-4">how much MVA leads cost</Link>, or how we run <Link href="/facebook-ads-for-lawyers" className="font-bold text-purple-700 underline underline-offset-4">Facebook ads for lawyers</Link>.
             </p>
           </div>
           <div className="relative grid md:grid-cols-2 gap-6 md:gap-10">
@@ -341,6 +335,9 @@ export default function PersonalInjuryLeadGenerationPage() {
               From Facebook Ad to{" "}
               <span className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-purple-400 bg-clip-text text-transparent">Signed Case</span>
             </h2>
+            <p className="mt-5 text-[16px] sm:text-lg text-stone-300 leading-relaxed">
+              The ad reaches people who recently had an accident or injury. A short form screens accident date, injuries, treatment and representation. Your intake team gets the lead instantly, with a text sent to the claimant within minutes.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {steps.map(({ icon: Icon, title, desc }, i) => (
@@ -379,7 +376,7 @@ export default function PersonalInjuryLeadGenerationPage() {
             </div>
           </div>
           <p className="mt-12 text-center text-sm text-stone-400 font-medium max-w-3xl mx-auto">
-            Attorney advertising rules vary by state. Ads and landing pages are reviewed with your firm before launch so they fit your bar&apos;s requirements.
+            {LEGAL_FORM_NOTE}
           </p>
         </div>
       </section>
@@ -395,7 +392,7 @@ export default function PersonalInjuryLeadGenerationPage() {
               <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-stone-950 text-white"><Scale className="w-6 h-6" /></span>
               <h3 className="mt-5 text-2xl font-black text-stone-950 tracking-tight">Personal injury law firms</h3>
               <p className="mt-3 text-stone-600 font-medium leading-relaxed">
-                Firms that want a steady, predictable flow of car, truck, motorcycle and rideshare accident inquiries without relying on shared lead vendors.
+                Personal injury firms and MVA practices that have an intake team ready to call leads quickly and want a steady flow of cases they control.
               </p>
               <Link href="/contact" className="mt-6 inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
                 Book a strategy call <ArrowRight className="w-4 h-4" />
@@ -405,7 +402,7 @@ export default function PersonalInjuryLeadGenerationPage() {
               <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-700 text-white"><Users className="w-6 h-6" /></span>
               <h3 className="mt-5 text-2xl font-black text-stone-950 tracking-tight">Agencies advertising for attorneys</h3>
               <p className="mt-3 text-stone-600 font-medium leading-relaxed">
-                Agencies that run Facebook ads for PI firms and want fresher audiences. Learn the process in the mastermind, or partner with our team.
+                Pay-per-lead agencies with an intake team ready to call leads quickly that want a steady flow of cases they control. Learn the process in the mastermind, or partner with our team.
               </p>
               <Link href="/mvaleadgeneration" className="mt-6 inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
                 Watch the Sniper Method mastermind <ArrowRight className="w-4 h-4" />

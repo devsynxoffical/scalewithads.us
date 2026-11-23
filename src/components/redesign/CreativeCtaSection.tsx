@@ -46,7 +46,7 @@ export function CreativeCtaSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mt-6 text-stone-700 text-base sm:text-xl max-w-2xl mx-auto font-medium leading-relaxed"
         >
-          Stop guessing. Stop relying on referrals. Stop switching agencies. Install a complete Client Acquisition System that consistently attracts, qualifies, nurtures, and books premium clients—so you can focus on closing deals and scaling your business.
+          Stop guessing. Stop relying on referrals. Stop switching agencies. Install a complete Client Acquisition System that consistently attracts, qualifies, nurtures, and books premium clients, so you can focus on closing deals and scaling your business.
         </motion.p>
 
         {/* Action Buttons (Lunvoro dual pill buttons) */}

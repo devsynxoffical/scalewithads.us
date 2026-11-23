@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { ArrowRight, BookOpen, Briefcase, LineChart, type LucideIcon } from "lucide-react";
 
 export type RelatedItem = {
@@ -22,11 +23,13 @@ export function RelatedResources({
   eyebrow = "Keep exploring",
   title = "Related guides &",
   accent = "services",
+  intro,
   items,
 }: {
   eyebrow?: string;
   title?: string;
   accent?: string;
+  intro?: ReactNode;
   items: RelatedItem[];
 }) {
   return (
@@ -39,6 +42,7 @@ export function RelatedResources({
           <h2 id="related-resources" className="mt-5 text-3xl sm:text-5xl font-black text-stone-950 tracking-tight uppercase font-hero leading-[1.05]">
             {title} <span className="animate-purple-gradient font-hero">{accent}</span>
           </h2>
+          {intro && <p className="mt-5 max-w-3xl mx-auto text-[16px] sm:text-lg text-stone-600 leading-relaxed">{intro}</p>}
         </div>
         <div className={`mt-12 grid gap-5 sm:grid-cols-2 ${items.length >= 3 ? "lg:grid-cols-3" : ""}`}>
           {items.map((item) => {

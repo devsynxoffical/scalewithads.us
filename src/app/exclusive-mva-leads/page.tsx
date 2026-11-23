@@ -31,6 +31,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { LegalProofSection } from "@/components/leads/LegalProofSection";
 import { Breadcrumbs, RelatedResources } from "@/components/seo/RelatedResources";
 import { LeadForm } from "@/components/leads/LeadForm";
+import { LEGAL_FORM_NOTE } from "@/components/leads/LegalLeadPage";
 import { CaseCostCalculator } from "@/components/leads/Calculators";
 import { InquiryFlowTabs } from "@/components/leads/Interactive";
 import type { Faq } from "@/lib/faqs";
@@ -41,7 +42,7 @@ const PATH = "/exclusive-mva-leads";
 export const metadata: Metadata = pageMeta({
   title: "Exclusive MVA Leads for Personal Injury Attorneys",
   description:
-    "Exclusive MVA leads for personal injury attorneys from Facebook and Instagram ads in your own account: qualified, contacted instantly, never shared or resold.",
+    "Exclusive MVA leads for PI attorneys from your own campaigns. Screened, verified and delivered in minutes. Real results like 76 MVA leads in 5 days.",
   path: PATH,
 });
 
@@ -87,27 +88,27 @@ const DELIVERABLES = [
 const faqs: Faq[] = [
   {
     q: "What are MVA leads?",
-    a: "MVA leads are inquiries from people injured in a motor vehicle accident, such as a car, motorcycle, truck or rideshare crash, who want to talk to a personal injury lawyer. Firms either buy them from lead vendors or generate them with their own advertising.",
-  },
-  {
-    q: "Are your MVA leads exclusive?",
-    a: "Yes. We run the ads in your firm's own ad account and send every inquiry straight to your intake, so no lead is shared with or resold to another firm.",
-  },
-  {
-    q: "How is this different from buying MVA leads for sale?",
-    a: "When you buy leads, a vendor runs the ads and you pay per lead, often for leads that are also sold to other firms. With our system the campaigns are yours: you own the ads, landing pages and data, and you can see exactly where each case came from.",
+    a: "MVA leads are people who were recently in a motor vehicle accident and are looking for legal help. They are a core source of new cases for personal injury firms.",
   },
   {
     q: "How much do MVA leads cost?",
-    a: "Vendor prices vary widely by state, case type and exclusivity. With your own campaigns you pay Meta for the ad spend plus our fee. Our published MVA campaigns ran at $17.13 to $18.69 per lead, and a Texas personal injury firm at $26.93. The more useful number is cost per signed case, which the calculator on this page helps you estimate with your own figures.",
+    a: "Prices vary by state, exclusivity and screening. Shared leads cost less but are sold to several firms. Exclusive, screened leads cost more per lead but usually produce more signed cases.",
   },
   {
-    q: "Do the ads follow attorney advertising rules?",
-    a: "Your firm reviews and approves every ad and landing page before launch, so they can be checked against your state bar's advertising rules. We do not publish anything without your approval.",
+    q: "Are your MVA leads exclusive?",
+    a: "Yes. Campaigns run in your own ad account, so every lead goes only to your firm.",
   },
   {
-    q: "How fast can we start getting MVA leads?",
-    a: "Onboarding and the build typically take 14 to 21 days from the kickoff call to live campaigns.",
+    q: "How are MVA leads screened?",
+    a: "Leads answer questions about accident date, injuries, treatment, fault and whether they have an attorney, and phone numbers can be verified with a one-time code.",
+  },
+  {
+    q: "How fast are leads delivered?",
+    a: "In real time. Your intake team receives the lead within seconds, and the claimant gets an automatic text within minutes.",
+  },
+  {
+    q: "What is the difference between MVA leads and car accident leads?",
+    a: "MVA covers all motor vehicle accidents, including cars, trucks, motorcycles and rideshare. Car accident leads are one part of that group.",
   },
 ];
 
@@ -160,7 +161,7 @@ export default function ExclusiveMvaLeadsPage() {
           <LeadForm
             industry="Personal injury (MVA)"
             title="Get exclusive MVA leads"
-            subtitle="Tell us about your firm. We'll reply within one business day with a campaign plan for your market."
+            subtitle={`Tell us about your firm. We'll reply within one business day with a campaign plan for your market. ${LEGAL_FORM_NOTE}`}
             companyLabel="Law firm"
             submitLabel="Get my MVA lead plan"
           />
@@ -169,7 +170,7 @@ export default function ExclusiveMvaLeadsPage() {
 
       <TrustBarSection />
 
-      <LegalProofSection />
+      <LegalProofSection subtitle="76 MVA leads in 5 days, 203 MVA leads in 21 days and 530 leads in 7 days for a Texas PI firm. Click a result to see the Meta Ads dashboard it came from." />
 
       {/* What are MVA leads + lead types */}
       <section className="py-20 sm:py-24 px-4 md:px-8">
@@ -180,7 +181,7 @@ export default function ExclusiveMvaLeadsPage() {
               Three ways to get <span className="animate-purple-gradient font-hero">MVA leads</span>
             </h2>
             <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">
-              MVA leads are inquiries from people injured in a motor vehicle accident who want to speak to a lawyer. How you get them decides who else is calling them, and who owns the data. Focused on car crashes? See{" "}
+              Buy shared leads: fast but sold to several firms. Buy exclusive leads from a vendor: better, but you do not own the source. Or run your own campaigns: exclusive leads and a system your firm owns. Focused on car crashes? See{" "}
               <Link href="/car-accident-leads" className="font-bold text-purple-700 underline underline-offset-4">car accident leads</Link>.
             </p>
           </div>
@@ -222,7 +223,8 @@ export default function ExclusiveMvaLeadsPage() {
               What does a <span className="animate-purple-gradient font-hero">signed case</span> really cost?
             </h2>
             <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">
-              Price per lead is only half the story. Enter your own numbers to see your cost per signed case, and how much a better sign rate changes it.
+              MVA lead prices vary widely by state and exclusivity. The number that matters is cost per signed case, which depends on screening quality and how fast your team calls. Read{" "}
+              <Link href="/blog/how-much-do-mva-leads-cost" className="font-bold text-purple-700 underline underline-offset-4">how much MVA leads cost</Link>, or enter your own numbers below.
             </p>
           </div>
           <div className="mt-12"><CaseCostCalculator /></div>
@@ -240,6 +242,9 @@ export default function ExclusiveMvaLeadsPage() {
             <h2 className="mt-5 text-3xl sm:text-5xl font-black tracking-tight uppercase font-hero leading-[1.05]">
               From accident to <span className="text-purple-300">your intake</span> in minutes
             </h2>
+            <p className="mt-5 text-[16px] sm:text-lg text-stone-300 leading-relaxed">
+              A recent accident victim sees the ad, answers a short screening form and verifies their phone number. Your intake team gets the lead in real time, and the claimant receives a text within minutes.
+            </p>
           </div>
           <div className="mt-12"><InquiryFlowTabs /></div>
         </div>
@@ -251,6 +256,9 @@ export default function ExclusiveMvaLeadsPage() {
           <h2 className={`text-center ${H2}`}>
             One campaign per <span className="animate-purple-gradient font-hero">accident type</span>
           </h2>
+          <p className="mt-5 max-w-3xl mx-auto text-center text-[16px] sm:text-lg text-stone-600 leading-relaxed">
+            Car, truck, motorcycle and rideshare accidents each get their own ads and screening, so leads match the cases your firm wants.
+          </p>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {CASE_TYPES.map((c) => (
               <div key={c.title} className="group rounded-3xl border-2 border-stone-950 bg-white p-6 shadow-lg hover:-translate-y-1 hover:border-purple-600 transition-all duration-300">
@@ -276,7 +284,8 @@ export default function ExclusiveMvaLeadsPage() {
               A lead system your firm <span className="animate-purple-gradient font-hero">owns</span>
             </h2>
             <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">
-              Everything is built in your accounts. If we ever part ways, the ads, pages, data and follow-up stay with your firm.
+              The ad account, creatives, forms and lead data stay with your firm, so your cost per case improves over time instead of being rented from a vendor. Want more than MVA? See{" "}
+              <Link href="/facebook-ads-for-lawyers" className="font-bold text-purple-700 underline underline-offset-4">Facebook ads for lawyers</Link>.
             </p>
             <Link href="/personal-injury-lead-generation" className="mt-6 inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
               See the full PI lead generation service <ArrowRight className="w-4 h-4" />
@@ -311,7 +320,8 @@ export default function ExclusiveMvaLeadsPage() {
               ))}
             </ul>
           </div>
-          <LeadForm industry="Personal injury (MVA)" title="Request your MVA lead plan" companyLabel="Law firm" submitLabel="Send my request" />
+          <LeadForm industry="Personal injury (MVA)" title="Request your MVA lead plan" companyLabel="Law firm" submitLabel="Send my request"
+            subtitle={`Tell us about your firm. We reply within one business day with a plan for your market. ${LEGAL_FORM_NOTE}`} />
         </div>
       </section>
 

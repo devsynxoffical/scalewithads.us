@@ -30,14 +30,17 @@ export type LegalLeadPageConfig = {
   service: { name: string; serviceType: string; description: string; audience: string };
   showProof: boolean;
   proofTitle?: string;
+  proofIntro?: string;
   cardsEyebrow: string;
   cardsTitle: [string, string];
-  cardsIntro: string;
+  cardsIntro: ReactNode;
+  cardsLead?: ReactNode;
   cards: Card[];
   qualifyTitle: [string, string];
-  qualifyIntro: string;
+  qualifyIntro: ReactNode;
   questions: string[];
   showCalculator: boolean;
+  calcIntro?: ReactNode;
   steps: Card[];
   compliance: string;
   faqs: Faq[];
@@ -46,6 +49,9 @@ export type LegalLeadPageConfig = {
   finalBullets: string[];
   related: RelatedItem[];
 };
+
+/** Attorney advertising note shown with every lead form on the legal pages. */
+export const LEGAL_FORM_NOTE = "Advertising rules for attorneys vary by state. All campaigns are built to follow your state bar's advertising rules.";
 
 const H2 = "text-3xl sm:text-5xl font-black text-stone-950 tracking-tight uppercase font-hero leading-[1.05]";
 const CHIP = "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-100 border border-purple-200 text-purple-900 font-mono font-black text-[11px] tracking-widest uppercase";
@@ -93,13 +99,13 @@ export function LegalLeadPage({ c }: { c: LegalLeadPageConfig }) {
             </ul>
           </div>
           <LeadForm industry={c.industry} title={c.formTitle} companyLabel="Law firm" submitLabel={c.formSubmit}
-            subtitle="Tell us about your firm. We'll reply within one business day with a campaign plan for your market." />
+            subtitle={`Tell us about your firm. We'll reply within one business day with a campaign plan for your market. ${LEGAL_FORM_NOTE}`} />
         </div>
       </section>
 
       <TrustBarSection />
 
-      {c.showProof && <LegalProofSection title={c.proofTitle} />}
+      {c.showProof && <LegalProofSection title={c.proofTitle} subtitle={c.proofIntro} />}
 
       {/* Cards */}
       <section className={`py-20 sm:py-24 px-4 md:px-8 ${c.showProof ? "bg-white border-y border-stone-200" : ""}`}>
@@ -107,6 +113,7 @@ export function LegalLeadPage({ c }: { c: LegalLeadPageConfig }) {
           <div className="max-w-3xl mx-auto text-center">
             <span className={CHIP}>{c.cardsEyebrow}</span>
             <h2 className={`mt-5 ${H2}`}>{c.cardsTitle[0]} <span className="animate-purple-gradient font-hero">{c.cardsTitle[1]}</span></h2>
+            {c.cardsLead && <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">{c.cardsLead}</p>}
             <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">{c.cardsIntro}</p>
           </div>
           <div className={`mt-12 grid gap-4 sm:grid-cols-2 ${c.cards.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`}>
@@ -160,7 +167,7 @@ export function LegalLeadPage({ c }: { c: LegalLeadPageConfig }) {
             <div className="max-w-3xl mx-auto text-center">
               <span className={CHIP}><Gauge className="w-3.5 h-3.5" /> Interactive calculator</span>
               <h2 className={`mt-5 ${H2}`}>What does a <span className="animate-purple-gradient font-hero">signed case</span> really cost?</h2>
-              <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">Enter your own numbers to see your cost per signed case, and how much a better sign rate changes it.</p>
+              <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">{c.calcIntro ?? "Enter your own numbers to see your cost per signed case, and how much a better sign rate changes it."}</p>
             </div>
             <div className="mt-12"><CaseCostCalculator /></div>
           </div>
@@ -208,7 +215,8 @@ export function LegalLeadPage({ c }: { c: LegalLeadPageConfig }) {
               ))}
             </ul>
           </div>
-          <LeadForm industry={c.industry} title="Request your campaign plan" companyLabel="Law firm" submitLabel="Send my request" />
+          <LeadForm industry={c.industry} title="Request your campaign plan" companyLabel="Law firm" submitLabel="Send my request"
+            subtitle={`Tell us about your firm. We reply within one business day with a plan for your market. ${LEGAL_FORM_NOTE}`} />
         </div>
       </section>
 

@@ -23,7 +23,7 @@ export function FinalCtaSection() {
 
         <p className="text-purple-100 text-base sm:text-xl font-medium leading-relaxed max-w-3xl mx-auto mb-10">
           Stop guessing. Stop relying on referrals. Stop switching agencies. <br className="hidden sm:inline" />
-          Install a complete Client Acquisition System that consistently attracts, qualifies, nurtures, and books premium clients—so you can focus on closing deals and scaling your business.
+          Install a complete Client Acquisition System that consistently attracts, qualifies, nurtures, and books premium clients, so you can focus on closing deals and scaling your business.
         </p>
 
         <div>
