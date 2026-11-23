@@ -1840,3 +1840,8 @@ a, button, [role="button"] {
   animation: textGradientMove 5s ease infinite;
 }
 
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}

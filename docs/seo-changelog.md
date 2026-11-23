@@ -46,3 +46,9 @@ Checks after the build: each page has 1 H1, a unique title under 60 characters a
 | "8 Core Pillars" curriculum and "Is This Private Mastermind Right For You?" qualification matrix | AI Client Acquisition Mastermind: program introduction, 4 core benefits, 6-week curriculum (12 classes, expandable topic lists), apply CTA, 6 differentiators, 14 implementation resources, who it is for, graduate support |
 | 5 FAQs about the 90-day program and guarantee | 7 FAQs about the 6-week mastermind; FAQPage schema matches the visible text |
 | Meta description mentioned "8 core growth pillars" | "A 6-week Meta Ads mastermind for agencies: 12 live classes on targeting, AI ads, tracking, scaling and profitability, applied to your own campaigns." |
+
+## 2026-11-23: /privatemastermind program introduction made interactive
+
+| Before | After |
+|---|---|
+| Centered heading and 2 paragraphs | Two-column layout: heading, intro, 6 / 12 / 14 stat tiles (weeks, live classes, resources) and an apply button, next to a clickable 6-week journey (week tabs, progress bar, each week's theme and classes, link to the full curriculum). Same copy, no new claims. |
