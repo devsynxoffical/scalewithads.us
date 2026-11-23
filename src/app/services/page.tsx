@@ -9,7 +9,7 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { FaqSection } from "@/components/redesign/FaqSection";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { faqJsonLd } from "@/lib/seo";
+import { SITE_URL, faqJsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -33,24 +33,32 @@ import {
 
 const SERVICES_FAQS = [
   {
-    q: "What is a Meta VSL ad?",
-    a: "A Meta VSL ad is a video sales letter, or a short cut-down of one, run as a Facebook or Instagram ad. It hooks the right viewer, explains the problem and your approach, and sends them to a landing page that continues the same argument and books a call.",
-  },
-  {
-    q: "How do you run VSL ads on Meta?",
-    a: "We script the VSL, cut several hooks and short versions from it to test as ads, send viewers to a VSL landing page, and follow up every lead instantly through the CRM. Budget moves to the hooks and audiences that produce booked calls, not just clicks.",
-  },
-  {
     q: "What does a Meta ads agency do?",
-    a: "A Meta ads agency plans, builds and manages Facebook and Instagram advertising: offer and angle, creatives, audiences, landing pages, tracking and optimization. We also connect the ads to your CRM and follow-up so leads turn into booked calls.",
+    a: "A Meta ads agency plans, creates and manages Facebook and Instagram ads for your business. That includes creatives, audiences, budgets, landing pages, tracking and reporting on leads and sales.",
   },
   {
-    q: "Are you a paid ads agency for any industry?",
-    a: "We focus on Meta Ads (Facebook and Instagram) and have run campaigns for law firms, home services, coaches, webinars, mortgage, agencies and e-commerce. See results by industry on our results page.",
+    q: "Are Meta ads effective for service businesses?",
+    a: "Yes. Meta lets you reach people before they start searching, often at a lower cost per lead than search ads. Results depend on the offer, creative quality and how fast leads are followed up.",
   },
   {
-    q: "Who owns the ad account, creatives and data?",
-    a: "You do. Campaigns run in your own ad account, and every ad, landing page and lead stays with your business.",
+    q: "How much does a Meta ads agency cost?",
+    a: "Most agencies charge a monthly management fee or a percentage of ad spend, plus your ad budget. Judge the cost against your cost per booked call or signed client.",
+  },
+  {
+    q: "What is the difference between Meta ads and Facebook ads?",
+    a: "Meta is the company behind Facebook, Instagram, Messenger and Audience Network. Meta ads run across all of them from one ad account.",
+  },
+  {
+    q: "How long before Meta ads bring results?",
+    a: "Many campaigns produce leads in the first week. The first 2 to 4 weeks are a testing period while creatives and audiences are optimized.",
+  },
+  {
+    q: "Do I own my ad account?",
+    a: "Yes. Campaigns run in your own Business Manager and ad account, so your data, pixel history and creatives stay with you.",
+  },
+  {
+    q: "What is a Meta VSL ad?",
+    a: "It is an ad that leads to a short video sales letter and a booking step. It works well for high-ticket offers because the video does the selling before the call.",
   },
 ];
 
@@ -155,7 +163,7 @@ export default function ServicesPage() {
             <span>CORE ACQUISITION SERVICES WE OFFER</span>
           </span>
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-stone-950 tracking-tight leading-tight uppercase font-hero">
-            META ADS AGENCY <span className="font-serif italic lowercase animate-purple-gradient">services.</span>
+            Meta Ads Agency <span className="font-serif italic lowercase animate-purple-gradient">services</span> for Predictable Client Acquisition
           </h1>
           <p className="mt-4 text-stone-600 font-medium text-lg sm:text-xl max-w-3xl mx-auto font-sans">
             We build and manage the 5 essential pillars of your client acquisition engine: Creatives Creation, Funnels, Media Buying, Trainings, and Mastermind.
@@ -245,7 +253,7 @@ export default function ServicesPage() {
                 Creatives <span className="font-serif italic lowercase text-purple-700">creation.</span>
               </h2>
               <p className="mt-4 text-stone-600 font-medium text-base sm:text-lg leading-relaxed">
-                High-converting direct-response ad copy, VSL storyboards, image creatives, and shortform video ads engineered to hook cold traffic and lower CPL.
+                Every Meta campaign lives or dies on the creative. We script, design and edit video, UGC-style, image and carousel ads, then test new hooks every week. Winning ads get more budget, and weak ones are cut quickly so you are not paying for ads that do not convert.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -377,7 +385,7 @@ export default function ServicesPage() {
                 Conversion <span className="font-serif italic lowercase text-amber-700">architecture.</span>
               </h2>
               <p className="mt-4 text-stone-600 font-medium text-base sm:text-lg leading-relaxed">
-                High-converting landing pages, VSL booking funnels, and CRM qualification workflows designed to turn cold clicks into high-intent booked appointments.
+                Clicks only matter if they turn into calls. We build the landing pages, lead forms, VSL pages and qualifying questions behind every ad, and connect them to your CRM with the Meta Conversions API so the algorithm learns which leads become clients.
               </p>
 
               <ul className="mt-6 space-y-3 text-xs sm:text-sm font-extrabold">
@@ -428,7 +436,7 @@ export default function ServicesPage() {
                 Media <span className="font-serif italic lowercase text-purple-700">buying.</span>
               </h2>
               <p className="mt-4 text-stone-600 font-medium text-base sm:text-lg leading-relaxed">
-                Daily campaign optimization, Advantage+ bidding strategies, and server-side CAPI telemetry to scale your Meta & TikTok Ads reliably.
+                Our media buyers manage structure, audiences, budgets and bidding daily. We scale with clear rules based on cost per qualified lead and cost per booked call, not on vanity metrics like likes or reach.
               </p>
 
               <div className="mt-8 space-y-4 text-xs sm:text-sm font-extrabold">
@@ -522,7 +530,7 @@ export default function ServicesPage() {
                 SOPs & <span className="font-serif italic lowercase text-emerald-700">trainings.</span>
               </h2>
               <p className="mt-4 text-stone-600 font-medium text-base sm:text-lg leading-relaxed">
-                Plug-and-play scaling frameworks, ad scripting SOPs, and system training videos to empower your internal growth team.
+                You get the playbooks behind your campaigns: follow-up scripts, intake processes and reporting templates, so your team turns more leads into signed clients.
               </p>
 
               <div className="mt-8">
@@ -549,7 +557,7 @@ export default function ServicesPage() {
               Meta VSL ads that <span className="animate-purple-gradient font-hero">book calls</span>
             </h2>
             <p className="mt-5 text-[16px] sm:text-lg text-stone-600 leading-relaxed">
-              A VSL (video sales letter) does the selling before the call. We script it, cut the strongest hooks into short Facebook and Instagram ads, and send viewers to a VSL page that continues the same story and books the appointment.
+              A Meta VSL ad pairs a short video sales letter with a direct booking step. The video explains the offer and pre-qualifies the viewer, so the people who book a call already understand what you sell. For high-ticket offers, it is one of the most reliable ways to fill a sales calendar.
             </p>
             <p className="mt-4 text-[16px] text-stone-600 leading-relaxed">
               See the structure we use in our <Link href="/blog/vsl-script-structure" className="font-bold text-purple-700 underline underline-offset-4">VSL script guide</Link>.
@@ -588,6 +596,18 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Meta ads management",
+          serviceType: "Meta ads agency",
+          description: "Meta ads agency services for service businesses and law firms: creatives, conversion funnels, media buying and VSL ads that book calls.",
+          provider: { "@id": `${SITE_URL}/#organization` },
+          areaServed: { "@type": "Country", name: "United States" },
+          url: `${SITE_URL}/services`,
+        }}
+      />
       <JsonLd data={faqJsonLd(SERVICES_FAQS)} />
       <FaqSection faqs={SERVICES_FAQS} eyebrow="Meta Ads agency FAQ" title={<>Questions about <span className="font-serif italic lowercase animate-purple-gradient">our services.</span></>} />
 
@@ -596,6 +616,14 @@ export default function ServicesPage() {
         eyebrow="Industries & guides"
         title="Built for your"
         accent="industry"
+        intro={
+          <>
+            We run Meta ads for personal injury and MVA law firms, mass tort and workers comp campaigns, coaches, consultants and high-ticket service businesses. See{" "}
+            <Link href="/facebook-ads-for-lawyers" className="font-bold text-purple-700 underline underline-offset-4">Facebook ads for lawyers</Link>,{" "}
+            <Link href="/exclusive-mva-leads" className="font-bold text-purple-700 underline underline-offset-4">MVA leads</Link> and{" "}
+            <Link href="/personal-injury-lead-generation" className="font-bold text-purple-700 underline underline-offset-4">personal injury lead generation</Link>.
+          </>
+        }
         items={[
           {
             kind: "Service",

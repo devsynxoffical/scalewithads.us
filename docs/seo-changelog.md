@@ -14,3 +14,19 @@ Baseline for this round: Google Search Console, 28 days to 21 Nov 2026: 79 impre
 | Em dash removed from visible text | /services | | 1 em dash | 0 | grep |
 
 Not changed: sitewide footer links to sister sites (none exist; the footer only links to the Facebook group and WhatsApp). Disavow file: no backlink export is available in this repo or session, so docs/disavow.txt was not generated.
+
+## 2026-11-23: Content round (5 pages, from the DEVSYNX content brief)
+
+/services and /personal-injury-lead-generation were also changed earlier today (round 1). The brief names both pages, so the copy, FAQs and meta were updated again. Layout, components and section order are unchanged on all 5 pages.
+
+| Page | Target keywords | Before | After |
+|---|---|---|---|
+| /services | meta ads agency, best meta ads agency, facebook ads agency | Title "Meta Ads Agency for Lead Generation"; H1 "Meta Ads Agency services."; 5 FAQs; FAQPage schema only | Title "Meta Ads Agency for Client Acquisition"; H1 "Meta Ads Agency Services for Predictable Client Acquisition"; new copy in the 4 pillars and the VSL section; industry intro with links to /facebook-ads-for-lawyers, /exclusive-mva-leads and /personal-injury-lead-generation; 7 FAQs; Service + FAQPage schema |
+| /facebook-ads-for-lawyers | facebook ads for lawyers, law firm facebook ads, can lawyers advertise on facebook | Title "Facebook Ads for Lawyers & Law Firms"; 6 FAQs | Title matches H1 "Facebook Ads for Lawyers That Bring Signed Cases"; proof intro, case-type cards, screening, cost and steps copy rewritten; in-text links to all 5 legal pages; 6 new FAQs |
+| /personal-injury-lead-generation | personal injury leads, personal injury lead generation, exclusive personal injury leads | Title "Personal Injury Lead Generation With Facebook Ads"; 7 FAQs | Title "Personal Injury Leads From Facebook and Instagram"; H1 "...With Facebook and Instagram"; new copy in proof, case types, exclusive vs shared, how it works and who it's for; links to /exclusive-mva-leads, /car-accident-leads, /facebook-ads-for-lawyers, /blog/how-much-do-mva-leads-cost; 5 FAQs |
+| /mass-tort-leads | mass tort leads, what is a mass tort, mass tort lead generation | Title "Mass Tort Leads From Facebook & Instagram Ads"; 6 FAQs | Title matches H1; "What is a mass tort?" paragraph near the top; criteria, screening and cost copy rewritten, still states no mass tort results are published; 5 FAQs |
+| /exclusive-mva-leads | mva leads, exclusive mva leads, mva leads for attorneys | 6 FAQs; older description | New description; proof intro, three ways, cost, flow, accident types and ownership copy rewritten; link to /blog/how-much-do-mva-leads-cost and /facebook-ads-for-lawyers; 6 new FAQs |
+| All legal pages (template, MVA, PI) | | No state bar line near the forms | "Advertising rules for attorneys vary by state. All campaigns are built to follow your state bar's advertising rules." next to every lead form |
+| Sitewide footer and CTA sections | | 3 em dashes | 0 |
+
+Checks after the build: each page has 1 H1, a unique title under 60 characters and description under 155, a canonical, valid Service + FAQPage JSON-LD that matches the visible FAQs word for word, no em dashes, no horizontal overflow at 390px.

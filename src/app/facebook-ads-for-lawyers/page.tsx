@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BadgeCheck, BarChart3, Car, Crosshair, Gavel, HardHat, Megaphone, MessageSquare, Pill, Scale } from "lucide-react";
 import { LegalLeadPage, type LegalLeadPageConfig } from "@/components/leads/LegalLeadPage";
 import { pageMeta } from "@/lib/seo";
@@ -6,9 +7,9 @@ import { pageMeta } from "@/lib/seo";
 const PATH = "/facebook-ads-for-lawyers";
 
 export const metadata: Metadata = pageMeta({
-  title: "Facebook Ads for Lawyers & Law Firms | Scale With Ads™",
+  title: "Facebook Ads for Lawyers That Bring Signed Cases",
   description:
-    "Facebook ads for lawyers and law firms: done-for-you Meta Ads that bring exclusive case inquiries, with real results like 530 PI leads in 7 days.",
+    "Facebook ads for lawyers and law firms: case-type campaigns, screened leads and fast intake. See real results like 530 leads in 7 days for a PI firm.",
   path: PATH,
 });
 
@@ -34,19 +35,24 @@ const config: LegalLeadPageConfig = {
   },
   showProof: true,
   proofTitle: "Real law firm campaigns",
+  proofIntro: "Real campaigns, real numbers: 530 leads in 7 days for a Texas personal injury firm, 76 MVA leads in 5 days and 203 MVA leads in 21 days. Click a result to see the Meta Ads dashboard it came from.",
   cardsEyebrow: "Practice areas",
   cardsTitle: ["Facebook ads for", "every case type"],
-  cardsIntro: "Each practice area gets its own campaigns, landing pages and qualifying questions. Pick a practice area to see how we run it.",
+  cardsIntro: (
+    <>
+      Each case type gets its own ads, landing page and screening questions, from <Link href="/car-accident-leads" className="font-bold text-purple-700 underline underline-offset-4">car accident leads</Link> and <Link href="/exclusive-mva-leads" className="font-bold text-purple-700 underline underline-offset-4">exclusive MVA leads</Link> to <Link href="/workers-comp-leads" className="font-bold text-purple-700 underline underline-offset-4">workers comp leads</Link> and <Link href="/mass-tort-leads" className="font-bold text-purple-700 underline underline-offset-4">mass tort leads</Link>.
+    </>
+  ),
   cards: [
-    { icon: Scale, title: "Personal injury", text: "Done-for-you Meta Ads for PI firms, from research to CRM.", href: "/personal-injury-lead-generation" },
-    { icon: Gavel, title: "MVA leads", text: "Car, motorcycle and truck accident leads only your firm gets.", href: "/exclusive-mva-leads" },
-    { icon: Car, title: "Car accident leads", text: "Campaigns built around crash type, fault and injury.", href: "/car-accident-leads" },
-    { icon: HardHat, title: "Workers' compensation", text: "Injured workers screened for work injury and claim status.", href: "/workers-comp-leads" },
-    { icon: Pill, title: "Mass tort", text: "Claimants screened against your tort criteria.", href: "/mass-tort-leads" },
+    { icon: Scale, title: "Personal injury", text: "Slip and fall, premises and other injury cases.", href: "/personal-injury-lead-generation" },
+    { icon: Gavel, title: "Truck and MVA accidents", text: "Motor vehicle accident leads only your firm gets, screened fast.", href: "/exclusive-mva-leads" },
+    { icon: Car, title: "Car accidents", text: "Recent-accident targeting with fast screening.", href: "/car-accident-leads" },
+    { icon: HardHat, title: "Workers comp", text: "Injured workers screened on employment and injury date.", href: "/workers-comp-leads" },
+    { icon: Pill, title: "Mass tort", text: "Claimants screened against your exact case criteria.", href: "/mass-tort-leads" },
     { icon: Crosshair, title: "Hidden audience research", text: "The targeting method behind our legal campaigns, taught in our mastermind.", href: "/mvaleadgeneration" },
   ],
   qualifyTitle: ["Every inquiry screened", "before intake"],
-  qualifyIntro: "Law firm ads attract curious clicks as well as real cases. Short qualifying questions, set with your firm, filter inquiries before your team spends time on them.",
+  qualifyIntro: "Each lead answers qualifying questions before it reaches your intake team: accident date, injuries, treatment, fault and whether they already have an attorney. Phone numbers can be verified with a one-time code, so your team spends time on real cases.",
   questions: [
     "What happened, and when?",
     "Were you injured or financially harmed?",
@@ -55,21 +61,27 @@ const config: LegalLeadPageConfig = {
     "What's the best time to call you?",
   ],
   showCalculator: true,
+  calcIntro: (
+    <>
+      Cost per lead is only the first number. What matters is cost per signed case, which depends on screening, speed to contact and intake quality. We report both, so you can see exactly what each signed case costs. For{" "}
+      <Link href="/personal-injury-lead-generation" className="font-bold text-purple-700 underline underline-offset-4">personal injury lead generation</Link>, enter your own numbers below.
+    </>
+  ),
   steps: [
-    { icon: Crosshair, title: "Research", text: "Audiences and messaging mapped for each practice area and state." },
-    { icon: Megaphone, title: "Ads & landing pages", text: "Video and image ads plus practice-area pages, approved by your firm." },
-    { icon: BadgeCheck, title: "Qualification", text: "Practice-specific questions on every form." },
-    { icon: MessageSquare, title: "Instant follow-up", text: "SMS and email in seconds, and the inquiry lands in your CRM." },
-    { icon: BarChart3, title: "Optimize on signed cases", text: "Budget moves toward what produces signed cases, not just clicks." },
+    { icon: Crosshair, title: "Strategy call", text: "Strategy call on case types, areas and intake capacity." },
+    { icon: Megaphone, title: "Ads & landing pages", text: "Ads and landing pages built for each case type." },
+    { icon: BadgeCheck, title: "Screening forms", text: "Screening forms built for each case type." },
+    { icon: MessageSquare, title: "Real-time delivery", text: "Leads delivered in real time with instant text follow-up." },
+    { icon: BarChart3, title: "Optimize on signed cases", text: "Weekly optimization based on signed cases." },
   ],
   compliance: "Your firm reviews and approves every ad and landing page before launch, so they can be checked against your state bar's attorney advertising rules.",
   faqs: [
-    { q: "Do Facebook ads work for lawyers?", a: "They can, when the offer, qualification and follow-up work together. Our published law firm campaigns include 530 leads in 7 days for a Texas personal injury firm and 76 MVA leads in 5 days. Results vary by state, practice area and intake speed." },
-    { q: "Are law firms allowed to advertise on Facebook?", a: "Yes, law firms can advertise on Facebook, but attorney advertising is regulated by each state bar. Your firm approves every ad and landing page before launch so they can be checked against your state's rules." },
-    { q: "How much do Facebook ads for law firms cost?", a: "You pay Meta directly for ad spend plus our fee. In our published legal campaigns, cost per lead ranged from $17.13 to $26.93. Cost per signed case depends on your sign rate, which you can model with the calculator on this page." },
-    { q: "Which practice areas do you run ads for?", a: "Personal injury, motor vehicle accidents, car accidents, workers' compensation and mass tort. Each practice area runs as its own campaign." },
-    { q: "Who owns the ad account and leads?", a: "Your firm. Everything runs in your accounts, and the ads, pages and data stay with you if we ever part ways." },
-    { q: "How long until we get leads?", a: "Campaigns typically go live 14 to 21 days after the kickoff call, and leads start once the ads are approved and running." },
+    { q: "Do Facebook ads work for lawyers?", a: "Yes. Facebook and Instagram reach people shortly after an accident or injury, often before they search for a lawyer. With strong screening and fast intake, they can produce signed cases at a predictable cost." },
+    { q: "Can lawyers advertise on Facebook?", a: "Yes. Lawyers in the US can advertise on Facebook, but ads must follow their state bar's advertising rules, which can cover claims, testimonials and disclaimers. Campaigns should be reviewed with those rules in mind." },
+    { q: "How do I run Facebook ads for a law firm?", a: "Choose a case type, build an ad and a landing page for it, add screening questions, connect leads to your intake team in real time and track which leads become signed cases." },
+    { q: "How much do Facebook ads cost for lawyers?", a: "Costs vary by case type, market and competition. Personal injury and MVA campaigns usually have higher lead costs than general practice, but they also bring much higher case values." },
+    { q: "What types of law firms benefit most from Facebook ads?", a: "Personal injury, motor vehicle accident, workers comp, mass tort, family law and immigration firms often see strong results because their clients make decisions quickly after an event." },
+    { q: "Are Facebook leads exclusive to my firm?", a: "Yes. Campaigns run in your own ad account, so leads come only to you and are not resold." },
   ],
   faqTitle: "Facebook ads for lawyers.",
   finalTitle: "Get a Facebook ads plan for your firm",

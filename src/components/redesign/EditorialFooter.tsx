@@ -29,7 +29,7 @@ export function EditorialFooter() {
                 </Link>
 
                 <p className="text-stone-600 text-sm font-medium leading-relaxed max-w-sm">
-                  We install our proprietary <strong className="text-stone-950 font-bold">Scale With Ads™ Client Acquisition System</strong> into your business and double your revenue in 90 days—or we work for $0 management fee until we do.
+                  We install our proprietary <strong className="text-stone-950 font-bold">Scale With Ads™ Client Acquisition System</strong> into your business and double your revenue in 90 days, or we work for $0 management fee until we do.
                 </p>
               </div>
 
