@@ -7,6 +7,7 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { RichText } from "@/components/seo/RichText";
 import { PostCover } from "@/components/blog/PostCover";
+import { PreferredSourceButton } from "@/components/seo/PreferredSourceButton";
 import { BLOG_AUTHOR, POSTS, getPost, readingMinutes, type Block } from "@/lib/blog";
 import { OG_IMAGE, SITE_NAME, SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 
@@ -241,6 +242,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     </div>
                   </section>
                 )}
+
+                {/* Follow on Google */}
+                <div className="mt-14 rounded-3xl border-2 border-stone-200 bg-white p-6 text-center">
+                  <p className="font-black text-stone-950">Found this useful?</p>
+                  <p className="mt-1 text-sm text-stone-600">Add us as a preferred source on Google to see more of our guides in your search results.</p>
+                  <PreferredSourceButton className="mt-4" />
+                </div>
 
                 {/* Author box */}
                 <div className="mt-14 flex gap-4 rounded-3xl border-2 border-stone-200 bg-white p-6">

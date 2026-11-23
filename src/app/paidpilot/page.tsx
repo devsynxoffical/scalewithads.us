@@ -4,8 +4,6 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { ResultsSection } from "@/components/redesign/ResultsSection";
-import { SelectedWorkShowcase } from "@/components/redesign/SelectedWorkShowcase";
-import { ClientTestimonialsSection } from "@/components/redesign/ClientTestimonialsSection";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { Crown, ArrowRight, ShieldCheck, Sparkles, CheckCircle2, TrendingUp, BarChart2, Star, AlertTriangle, Play, Zap, RefreshCw, Lock, Award, FileText } from "lucide-react";
@@ -276,11 +274,7 @@ export default function PaidPilotPage() {
       {/* Proven Track Record Section */}
       <ResultsSection />
 
-      {/* System Training Library Section (Home Page Component) */}
-      <SelectedWorkShowcase />
 
-      {/* Verified Client Video Testimonials Section */}
-      <ClientTestimonialsSection />
 
       {/* Frequently Asked Questions Accordion */}
       <section className="py-24 px-4 md:px-8 max-w-5xl mx-auto border-t border-stone-200">

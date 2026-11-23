@@ -25,6 +25,7 @@ export function FloatingNavbar() {
         { label: "$847K LTO Funnel", href: "/metalto", icon: BookOpen, desc: "$847K Meta Ads Funnel Case Study" },
         { label: "MVA Lead Generation", href: "/mvaleadgeneration", icon: Crosshair, desc: "Sniper Method: Hidden Facebook Audiences for PI Cases" },
         { label: "Paid Pilot Trial", href: "/paidpilot", icon: Zap, desc: "Guaranteed Revenue Paid Trial" },
+        { label: "1-on-1 Coaching", href: "/privatemastermind/coaching", icon: Users, desc: "Meta Ads growth coaching" },
       ],
     },
     {

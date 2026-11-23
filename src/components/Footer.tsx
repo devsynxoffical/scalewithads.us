@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PreferredSourceButton } from "@/components/seo/PreferredSourceButton";
 import { BOOKING_PATH } from "../lib/offer";
 import { SectionBackground } from "./ui/SectionBackground";
 
@@ -123,8 +124,13 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Google "Preferred sources" follow button */}
+        <div className="mt-12 flex justify-center">
+          <PreferredSourceButton />
+        </div>
+
         {/* Bottom Bar */}
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-zinc-800 pt-6 text-xs text-zinc-500 sm:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-zinc-800 pt-6 text-xs text-zinc-500 sm:flex-row">
           <p>
             © {new Date().getFullYear()} Scale With Ads™. All rights reserved.
             Results vary.

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:hostinger": "node scripts/build-hostinger.mjs"
   },
   "dependencies": {
     "@types/matter-js": "^0.20.2",

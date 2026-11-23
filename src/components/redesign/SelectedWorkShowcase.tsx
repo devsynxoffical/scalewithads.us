@@ -251,7 +251,7 @@ export function SelectedWorkShowcase() {
   ];
 
   return (
-    <section id="work" className="py-28 px-4 md:px-8 bg-[#FDFBF7] text-stone-900 border-b border-stone-200">
+    <section id="work" className="overflow-x-clip py-28 px-4 md:px-8 bg-[#FDFBF7] text-stone-900 border-b border-stone-200">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           

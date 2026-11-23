@@ -1,0 +1,82 @@
+[
+  {
+    "source": "/snipermethod",
+    "destination": "/mvaleadgeneration"
+  },
+  {
+    "source": "/portfolio",
+    "destination": "/medialibrary"
+  },
+  {
+    "source": "/metads",
+    "destination": "/services"
+  },
+  {
+    "source": "/book",
+    "destination": "/contact"
+  },
+  {
+    "source": "/book-a-call",
+    "destination": "/contact"
+  },
+  {
+    "source": "/booking",
+    "destination": "/contact"
+  },
+  {
+    "source": "/contact-us",
+    "destination": "/contact"
+  },
+  {
+    "source": "/about-us",
+    "destination": "/about"
+  },
+  {
+    "source": "/case-studies",
+    "destination": "/work"
+  },
+  {
+    "source": "/roofing-leads",
+    "destination": "https://www.roofingsystems.co/"
+  },
+  {
+    "source": "/facebook-ads-for-roofing-companies",
+    "destination": "https://www.roofingsystems.co/facebook-ads-for-roofers"
+  },
+  {
+    "source": "/case-studies/roofing-leads-3-75-cost-per-lead",
+    "destination": "https://www.roofingsystems.co/case-studies/roofing-25-leads-one-day-3-75"
+  },
+  {
+    "source": "/case-studies/roofing-marketing-agency-664-leads",
+    "destination": "https://www.roofingsystems.co/case-studies/roofing-agency-664-leads-4-51"
+  },
+  {
+    "source": "/case-studies/227-roofing-leads-14-cpl",
+    "destination": "https://www.roofingsystems.co/case-studies/roofing-227-leads-14-cpl-28-days"
+  },
+  {
+    "source": "/case-studies/florida-roofing-solar-280-leads",
+    "destination": "https://www.roofingsystems.co/case-studies/florida-home-services-280-leads-15-days"
+  },
+  {
+    "source": "/case-studies/roofing-marketing-agency-546k-revenue",
+    "destination": "https://www.roofingsystems.co/case-studies/roofing-agency-546k-67-days"
+  },
+  {
+    "source": "/case-studies/roofing-leads-154-in-15-days",
+    "destination": "https://www.roofingsystems.co/case-studies/roofing-154-leads-14-58-cpl"
+  },
+  {
+    "source": "/testimonials",
+    "destination": "/work"
+  },
+  {
+    "source": "/results",
+    "destination": "/work"
+  },
+  {
+    "source": "/home",
+    "destination": "/"
+  }
+]

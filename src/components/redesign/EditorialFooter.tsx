@@ -3,6 +3,7 @@
 import React from "react";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { PreferredSourceButton } from "@/components/seo/PreferredSourceButton";
 import Image from "next/image";
 
 export function EditorialFooter() {
@@ -104,6 +105,12 @@ export function EditorialFooter() {
                 <Link href="/services" className="text-stone-600 hover:text-purple-700 transition-colors">
                   CRM & AI Nurture
                 </Link>
+                <Link href="/features" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Tracking & Attribution
+                </Link>
+                <Link href="/leadpilot" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Lead Pilot DFY
+                </Link>
               </div>
 
               {/* Col 3 */}
@@ -112,7 +119,10 @@ export function EditorialFooter() {
                   MASTERMIND
                 </p>
                 <Link href="/privatemastermind" className="text-stone-600 hover:text-purple-700 transition-colors">
-                  Private 1:1 Advisory
+                  Private Mastermind
+                </Link>
+                <Link href="/privatemastermind/coaching" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  1-on-1 Coaching
                 </Link>
                 <Link href="/metalto" className="text-stone-600 hover:text-purple-700 transition-colors">
                   $847K Meta Funnel
@@ -166,6 +176,11 @@ export function EditorialFooter() {
           <p aria-hidden="true" className="text-[7.5vw] sm:text-[8.2vw] lg:text-[8.8vw] font-black text-stone-950 leading-none tracking-tight uppercase font-hero block w-full whitespace-nowrap">
             SCALEWITHADS™
           </p>
+        </div>
+
+        {/* Google "Preferred sources" follow button */}
+        <div className="flex justify-center pb-6">
+          <PreferredSourceButton />
         </div>
 
         {/* Minimal Copyright Legal Bar */}
