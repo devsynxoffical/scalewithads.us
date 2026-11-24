@@ -78,7 +78,7 @@ export function PricingSection() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base font-medium text-stone-600 sm:text-lg">
             Pick the acquisition engine tailored for your business. Final
-            investment is scoped on your application call — backed by our written
+            investment is scoped on your application call, backed by our written
             90-day revenue growth agreement.
           </p>
         </div>

@@ -98,7 +98,7 @@ export default function MvaLeadGenerationPage() {
     <main className="min-h-screen bg-[#FDFBF7] text-stone-900 font-sans selection:bg-purple-200 selection:text-purple-950">
       <FloatingNavbar />
 
-      {/* SECTION 1 — HERO + SECTION 2 — MASTERMIND VIDEO (laptop) */}
+      {/* SECTION 1, HERO + SECTION 2, MASTERMIND VIDEO (laptop) */}
       <section className="pt-28 sm:pt-36 pb-16 sm:pb-20 px-4 md:px-8 bg-white text-stone-900 overflow-hidden border-b border-stone-200 relative">
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-gradient-to-tr from-purple-200/40 via-purple-100/20 to-amber-100/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
@@ -170,7 +170,7 @@ export default function MvaLeadGenerationPage() {
         </div>
       </section>
 
-      {/* SECTION 3 — WHAT YOU'LL DISCOVER */}
+      {/* SECTION 3, WHAT YOU'LL DISCOVER */}
       <section className="relative overflow-hidden bg-stone-950 text-white py-24 sm:py-28 px-4 md:px-8">
         {/* Ambient glows + grid texture */}
         <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full bg-purple-700/25 blur-3xl" />
@@ -269,7 +269,7 @@ export default function MvaLeadGenerationPage() {
         </div>
       </section>
 
-      {/* SECTION 4 — WHY THIS MATTERS */}
+      {/* SECTION 4, WHY THIS MATTERS */}
       <section className="py-24 px-4 md:px-8 bg-white border-y border-stone-200">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -298,7 +298,7 @@ export default function MvaLeadGenerationPage() {
         </div>
       </section>
 
-      {/* SECTION 5 — OUR RESULTS */}
+      {/* SECTION 5: OUR RESULTS */}
       <div id="results">
         <ResultsSection
           eyebrow="OUR RESULTS"
@@ -317,7 +317,7 @@ export default function MvaLeadGenerationPage() {
       {/* Photo ribbon (same as home page) */}
       <UFSquareMarquee hideCallout />
 
-      {/* SECTION 6 — WANT US TO RUN YOUR ADS? (CTA → /contact booking page) */}
+      {/* SECTION 6, WANT US TO RUN YOUR ADS? (CTA → /contact booking page) */}
       <section id="run-your-ads" className="py-24 px-4 md:px-8 max-w-5xl mx-auto">
         <div className="text-center max-w-3xl mx-auto">
           <Eyebrow icon={CalendarCheck}>Want Us to Run Your Ads?</Eyebrow>

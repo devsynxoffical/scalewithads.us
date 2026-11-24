@@ -97,7 +97,7 @@ export function SystemsShowcase() {
               </GradientText>
             </>
           }
-          description="Whether you need complete done-for-you ads management or private 1:1 agency training — explore our specialized systems."
+          description="Whether you need complete done-for-you ads management or private 1:1 agency training, explore our specialized systems."
         />
 
         {/* Tab Switcher */}

@@ -13,8 +13,8 @@ import { lockScroll } from "../lib/scroll";
 import { Trophy, TrendingUp, DollarSign, Award, ChevronDown, Maximize2, ArrowRight } from "lucide-react";
 
 const DASHBOARDS = [
-  { file: "proof-695d97e2.png", label: "Campaign Dashboard #1 — Tracked Spend & Returns", rev: "$847,290", roas: "3.32x ROAS" },
-  { file: "proof-695d9820.png", label: "Campaign Dashboard #2 — High-Ticket Acquisition", rev: "13,630 Leads", roas: "$255K Spend" },
+  { file: "proof-695d97e2.png", label: "Campaign Dashboard #1: Tracked Spend & Returns", rev: "$847,290", roas: "3.32x ROAS" },
+  { file: "proof-695d9820.png", label: "Campaign Dashboard #2: High-Ticket Acquisition", rev: "13,630 Leads", roas: "$255K Spend" },
 ];
 
 const COLLAPSED_H = 420;
@@ -64,7 +64,7 @@ export function Results() {
               </GradientText>
             </>
           }
-          description="Live dashboards from campaigns we manage — real spend, real qualified appointments, real revenue. No mock-ups, no projections."
+          description="Live dashboards from campaigns we manage: real spend, real qualified appointments, real revenue. No mock-ups, no projections."
         />
 
         {/* Top Metrics Cards */}

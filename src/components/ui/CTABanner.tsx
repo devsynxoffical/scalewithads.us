@@ -59,7 +59,7 @@ export function CTABanner({
           <Reveal delay={0.2}>
             <p className="mx-auto mt-6 max-w-xl text-pretty text-[1rem] leading-relaxed text-mist sm:text-lg">
               Book a free strategy call. We&apos;ll audit your offer, show you the exact funnel you
-              need — and get qualified clients onto your calendar. No pressure, no fluff.
+              need, and get qualified clients onto your calendar. No pressure, no fluff.
             </p>
           </Reveal>
 

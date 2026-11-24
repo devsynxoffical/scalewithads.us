@@ -84,7 +84,7 @@ export default function MetaLTOPage() {
   const faqs = [
     {
       q: "What exactly is included in the 90-day private mastermind?",
-      a: "You’ll get one private 1-on-1 strategy call every week, plus 24/7 access to us for questions and support throughout the program. There is no artificial time limit on your weekly calls — we stay on until your questions are answered and you have clarity on your next steps. You’ll also get recordings of every session so you can revisit the strategies and training whenever you need.",
+      a: "You’ll get one private 1-on-1 strategy call every week, plus 24/7 access to us for questions and support throughout the program. There is no artificial time limit on your weekly calls, we stay on until your questions are answered and you have clarity on your next steps. You’ll also get recordings of every session so you can revisit the strategies and training whenever you need.",
     },
     {
       q: "What will I learn during the 90 days?",

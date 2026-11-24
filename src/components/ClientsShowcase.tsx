@@ -61,7 +61,7 @@ export function ClientsShowcase() {
               </GradientText>
             </>
           }
-          description="From 9-figure agency owners and Hollywood celebrities to trading coaches and medical experts — powered by our done-for-you ads system."
+          description="From 9-figure agency owners and Hollywood celebrities to trading coaches and medical experts, powered by our done-for-you ads system."
         />
 
         {/* Filter Category Tabs */}
@@ -81,7 +81,7 @@ export function ClientsShowcase() {
           ))}
         </div>
 
-        {/* Creators Marquee — Left & Right edges fully normal & clear (no dark overlay) */}
+        {/* Creators Marquee, Left & Right edges fully normal & clear (no dark overlay) */}
         <div className="relative mt-12 overflow-hidden py-4 flex flex-col gap-6">
           {rows.map((row, rowIdx) => (
             <div key={rowIdx} className="flex gap-5 overflow-hidden">

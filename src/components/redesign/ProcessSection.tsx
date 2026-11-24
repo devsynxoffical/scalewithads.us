@@ -87,7 +87,7 @@ export function ProcessSection() {
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16 sm:mb-20">
           <span className="text-xs font-black uppercase tracking-widest text-purple-700 bg-purple-100 border border-purple-200 px-4 py-1.5 rounded-full inline-block mb-4 shadow-sm">
-            ✦ SECTION 5 — HOW OUR CLIENT ACQUISITION SYSTEM WORKS
+            ✦ SECTION 5: HOW OUR CLIENT ACQUISITION SYSTEM WORKS
           </span>
           
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-stone-950 leading-tight uppercase font-hero">
@@ -95,7 +95,7 @@ export function ProcessSection() {
           </h2>
 
           <p className="mt-4 text-stone-600 text-base sm:text-lg font-medium max-w-2xl mx-auto">
-            From deep market research to automated qualification & booked deals—here is our exact end-to-end blueprint.
+            From deep market research to automated qualification & booked deals, here is our exact end-to-end blueprint.
           </p>
         </div>
 

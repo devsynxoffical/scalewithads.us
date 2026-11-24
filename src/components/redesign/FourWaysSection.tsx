@@ -46,7 +46,7 @@ export function FourWaysSection() {
       number: "04",
       title: "One Complete Scale",
       italicWord: "ecosystem",
-      subtitle: "At Scale With Ads™, we build one complete ecosystem where every part works together—from the first click to a qualified client sitting on your calendar.",
+      subtitle: "At Scale With Ads™, we build one complete ecosystem where every part works together, from the first click to a qualified client sitting on your calendar.",
       icon: CheckCircle2,
       href: "/contact",
     },

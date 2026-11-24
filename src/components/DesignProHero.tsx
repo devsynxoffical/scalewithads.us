@@ -12,7 +12,7 @@ export function DesignProHero() {
       className="relative h-screen min-h-[640px] w-full overflow-hidden bg-black/40 backdrop-blur-md text-white"
       style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}
     >
-      {/* Full-screen looping video background — tinted red to match theme */}
+      {/* Full-screen looping video background, tinted red to match theme */}
       <video
         className="absolute inset-0 h-full w-full object-cover [filter:grayscale(1)_sepia(1)_hue-rotate(-40deg)_saturate(4)]"
         src={VIDEO_SRC}

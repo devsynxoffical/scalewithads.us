@@ -88,7 +88,7 @@ export default function RedesignPage() {
         <GuaranteeSection />
       </div>
 
-      {/* Engagement options — no dollar amounts shown */}
+      {/* Engagement options, no dollar amounts shown */}
       <div id="pricing">
         <PricingSection />
       </div>

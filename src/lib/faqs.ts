@@ -12,7 +12,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "Do I own everything?",
-    a: "Yes. Every single asset we build—funnels, copy, ad creatives, CRM sequences, and customer data—belongs 100% to your business with no lock-ins.",
+    a: "Yes. Every single asset we build (funnels, copy, ad creatives, CRM sequences, and customer data) belongs 100% to your business with no lock-ins.",
   },
   {
     q: "How long does implementation take?",

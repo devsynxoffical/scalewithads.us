@@ -302,9 +302,9 @@ export default function IntroAnimation() {
             marketing vendors.
           </h2>
           <p className="text-sm md:text-base text-gray-600 max-w-2xl leading-relaxed">
-            We build your entire client acquisition ecosystem — offer
+            We build your entire client acquisition ecosystem: offer
             positioning, Meta Ads, short-form creatives, landing pages, CRM, AI
-            automations, lead qualification, and follow-up — so your only job is
+            automations, lead qualification, and follow-up, so your only job is
             to show up, run the calls, and close high-ticket clients.
           </p>
         </motion.div>
