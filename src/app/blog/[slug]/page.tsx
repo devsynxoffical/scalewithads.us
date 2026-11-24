@@ -102,6 +102,26 @@ function BlockView({ block, prev }: { block: Block; prev?: Block }) {
         </ul>
       );
     }
+    case "table":
+      return (
+        <div className="mt-7 overflow-x-auto rounded-2xl border-2 border-stone-950">
+          <table className="w-full min-w-[560px] text-left text-sm">
+            <caption className="sr-only">{block.caption}</caption>
+            <thead className="bg-stone-950 text-white">
+              <tr>{block.head.map((h) => <th key={h} scope="col" className="px-4 py-3 font-black">{h}</th>)}</tr>
+            </thead>
+            <tbody>
+              {block.rows.map((r, i) => (
+                <tr key={i} className={i % 2 ? "bg-[#FAF8F4]" : "bg-white"}>
+                  {r.map((c, j) => j === 0
+                    ? <th key={j} scope="row" className="px-4 py-3 font-black text-stone-950">{c}</th>
+                    : <td key={j} className="px-4 py-3 text-stone-700">{c}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
     case "callout":
       return (
         <aside className="mt-8 rounded-2xl border-2 border-purple-200 border-l-[6px] border-l-purple-600 bg-purple-50 p-5 sm:p-6">

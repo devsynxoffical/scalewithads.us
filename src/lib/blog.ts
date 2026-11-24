@@ -9,7 +9,8 @@ export type Block =
   | { type: "h3"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
-  | { type: "callout"; title: string; text: string };
+  | { type: "callout"; title: string; text: string }
+  | { type: "table"; caption: string; head: string[]; rows: string[][] };
 
 export type Post = {
   slug: string;
@@ -461,6 +462,78 @@ export const POSTS: Post[] = [
       { type: "ul", items: ["Reach workers by job, industry and location, and let the form qualify the claim.", "Ask about the work injury, reporting, claim status, treatment and representation.", "Follow up within minutes and track every lead to a signed case.", "See how we run these campaigns on our [workers comp leads](/workers-comp-leads) page, and our approach to [mass tort leads](/mass-tort-leads)."] },
     ],
   },
+  {
+    slug: "how-to-choose-a-legal-lead-generation-company",
+    title: "How to Choose a Legal Lead Generation Company: 8 Criteria",
+    metaTitle: "How to Choose a Legal Lead Generation Company",
+    description:
+      "8 criteria for choosing a legal lead generation company for personal injury, MVA, mass tort or workers comp cases, plus the 4 lead source types compared.",
+    category: "Legal Marketing",
+    datePublished: "2026-11-24",
+    dateModified: "2026-11-24",
+    primaryKeyword: "best personal injury lead generation companies",
+    related: { label: "See our personal injury lead generation", href: "/personal-injury-lead-generation" },
+    faqs: [
+      {
+        q: "What is the best legal lead generation company?",
+        a: "There is no single best company for every firm. The right one sells leads to your firm only, screens every lead, delivers in real time, lets you own the data, reports cost per signed case and publishes dated results.",
+      },
+      {
+        q: "Are exclusive legal leads worth the higher price?",
+        a: "Usually, if your intake team calls fast. Exclusive leads are not being called by other firms at the same time, so contact and sign rates tend to be higher. Compare sources on cost per signed case, not price per lead.",
+      },
+      {
+        q: "Should a law firm buy leads or run its own ads?",
+        a: "Buying leads is faster to start, but the vendor owns the source and the data. Running ads in your own account takes setup and fast follow-up, but every lead is yours and your cost per case can improve over time.",
+      },
+      {
+        q: "What questions should I ask a legal lead vendor?",
+        a: "Ask whether leads are exclusive, how they are screened and verified, how fast they are delivered, who owns the data and the ads, how ads follow state bar rules and whether they can show dated results with dashboards.",
+      },
+      {
+        q: "How do I compare the cost of legal lead sources?",
+        a: "Divide what you spend on each source by the number of cases it produces. Cost per signed case shows the real cost, because cheap leads that never sign are expensive.",
+      },
+    ],
+    body: [
+      { type: "h2", text: "How do you choose a legal lead generation company?" },
+      { type: "p", text: "Choose a company that sells each lead to your firm only, screens every lead before intake, delivers leads in real time, lets you own the ads and data, follows your state bar's advertising rules, reports cost per signed case and can show dated results. Judge every option on cost per signed case, not price per lead." },
+      { type: "h2", text: "The 4 types of legal lead sources" },
+      { type: "p", text: "Before comparing companies, know which model each one uses. The model decides who else gets the lead and who owns the source." },
+      {
+        type: "table",
+        caption: "Legal lead sources compared",
+        head: ["Source", "Exclusive to your firm?", "Who owns the ads and data?", "How you pay"],
+        rows: [
+          ["Shared lead vendor", "No, often sold to several firms", "The vendor", "Per lead"],
+          ["Exclusive lead vendor", "Yes", "The vendor", "Per lead, usually higher"],
+          ["Pay per signed case", "Usually", "The vendor", "Per signed case or retainer"],
+          ["Ads in your own account (in-house or agency)", "Yes", "Your firm", "Ad spend to the platform, plus a fee if you use an agency"],
+        ],
+      },
+      { type: "h2", text: "8 criteria for choosing a legal lead generation company" },
+      {
+        type: "ol",
+        items: [
+          "Exclusivity: each lead goes to your firm only and is never resold.",
+          "Screening: every lead answers questions on incident date, injuries, treatment, fault and representation before it reaches intake.",
+          "Verification: phone numbers are verified, for example with a one-time code.",
+          "Speed: leads arrive in real time, with an automatic text to the claimant within minutes.",
+          "Ownership: you own the ad account, creatives, forms and lead data if you stop.",
+          "Compliance: ads and landing pages are reviewed against your state bar's advertising rules before launch.",
+          "Reporting: you see cost per lead and cost per signed case, by case type.",
+          "Proof: the company publishes results with dates and dashboards, not only testimonials.",
+        ],
+      },
+      { type: "h2", text: "One campaign per case type" },
+      { type: "p", text: "Car accidents, mass torts and workplace injuries need different ads and different screening questions. Ask whether the company runs a separate campaign for each case type, such as [exclusive MVA leads](/exclusive-mva-leads), [mass tort leads](/mass-tort-leads) and [workers comp leads](/workers-comp-leads)." },
+      { type: "h2", text: "Red flags" },
+      { type: "ul", items: ["No answer on whether leads are shared.", "No screening questions on the form.", "Results with no dates or dashboards.", "You cannot keep the data or the ads if you leave.", "No review of ads against state bar rules."] },
+      { type: "callout", title: "Our published numbers", text: "Our own Meta Ads campaigns for law firms produced 76 MVA leads in 5 days, 203 MVA leads in 21 days and 530 leads in 7 days for a Texas personal injury firm, each shown with a dated dashboard on our [results page](/work)." },
+      { type: "h2", text: "Key takeaways" },
+      { type: "ul", items: ["Know the model first: shared, exclusive, pay per case or your own ads.", "Use the 8 criteria: exclusivity, screening, verification, speed, ownership, compliance, reporting and proof.", "Compare every source on cost per signed case. See [how much MVA leads cost](/blog/how-much-do-mva-leads-cost).", "See how we run [personal injury lead generation](/personal-injury-lead-generation) and [Facebook ads for lawyers](/facebook-ads-for-lawyers)."] },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
@@ -469,7 +542,7 @@ export function getPost(slug: string): Post | undefined {
 
 export function readingMinutes(post: Post): number {
   const words = post.body
-    .map((b) => ("text" in b ? b.text : "items" in b ? b.items.join(" ") : ""))
+    .map((b) => ("text" in b ? b.text : "items" in b ? b.items.join(" ") : "rows" in b ? b.rows.flat().join(" ") : ""))
     .join(" ")
     .split(/\s+/).length;
   return Math.max(1, Math.round(words / 220));

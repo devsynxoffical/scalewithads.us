@@ -62,3 +62,19 @@ Data: Search Console 28 days to 23 Nov. /workers-comp-leads 13 impressions, aver
 |---|---|
 | 6 FAQs, none answering how lawyers find workers comp leads | New FAQ "How do lawyers find workers comp leads?" (FAQPage schema updated) |
 | Qualification intro did not say leads are screened; no link to the workers comp article (unknown to Google) | Intro starts "Every lead is screened before intake" and links to /blog/how-to-get-workers-comp-leads |
+
+## 2026-11-24: AEO and GEO plan (scalewithads.us part, weeks 1, 2 and 4)
+
+7-day rule: /services, /facebook-ads-for-lawyers, /personal-injury-lead-generation, /mass-tort-leads, /exclusive-mva-leads, /workers-comp-leads and the homepage were edited on 23 or 24 Nov, so only titles, meta and FAQs were changed on them now. Answer boxes, "In short" lines, cost tables, "Key facts" blocks and "Updated" dates on those pages are scheduled for 1 Dec.
+
+| Change | Page | Before | After |
+|---|---|---|---|
+| Brand description sentence (Organization and WebSite schema, llms.txt) | Sitewide | "done-for-you client acquisition agency ... 90-day double-revenue guarantee" | "Scale With Ads™ is a Meta ads agency that runs Facebook and Instagram campaigns for law firms and service businesses, including exclusive personal injury, MVA, mass tort and workers comp leads." |
+| Organization knowsAbout | Sitewide | No mass tort or workers comp | Adds mass tort and workers compensation lead generation |
+| robots.txt AI crawlers | Sitewide | Already allows GPTBot, OAI-SearchBot, PerplexityBot, Google-Extended, ClaudeBot and others | No change needed |
+| llms.txt | /llms.txt | Old mastermind entry, roofing/HVAC/solar listed as verticals, no published legal results, 2 em dashes | Brand sentence, 6-week mastermind and coaching, dated legal results, new guide, sister-site verticals removed, 0 em dashes |
+| FAQs "What is a mass tort lead?" and "How does mass tort lead generation work?" (steps) | /mass-tort-leads | 5 FAQs | 7 FAQs, schema matches |
+| New guide with answer box, comparison table, 8 criteria and 5 FAQs | /blog/how-to-choose-a-legal-lead-generation-company | No page | Live; links to PI, MVA, mass tort, workers comp, lawyers and MVA cost pages |
+| Table block for blog posts | Blog template | Not available | Available |
+| Em dashes in visible text | Homepage and shared sections | 40+ across shared components | 0 on every page |
+| Home title | / | 60 characters | 59 characters |

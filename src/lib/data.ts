@@ -25,19 +25,19 @@ import {
 export const whyNotScale = [
   {
     title: "Ads without a system",
-    body: "An agency runs your ads and calls it marketing. But raw clicks don't create clients — only a pre-sold journey does.",
+    body: "An agency runs your ads and calls it marketing. But raw clicks don't create clients, only a pre-sold journey does.",
     stat: "Clicks",
     statLabel: "Not clients",
   },
   {
     title: "Funnels nobody owns",
-    body: "Somebody builds the landing page, somebody else runs the traffic. Nobody owns the full journey — so most leads go cold.",
+    body: "Somebody builds the landing page, somebody else runs the traffic. Nobody owns the full journey, so most leads go cold.",
     stat: "Broken",
     statLabel: "Handoffs between vendors",
   },
   {
     title: "Copy, but no follow-up",
-    body: "Great copy can't qualify, nurture or book leads. Follow-up is where the deals are won — and in the fragmented way, it never happens.",
+    body: "Great copy can't qualify, nurture or book leads. Follow-up is where the deals are won, and in the fragmented way, it never happens.",
     stat: "80%",
     statLabel: "Of sales need 5+ follow-ups",
   },
@@ -56,12 +56,12 @@ export const differentiators = [
   {
     icon: Funnel,
     title: "Complete Done-For-You Client Acquisition System",
-    body: "We install every piece — offer positioning, Meta Ads, short-form creatives, landing pages, CRM, AI automations, qualification and follow-up. Your only job is to close clients.",
+    body: "We install every piece: offer positioning, Meta Ads, short-form creatives, landing pages, CRM, AI automations, qualification and follow-up. Your only job is to close clients.",
   },
   {
     icon: BadgeCheck,
     title: "Premium Lead Qualification & Multi-Validation Process",
-    body: "A proprietary multi-validation process filters leads before they reach your calendar — lifting booking and show-up rates on every call.",
+    body: "A proprietary multi-validation process filters leads before they reach your calendar, lifting booking and show-up rates on every call.",
   },
   {
     icon: Bot,
@@ -75,12 +75,12 @@ export const differentiators = [
   },
   {
     icon: TrendingUp,
-    title: "Revenue-Focused Growth Strategy — Not Just More Leads",
-    body: "Not just more leads — a growth strategy engineered around closed revenue, cost per booked appointment and predictable compounding.",
+    title: "Revenue-Focused Growth Strategy, Not Just More Leads",
+    body: "Not just more leads, a growth strategy engineered around closed revenue, cost per booked appointment and predictable compounding.",
   },
   {
     icon: ShieldCheck,
-    title: "90-Day Written Guarantee — Risk Reversed",
+    title: "90-Day Written Guarantee: Risk Reversed",
     body: "Everything is backed in writing. If we don't help you hit the agreed growth milestones within 90 days, we keep working at no management fee until we do.",
   },
 ] as const;
@@ -126,7 +126,7 @@ export const acquisitionSteps: {
   {
     icon: ShieldCheck,
     title: "Lead Qualification",
-    body: "Our proprietary multi-validation process filters leads before they reach your calendar — improving booking and show-up rates.",
+    body: "Our proprietary multi-validation process filters leads before they reach your calendar, improving booking and show-up rates.",
   },
   {
     icon: CalendarCheck,
@@ -167,7 +167,7 @@ export const ownershipSteps = [
   {
     step: "01",
     title: "We build",
-    body: "We construct the entire acquisition system — ads, funnel, automation, CRM, the lot.",
+    body: "We construct the entire acquisition system: ads, funnel, automation, CRM, the lot.",
   },
   {
     step: "02",
@@ -260,17 +260,17 @@ export const faqs: {
   },
   {
     q: "Do I own everything?",
-    a: "Yes — written into the engagement. Landing pages, funnels, CRM, automations, ad creatives, copy, follow-up sequences and customer data all become your business assets. No lock-ins, no hidden ownership.",
+    a: "Yes, written into the engagement. Landing pages, funnels, CRM, automations, ad creatives, copy, follow-up sequences and customer data all become your business assets. No lock-ins, no hidden ownership.",
     category: "Ownership",
   },
   {
     q: "How long does implementation take?",
-    a: "Most systems are live within weeks. You'll start seeing traffic and booked calls during implementation — you don't wait 90 days just to get started.",
+    a: "Most systems are live within weeks. You'll start seeing traffic and booked calls during implementation, you don't wait 90 days just to get started.",
     category: "Onboarding",
   },
   {
     q: "What industries do you work with?",
-    a: "Coaches, agencies, high-ticket services, e-commerce, health & fitness, medical, finance, B2B and more — 22+ industries and counting.",
+    a: "Coaches, agencies, high-ticket services, e-commerce, health & fitness, medical, finance, B2B and more, 22+ industries and counting.",
     category: "The System",
   },
   {
@@ -280,7 +280,7 @@ export const faqs: {
   },
   {
     q: "How is this different from a marketing agency?",
-    a: "Agencies run ads and hand you raw, unqualified leads. We build and operate a complete client acquisition ecosystem — from the first click to a qualified lead on your calendar — and back it with a written guarantee.",
+    a: "Agencies run ads and hand you raw, unqualified leads. We build and operate a complete client acquisition ecosystem, from the first click to a qualified lead on your calendar, and back it with a written guarantee.",
     category: "The System",
   },
   {

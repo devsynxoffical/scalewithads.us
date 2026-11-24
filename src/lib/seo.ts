@@ -8,7 +8,7 @@ export const SITE_NAME = "Scale With Ads™";
 export const OG_IMAGE = "/og-image.png";
 
 export const SITE_DESCRIPTION =
-  "Scale With Ads™ is a done-for-you client acquisition agency. We install Meta Ads, ad creatives, funnels, CRM, AI follow-up and lead qualification into $10K+/month businesses, and put a 90-day double-revenue guarantee in writing.";
+  "Scale With Ads™ is a Meta ads agency that runs Facebook and Instagram campaigns for law firms and service businesses, including exclusive personal injury, MVA, mass tort and workers comp leads.";
 
 /**
  * Per-page metadata: title, description, canonical URL, Open Graph and Twitter card.
@@ -73,6 +73,8 @@ export const SITE_JSONLD = {
         "Personal injury lead generation",
         "Facebook ads for lawyers",
         "MVA lead generation",
+        "Mass tort lead generation",
+        "Workers compensation lead generation",
       ],
       sameAs: ["https://www.facebook.com/groups/milliondollarmedia"],
       contactPoint: {

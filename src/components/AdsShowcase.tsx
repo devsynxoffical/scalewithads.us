@@ -44,10 +44,10 @@ export function AdsShowcase() {
               <span className="text-[var(--accent)]">One system.</span>
             </>
           }
-          description="Press play — the same done-for-you creative engine behind million-dollar funnels, adapted to every vertical we work with."
+          description="Press play: the same done-for-you creative engine behind million-dollar funnels, adapted to every vertical we work with."
         />
 
-        {/* Video wall — every ad video plays on scroll */}
+        {/* Video wall, every ad video plays on scroll */}
         <div className="mt-12 columns-2 gap-4 sm:columns-3 lg:columns-5">
           {allAdVideos.map((video, i) => (
             <Reveal key={video.id} delay={(i % 4) * 60} className="break-inside-avoid">
@@ -56,7 +56,7 @@ export function AdsShowcase() {
           ))}
         </div>
 
-        {/* Static screenshot strip — 12 industries */}
+        {/* Static screenshot strip, 12 industries */}
         <Reveal delay={80} className="mt-12">
           <p className="eyebrow-accent mb-4 text-center">Creative screenshots</p>
         </Reveal>

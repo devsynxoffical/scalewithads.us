@@ -91,7 +91,7 @@ export function OwnershipSection() {
           {/* Section Eyebrow & Title */}
           <div className="max-w-3xl mb-12">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-purple-300 bg-purple-900/80 border border-purple-700/60 px-4 py-1.5 rounded-full inline-block mb-5 shadow-sm">
-              ✦ SECTION 7 — EVERYTHING BELONGS TO YOU
+              ✦ SECTION 7: EVERYTHING BELONGS TO YOU
             </span>
             
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white leading-[1.02] mb-4 font-hero uppercase">

@@ -34,7 +34,7 @@ export default function ResponsiveHeroBanner() {
         <p className="max-w-3xl text-lg md:text-2xl text-white/90 mb-10 mx-auto font-medium leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] text-center">
           We install our proprietary $50M+ proven Meta Ads system directly into your business. 
           <br className="hidden md:block" />
-          Double your revenue within the next 90 days — or we work at no management fee until we do.
+          Double your revenue within the next 90 days, or we work at no management fee until we do.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full">

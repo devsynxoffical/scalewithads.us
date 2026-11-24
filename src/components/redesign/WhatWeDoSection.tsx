@@ -25,7 +25,7 @@ export function WhatWeDoSection() {
       title: "Short-Form Video Ads (Reels, TikToks & Shorts)",
       shortDesc: "Reels, TikToks & Shorts that stop thumbs & start client conversations.",
       fullDesc:
-        "We script, record, and edit 20+ viral shortform video ad variations per month—testing hook angles, UGC cuts, and dynamic captions engineered to stop the scroll.",
+        "We script, record, and edit 20+ viral shortform video ad variations per month, testing hook angles, UGC cuts, and dynamic captions engineered to stop the scroll.",
       tags: ["TikTok Ads", "Meta Reels", "UGC Creators"],
       urlTag: "http/www.scalewithads.com/shortform",
     },

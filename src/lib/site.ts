@@ -12,7 +12,7 @@ export const site = {
     addressCountry: "US",
   },
   description:
-    "Scale With Ads™ installs a done-for-you client acquisition system for businesses already generating $10K+/month — offer positioning, Meta Ads, short-form creatives, landing pages, CRM, AI follow-up and qualification. Double your revenue in 90 days, backed in writing.",
+    "Scale With Ads™ installs a done-for-you client acquisition system for businesses already generating $10K+/month: offer positioning, Meta Ads, short-form creatives, landing pages, CRM, AI follow-up and qualification. Double your revenue in 90 days, backed in writing.",
   socials: [
     { label: "Facebook", href: "https://facebook.com" },
     { label: "Instagram", href: "https://instagram.com" },

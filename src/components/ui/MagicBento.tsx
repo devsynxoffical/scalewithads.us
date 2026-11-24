@@ -20,7 +20,7 @@ const cardData: CardData[] = [
   {
     color: '#0d0d12', // Match the agency help section color
     title: 'Ads Without Funnels',
-    description: "Agencies run traffic and call it marketing. But raw clicks don't book appointments — only a pre-sold journey does.",
+    description: "Agencies run traffic and call it marketing. But raw clicks don't book appointments, only a pre-sold journey does.",
     label: '94% of clicks never convert',
   },
   {
@@ -32,13 +32,13 @@ const cardData: CardData[] = [
   {
     color: '#0d0d12',
     title: 'Copy Without Follow-Up',
-    description: "Great copy gets attention. But without automated nurture, qualification, and booking — it's just noise. The deal dies in the inbox.",
+    description: "Great copy gets attention. But without automated nurture, qualification, and booking, it's just noise. The deal dies in the inbox.",
     label: '80% of sales need 5+ follow-ups',
   },
   {
     color: '#0d0d12',
     title: 'Data In Silos',
-    description: "Ads data sits in Meta. CRM data sits in HubSpot. Funnel data sits in ClickFunnels. Nobody sees the full picture — so nobody optimizes the whole system.",
+    description: "Ads data sits in Meta. CRM data sits in HubSpot. Funnel data sits in ClickFunnels. Nobody sees the full picture, so nobody optimizes the whole system.",
     label: 'Blind optimization = wasted spend',
   }
 ];
