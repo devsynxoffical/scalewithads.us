@@ -47,7 +47,12 @@ const config: LegalLeadPageConfig = {
     { icon: Building2, title: "Denied or delayed claims", text: "Workers whose claim was denied, delayed or cut off by the employer's insurer." },
   ],
   qualifyTitle: ["Screen every claim", "before intake"],
-  qualifyIntro: "A short form confirms the injury happened at work, that it was reported and whether the worker already has a lawyer. Your intake team only speaks to people you can help.",
+  qualifyIntro: (
+    <>
+      Every lead is screened before intake: a short form confirms the injury happened at work, that it was reported and whether the worker already has a lawyer. Your intake team only speaks to people you can help. For the full process, read{" "}
+      <Link href="/blog/how-to-get-workers-comp-leads" className="font-bold text-purple-700 underline underline-offset-4">how to get workers&apos; comp leads</Link>.
+    </>
+  ),
   questions: [
     "Were you injured while working?",
     "Have you reported the injury to your employer?",
@@ -66,6 +71,7 @@ const config: LegalLeadPageConfig = {
   compliance: "Your firm reviews and approves every ad and landing page before launch, so they can be checked against your state bar's attorney advertising rules. We have not yet published workers' comp case studies; our published legal results come from MVA and personal injury campaigns.",
   faqs: [
     { q: "What are workers comp leads?", a: "Workers' comp leads are inquiries from people injured at work who want help with a workers' compensation claim, often after a claim was denied, delayed or reduced." },
+    { q: "How do lawyers find workers comp leads?", a: "Most firms rely on referrals, search ads, lead vendors or social media ads. Facebook and Instagram ads in the firm's own ad account reach injured workers directly, and every lead is screened for a work injury, a reported claim and existing representation before it reaches intake." },
     { q: "Are these workers' comp leads exclusive?", a: "Yes. The ads run in your firm's own ad account and every inquiry goes only to your intake team." },
     { q: "How are leads qualified?", a: "Every form asks whether the injury happened at work, whether it was reported, the status of the claim, treatment and whether the person already has a lawyer. Your firm sets the final questions." },
     { q: "How much do workers' comp leads cost?", a: "It depends on your state, audience and offer. You pay Meta directly for ad spend plus our fee, and you can estimate your cost per signed case with the calculator on this page." },
