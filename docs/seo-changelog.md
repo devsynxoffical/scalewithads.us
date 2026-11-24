@@ -53,3 +53,12 @@ Checks after the build: each page has 1 H1, a unique title under 60 characters a
 |---|---|
 | Centered heading and 2 paragraphs | Two-column layout: heading, intro, 6 / 12 / 14 stat tiles (weeks, live classes, resources) and an apply button, next to a clickable 6-week journey (week tabs, progress bar, each week's theme and classes, link to the full curriculum). Same copy, no new claims. |
 - Section headings on /privatemastermind set to uppercase to match the rest of the site (font check).
+
+## 2026-11-24: 12h monitor, /workers-comp-leads
+
+Data: Search Console 28 days to 23 Nov. /workers-comp-leads 13 impressions, average position 23.4 (5 the previous run). New queries in striking distance: "how to find workers comp leads" 13.0, "lawyer workers comp leads" 13.0, "getting workers compensation leads" 17.0, "screened workers comp leads" 20.0; "workers comp leads" 23.0 -> 17.7. Page last changed 20 Nov; it is a target page and the data calls for the change.
+
+| Before | After |
+|---|---|
+| 6 FAQs, none answering how lawyers find workers comp leads | New FAQ "How do lawyers find workers comp leads?" (FAQPage schema updated) |
+| Qualification intro did not say leads are screened; no link to the workers comp article (unknown to Google) | Intro starts "Every lead is screened before intake" and links to /blog/how-to-get-workers-comp-leads |
