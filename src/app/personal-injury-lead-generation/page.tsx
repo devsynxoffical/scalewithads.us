@@ -29,6 +29,7 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { LegalProofSection } from "@/components/leads/LegalProofSection";
 import { LEGAL_FORM_NOTE } from "@/components/leads/LegalLeadPage";
+import { AnswerBlock, ChecklistBlock, LEGAL_PRICING, PricingBlock } from "@/components/leads/LegalBlocks";
 import { Breadcrumbs, RelatedResources, type RelatedItem } from "@/components/seo/RelatedResources";
 import type { Faq } from "@/lib/faqs";
 import { SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
@@ -36,7 +37,7 @@ import { SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 const PATH = "/personal-injury-lead-generation";
 
 export const metadata: Metadata = pageMeta({
-  title: "Personal Injury Leads From Facebook and Instagram",
+  title: "Personal Injury Leads and Lead Generation for Lawyers",
   description:
     "Exclusive personal injury leads screened before intake. One campaign per case type, real results and a lead system your firm owns. Get a plan.",
   path: PATH,
@@ -159,9 +160,9 @@ const RELATED: RelatedItem[] = [
   },
   {
     kind: "Service",
-    title: "MVA Lead Generation mastermind",
-    text: "Watch the training that walks through the full MVA campaign build.",
-    href: "/mvaleadgeneration",
+    title: "How much do MVA leads cost?",
+    text: "Pricing models, our published cost per lead and how to work out cost per signed case.",
+    href: "/blog/how-much-do-mva-leads-cost",
   },
 ];
 
@@ -210,7 +211,7 @@ export default function PersonalInjuryLeadGenerationPage() {
                 Book a free strategy call <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/mvaleadgeneration"
+                href="/privatemastermind"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full border-2 border-stone-950 bg-white hover:bg-purple-50 text-stone-950 font-black text-xs sm:text-sm uppercase tracking-wider transition-colors"
               >
                 <Play className="w-4 h-4" /> Watch the mastermind
@@ -230,6 +231,11 @@ export default function PersonalInjuryLeadGenerationPage() {
 
       {/* 2. Trust bar */}
       <TrustBarSection />
+
+      <AnswerBlock
+        question="What are personal injury leads?"
+        answer="Personal injury leads are people recently hurt in an accident who want to speak to a personal injury lawyer. The best ones are exclusive to your firm, screened for injury, treatment, fault and representation, and called within minutes. Our published campaigns include 530 leads in 7 days for a Texas personal injury firm."
+      />
 
       <LegalProofSection subtitle="530 leads in 7 days for a Texas PI firm, 76 MVA leads in 5 days and 203 MVA leads in 21 days, all from campaigns in the firm's own ad account. Click a result to see the Meta Ads dashboard it came from." />
 
@@ -266,6 +272,22 @@ export default function PersonalInjuryLeadGenerationPage() {
           </div>
         </div>
       </section>
+
+      <ChecklistBlock
+        title={["Personal injury lead", "qualification checklist"]}
+        intro="Each lead answers these questions on the form, so your intake team knows the case type, timing and status before the first call."
+        items={[
+          "Case type: car, truck, motorcycle, slip and fall, workplace or other injury",
+          "When and where the incident happened",
+          "What injuries the person has",
+          "Whether they have seen a doctor or received treatment",
+          "Who was at fault, in their own words",
+          "Whether they already have a lawyer",
+          "A verified phone number and the best time to call",
+        ]}
+      />
+
+      <PricingBlock items={LEGAL_PRICING} showCostTable />
 
       {/* 4. Exclusive vs shared */}
       <section className="py-20 sm:py-24 px-4 md:px-8 bg-white border-y border-stone-200">
@@ -404,8 +426,8 @@ export default function PersonalInjuryLeadGenerationPage() {
               <p className="mt-3 text-stone-600 font-medium leading-relaxed">
                 Pay-per-lead agencies with an intake team ready to call leads quickly that want a steady flow of cases they control. Learn the process in the mastermind, or partner with our team.
               </p>
-              <Link href="/mvaleadgeneration" className="mt-6 inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
-                Watch the Sniper Method mastermind <ArrowRight className="w-4 h-4" />
+              <Link href="/privatemastermind" className="mt-6 inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
+                See the private mastermind <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>

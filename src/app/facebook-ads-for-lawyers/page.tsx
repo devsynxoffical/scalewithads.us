@@ -3,11 +3,12 @@ import Link from "next/link";
 import { BadgeCheck, BarChart3, Car, Crosshair, Gavel, HardHat, Megaphone, MessageSquare, Pill, Scale } from "lucide-react";
 import { LegalLeadPage, type LegalLeadPageConfig } from "@/components/leads/LegalLeadPage";
 import { pageMeta } from "@/lib/seo";
+import { LEGAL_PRICING } from "@/components/leads/LegalBlocks";
 
 const PATH = "/facebook-ads-for-lawyers";
 
 export const metadata: Metadata = pageMeta({
-  title: "Facebook Ads for Lawyers That Bring Signed Cases",
+  title: "Facebook Ads for Lawyers and Law Firms",
   description:
     "Facebook ads for lawyers and law firms: case-type campaigns, screened leads and fast intake. See real results like 530 leads in 7 days for a PI firm.",
   path: PATH,
@@ -49,7 +50,7 @@ const config: LegalLeadPageConfig = {
     { icon: Car, title: "Car accidents", text: "Recent-accident targeting with fast screening.", href: "/car-accident-leads" },
     { icon: HardHat, title: "Workers comp", text: "Injured workers screened on employment and injury date.", href: "/workers-comp-leads" },
     { icon: Pill, title: "Mass tort", text: "Claimants screened against your exact case criteria.", href: "/mass-tort-leads" },
-    { icon: Crosshair, title: "Hidden audience research", text: "The targeting method behind our legal campaigns, taught in our mastermind.", href: "/mvaleadgeneration" },
+    { icon: Crosshair, title: "Hidden audience research", text: "The targeting method behind our legal campaigns, step by step.", href: "/blog/find-hidden-facebook-interests" },
   ],
   qualifyTitle: ["Every inquiry screened", "before intake"],
   qualifyIntro: "Each lead answers qualifying questions before it reaches your intake team: accident date, injuries, treatment, fault and whether they already have an attorney. Phone numbers can be verified with a one-time code, so your team spends time on real cases.",
@@ -61,6 +62,11 @@ const config: LegalLeadPageConfig = {
     "What's the best time to call you?",
   ],
   showCalculator: true,
+  answerQuestion: "Do Facebook ads work for lawyers?",
+  answer:
+    "Yes, when the ads, screening and intake follow-up work together. Facebook and Instagram reach people shortly after an accident or injury, often before they search for a lawyer. Our published law firm campaigns include 530 leads in 7 days for a Texas personal injury firm, with every inquiry screened before intake.",
+  pricing: LEGAL_PRICING,
+  showCostTable: true,
   calcIntro: (
     <>
       Cost per lead is only the first number. What matters is cost per signed case, which depends on screening, speed to contact and intake quality. We report both, so you can see exactly what each signed case costs. For{" "}

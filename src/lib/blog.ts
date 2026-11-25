@@ -41,7 +41,7 @@ export const POSTS: Post[] = [
     datePublished: "2026-11-16",
     dateModified: "2026-11-18",
     primaryKeyword: "hidden facebook interests",
-    related: { label: "Watch the MVA Lead Generation mastermind", href: "/mvaleadgeneration" },
+    related: { label: "Get exclusive MVA leads", href: "/exclusive-mva-leads" },
     faqs: [
       {
         q: "What are hidden Facebook interests?",
@@ -67,7 +67,7 @@ export const POSTS: Post[] = [
       },
       {
         type: "p",
-        text: "This guide walks through the workflow our team uses to find them, filter out the irrelevant ones and test them properly. It's the written companion to our [MVA Lead Generation mastermind](/mvaleadgeneration), which applies the same process to personal injury campaigns.",
+        text: "This guide walks through the workflow our team uses to find them, filter out the irrelevant ones and test them properly. It's the written companion to our [exclusive MVA leads](/exclusive-mva-leads) campaigns, which use the same process for personal injury cases.",
       },
       { type: "h2", text: "What counts as a hidden Facebook interest?" },
       {
@@ -532,6 +532,78 @@ export const POSTS: Post[] = [
       { type: "callout", title: "Our published numbers", text: "Our own Meta Ads campaigns for law firms produced 76 MVA leads in 5 days, 203 MVA leads in 21 days and 530 leads in 7 days for a Texas personal injury firm, each shown with a dated dashboard on our [results page](/work)." },
       { type: "h2", text: "Key takeaways" },
       { type: "ul", items: ["Know the model first: shared, exclusive, pay per case or your own ads.", "Use the 8 criteria: exclusivity, screening, verification, speed, ownership, compliance, reporting and proof.", "Compare every source on cost per signed case. See [how much MVA leads cost](/blog/how-much-do-mva-leads-cost).", "See how we run [personal injury lead generation](/personal-injury-lead-generation) and [Facebook ads for lawyers](/facebook-ads-for-lawyers)."] },
+    ],
+  },
+  {
+    slug: "how-much-do-personal-injury-leads-cost",
+    title: "How Much Do Personal Injury Leads Cost? Pricing Models Compared",
+    metaTitle: "How Much Do Personal Injury Leads Cost?",
+    description:
+      "What personal injury leads cost under each pricing model, our published cost per lead, and how to work out cost per signed case for your firm.",
+    category: "Legal Marketing",
+    datePublished: "2026-11-25",
+    dateModified: "2026-11-25",
+    primaryKeyword: "how much do personal injury leads cost",
+    related: { label: "See personal injury lead generation", href: "/personal-injury-lead-generation" },
+    faqs: [
+      {
+        q: "How much do personal injury leads cost?",
+        a: "It depends on the pricing model, state, case type and how exclusive and screened the lead is. In our own published Meta ads campaigns, personal injury and MVA leads cost $17.13 to $26.93 each. Cost per signed case is the number to compare.",
+      },
+      {
+        q: "Why do personal injury lead prices vary so much?",
+        a: "Prices change with the state and city, the case type, whether the lead is shared or exclusive, how well it is screened and how it is delivered. A cheap shared lead and an exclusive screened lead are different products.",
+      },
+      {
+        q: "Is it cheaper to pay per signed case?",
+        a: "You pay nothing for leads that do not sign, but the price per signed case is usually much higher than paying per lead or running your own ads. It suits firms that want no upfront risk.",
+      },
+      {
+        q: "How do I calculate my cost per signed case?",
+        a: "Add up everything you spend on a lead source in a period and divide it by the number of cases you signed from that source in the same period.",
+      },
+      {
+        q: "What lowers the cost of personal injury leads?",
+        a: "Exclusive leads, good screening questions, fast follow-up and one campaign per case type. These raise your sign rate, which lowers your cost per signed case even if the price per lead stays the same.",
+      },
+    ],
+    body: [
+      { type: "h2", text: "How much do personal injury leads cost?" },
+      { type: "p", text: "There is no single market price. What you pay depends on the pricing model, your state, the case type and whether the lead is exclusive and screened. In our own published Meta ads campaigns, personal injury and MVA leads cost $17.13 to $26.93 each. The number that matters more is your cost per signed case." },
+      { type: "h2", text: "Our published cost per lead" },
+      { type: "p", text: "These figures come from client dashboards we have published, each with a date and a screenshot on our [results page](/work)." },
+      {
+        type: "table",
+        caption: "Published personal injury and MVA campaign costs",
+        head: ["Campaign", "Leads", "Cost per lead", "Ad spend", "Dates"],
+        rows: [
+          ["Texas personal injury firm", "530 in 7 days", "$26.93", "$14,270", "Jun 1 to Jun 7, 2026"],
+          ["MVA campaign", "76 in 5 days", "$17.13", "$1,301.63", "Jul 27 to Jul 31, 2026"],
+          ["MVA campaigns (5)", "203 in 21 days", "$18.69", "$3,793.86", "Jul 1 to Jul 21, 2026"],
+        ],
+      },
+      { type: "callout", title: "Past results, not a quote", text: "These costs come from specific campaigns in specific markets. Your cost per lead will depend on your state, case types, offer and how fast your intake team follows up." },
+      { type: "h2", text: "The 4 ways to pay for personal injury leads" },
+      {
+        type: "table",
+        caption: "Personal injury lead pricing models",
+        head: ["Model", "How you pay", "Shared with other firms?", "Who owns the source"],
+        rows: [
+          ["Shared leads", "Per lead", "Often", "The vendor"],
+          ["Exclusive vendor leads", "Per lead, usually higher", "No", "The vendor"],
+          ["Pay per signed case", "Per signed case or retainer", "Usually not", "The provider"],
+          ["Your own campaigns", "Ad spend to the platform, plus a fee if you use an agency", "Never", "Your firm"],
+        ],
+      },
+      { type: "h2", text: "What drives the price of a personal injury lead" },
+      { type: "ul", items: ["Market: competitive states and cities cost more to advertise in.", "Case type: truck, motorcycle, workplace and product cases are priced differently from car accidents.", "Exclusivity: a lead no other firm is calling is worth more.", "Screening: leads checked for injury, treatment, fault and representation cost more but sign more often.", "Delivery speed: a lead delivered in real time is worth more than one delivered tomorrow."] },
+      { type: "h2", text: "How to calculate cost per signed case" },
+      { type: "ol", items: ["Add up everything you spent on one lead source in a period, including fees.", "Count the cases you signed from that source in the same period.", "Divide spend by signed cases.", "Repeat for each source and compare them side by side."] },
+      { type: "p", text: "As an example with made-up numbers: if you spend $5,000 on a source and sign 4 cases from it, your cost per signed case is $1,250. A cheaper source that signs only 1 case for $3,000 costs $3,000 per signed case. Use your own numbers." },
+      { type: "h2", text: "How to lower your cost per signed case" },
+      { type: "ul", items: ["Use exclusive leads, so your team is not racing other firms.", "Ask screening questions before the call.", "Respond within minutes with an instant text and a call. See [legal intake](/legal-intake).", "Run one campaign per case type, so every lead matches what your firm takes."] },
+      { type: "h2", text: "Key takeaways" },
+      { type: "ul", items: ["Personal injury lead prices depend on the model, market, case type, exclusivity and screening.", "Our published Meta ads campaigns ran at $17.13 to $26.93 per lead.", "Compare every source on cost per signed case.", "See how we run [personal injury lead generation](/personal-injury-lead-generation), or compare [personal injury lead generation companies](/best-personal-injury-lead-generation-companies)."] },
     ],
   },
 ];

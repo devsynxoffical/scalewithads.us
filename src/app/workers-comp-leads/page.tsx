@@ -3,11 +3,12 @@ import Link from "next/link";
 import { BadgeCheck, Building2, Crosshair, HardHat, HeartPulse, Megaphone, MessageSquare, Package, Repeat, Truck, BarChart3 } from "lucide-react";
 import { LegalLeadPage, type LegalLeadPageConfig } from "@/components/leads/LegalLeadPage";
 import { pageMeta } from "@/lib/seo";
+import { LEGAL_PRICING } from "@/components/leads/LegalBlocks";
 
 const PATH = "/workers-comp-leads";
 
 export const metadata: Metadata = pageMeta({
-  title: "Workers Comp Leads for Attorneys From Facebook Ads",
+  title: "Workers Comp Leads for Attorneys",
   description:
     "Exclusive workers' compensation leads for attorneys from Facebook and Instagram ads in your own account, screened for work injury, reporting and representation.",
   path: PATH,
@@ -61,6 +62,10 @@ const config: LegalLeadPageConfig = {
     "Do you already have a lawyer?",
   ],
   showCalculator: true,
+  answerQuestion: "What are workers comp leads?",
+  answer:
+    "Workers comp leads are people injured on the job who want help with a workers' compensation claim, often after a claim was denied, delayed or reduced. Good leads are screened for a work injury, reporting, claim status and representation before intake calls. We have not published workers comp results yet.",
+  pricing: LEGAL_PRICING,
   steps: [
     { icon: Crosshair, title: "Audience research", text: "Industries, job types and areas mapped for the states you practice in." },
     { icon: Megaphone, title: "Ads & landing pages", text: "Work-injury ads and pages, approved by your firm before launch." },
@@ -76,7 +81,6 @@ const config: LegalLeadPageConfig = {
     { q: "How are leads qualified?", a: "Every form asks whether the injury happened at work, whether it was reported, the status of the claim, treatment and whether the person already has a lawyer. Your firm sets the final questions." },
     { q: "How much do workers' comp leads cost?", a: "It depends on your state, audience and offer. You pay Meta directly for ad spend plus our fee, and you can estimate your cost per signed case with the calculator on this page." },
     { q: "Do you have workers' comp results?", a: "Our published legal results are from MVA and personal injury campaigns, which use the same system. We will publish workers' comp results once a campaign has enough data to share." },
-    { q: "Can workers' comp run alongside our PI campaigns?", a: "Yes. Each practice area runs as its own campaign with its own budget and reporting." },
   ],
   faqTitle: "workers comp leads.",
   finalTitle: "Get workers' comp leads only your firm receives",

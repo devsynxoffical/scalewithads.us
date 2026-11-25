@@ -84,6 +84,12 @@ export function EditorialFooter() {
                 <Link href="/legal-lead-generation" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Legal Lead Generation
                 </Link>
+                <Link href="/legal-intake" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Legal Intake
+                </Link>
+                <Link href="/google-ads-for-lawyers" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  Google Ads for Lawyers
+                </Link>
                 <Link href="/exclusive-mva-leads" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Exclusive MVA Leads
                 </Link>
@@ -135,9 +141,6 @@ export function EditorialFooter() {
                 </Link>
                 <Link href="/metalto" className="text-stone-600 hover:text-purple-700 transition-colors">
                   $847K Meta Funnel
-                </Link>
-                <Link href="/mvaleadgeneration" className="text-stone-600 hover:text-purple-700 transition-colors">
-                  MVA Lead Generation
                 </Link>
                 <Link href="/paidpilot" className="text-stone-600 hover:text-purple-700 transition-colors">
                   7-Day Paid Pilot

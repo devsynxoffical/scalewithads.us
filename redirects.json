@@ -1,7 +1,11 @@
 [
   {
+    "source": "/mvaleadgeneration",
+    "destination": "/exclusive-mva-leads"
+  },
+  {
     "source": "/snipermethod",
-    "destination": "/mvaleadgeneration"
+    "destination": "/exclusive-mva-leads"
   },
   {
     "source": "/portfolio",

@@ -32,6 +32,7 @@ import { LegalProofSection } from "@/components/leads/LegalProofSection";
 import { Breadcrumbs, RelatedResources } from "@/components/seo/RelatedResources";
 import { LeadForm } from "@/components/leads/LeadForm";
 import { LEGAL_FORM_NOTE } from "@/components/leads/LegalLeadPage";
+import { AnswerBlock, ChecklistBlock, LEGAL_PRICING, PricingBlock } from "@/components/leads/LegalBlocks";
 import { CaseCostCalculator } from "@/components/leads/Calculators";
 import { InquiryFlowTabs } from "@/components/leads/Interactive";
 import type { Faq } from "@/lib/faqs";
@@ -40,7 +41,7 @@ import { SITE_URL, breadcrumbJsonLd, faqJsonLd, pageMeta } from "@/lib/seo";
 const PATH = "/exclusive-mva-leads";
 
 export const metadata: Metadata = pageMeta({
-  title: "Exclusive MVA Leads for Personal Injury Attorneys",
+  title: "Exclusive MVA Leads (Motor Vehicle Accident)",
   description:
     "Exclusive MVA leads for PI attorneys from your own campaigns. Screened, verified and delivered in minutes. Real results like 76 MVA leads in 5 days.",
   path: PATH,
@@ -170,6 +171,11 @@ export default function ExclusiveMvaLeadsPage() {
 
       <TrustBarSection />
 
+      <AnswerBlock
+        question="What are MVA leads?"
+        answer="MVA leads are people recently injured in a motor vehicle accident, such as a car, truck, motorcycle or rideshare crash, who want legal help. A qualified MVA lead has an injury, has seen a doctor, was not at fault and has no lawyer yet. Our published campaigns produced 203 MVA leads in 21 days at $18.69 each."
+      />
+
       <LegalProofSection subtitle="76 MVA leads in 5 days, 203 MVA leads in 21 days and 530 leads in 7 days for a Texas PI firm. Click a result to see the Meta Ads dashboard it came from." />
 
       {/* What are MVA leads + lead types */}
@@ -211,6 +217,22 @@ export default function ExclusiveMvaLeadsPage() {
           </div>
         </div>
       </section>
+
+      <ChecklistBlock
+        title={["What makes an MVA lead", "qualified"]}
+        intro="Every motor vehicle accident lead answers these questions before it reaches your intake team. Your firm sets the final questions and the rules for which leads to accept."
+        items={[
+          "The accident happened recently, with a date your team can check",
+          "The accident is within your state's filing deadline (statute of limitations)",
+          "The person was injured, not only the vehicle",
+          "They have seen a doctor or received medical treatment",
+          "They were not mainly at fault for the crash",
+          "They have not already hired another lawyer",
+          "Their phone number is verified and they asked to be contacted",
+        ]}
+      />
+
+      <PricingBlock items={LEGAL_PRICING} showCostTable />
 
       {/* Calculator */}
       <section className="py-20 sm:py-24 px-4 md:px-8 bg-white border-y border-stone-200">
@@ -328,7 +350,7 @@ export default function ExclusiveMvaLeadsPage() {
       <RelatedResources
         items={[
           { kind: "Service", title: "Personal injury lead generation", text: "The full done-for-you system: research, ads, landing pages, qualification and CRM.", href: "/personal-injury-lead-generation" },
-          { kind: "Service", title: "MVA Lead Generation mastermind", text: "Watch the training that walks through our MVA campaign build step by step.", href: "/mvaleadgeneration" },
+          { kind: "Guide", title: "How much do MVA leads cost?", text: "Pricing models, our published cost per lead and cost per signed case.", href: "/blog/how-much-do-mva-leads-cost" },
           { kind: "Guide", title: "How to find hidden Facebook interests", text: "The targeting workflow behind our accident campaigns.", href: "/blog/find-hidden-facebook-interests" },
         ]}
       />

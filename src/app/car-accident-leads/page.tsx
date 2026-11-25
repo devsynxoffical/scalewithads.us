@@ -3,11 +3,12 @@ import Link from "next/link";
 import { BadgeCheck, Bike, Car, Crosshair, Footprints, Megaphone, MessageSquare, ShieldAlert, Smartphone, Truck, TrafficCone } from "lucide-react";
 import { LegalLeadPage, type LegalLeadPageConfig } from "@/components/leads/LegalLeadPage";
 import { pageMeta } from "@/lib/seo";
+import { LEGAL_PRICING } from "@/components/leads/LegalBlocks";
 
 const PATH = "/car-accident-leads";
 
 export const metadata: Metadata = pageMeta({
-  title: "Car Accident Leads for Personal Injury Lawyers",
+  title: "Car Accident Leads for Personal Injury Attorneys",
   description:
     "Exclusive car accident and auto accident leads for personal injury lawyers, from Facebook and Instagram ads in your own account. Qualified before intake.",
   path: PATH,
@@ -57,6 +58,11 @@ const config: LegalLeadPageConfig = {
     "Do you already have a lawyer?",
   ],
   showCalculator: true,
+  answerQuestion: "What are car accident leads?",
+  answer:
+    "Car accident leads, also called auto accident leads, are people recently hurt in a car crash who want to speak to a personal injury lawyer. The best ones are exclusive, screened for fault, injury, treatment and representation, and called within minutes. Our published MVA campaigns produced 76 leads in 5 days at $17.13 each.",
+  pricing: LEGAL_PRICING,
+  showCostTable: true,
   steps: [
     { icon: Crosshair, title: "Audience research", text: "We map audiences and areas for each crash type in the states you take cases in." },
     { icon: Megaphone, title: "Ads & landing pages", text: "Video and image ads plus crash-specific pages, approved by your firm before launch." },
