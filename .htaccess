@@ -13,7 +13,8 @@ RewriteCond %{HTTP_HOST} !^www\.scalewithads\.us$ [NC]
 RewriteRule ^ https://www.scalewithads.us%{REQUEST_URI} [R=301,L]
 
 # Permanent redirects (same list as Vercel, from redirects.json)
-RewriteRule ^snipermethod/?$ /mvaleadgeneration [R=301,L]
+RewriteRule ^mvaleadgeneration/?$ /exclusive-mva-leads [R=301,L]
+RewriteRule ^snipermethod/?$ /exclusive-mva-leads [R=301,L]
 RewriteRule ^portfolio/?$ /medialibrary [R=301,L]
 RewriteRule ^metads/?$ /services [R=301,L]
 RewriteRule ^book/?$ /contact [R=301,L]
