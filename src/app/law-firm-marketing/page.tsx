@@ -112,7 +112,7 @@ const config: PillarPageConfig = {
       title: ["Law firm marketing", "across the US"],
       paras: [
         "We work with firms across the United States. Lawyer advertising rules, crash patterns, workplace injury rates and competition all differ by state and city, so every campaign starts with your market: which case types are most common there, how competitive the ads are and what your state bar allows in an ad.",
-        "Local pages for individual states and cities will be added here as they are published.",
+        <>Local pages: <Link href="/law-firm-marketing/florida" className={A}>Florida</Link>, <Link href="/law-firm-marketing/miami-fl" className={A}>Miami</Link>, <Link href="/law-firm-marketing/chicago-il" className={A}>Chicago</Link>, <Link href="/law-firm-marketing/los-angeles-ca" className={A}>Los Angeles</Link> and <Link href="/law-firm-marketing/philadelphia-pa" className={A}>Philadelphia</Link>. Each covers that state&apos;s lawyer advertising rules, local crash and attorney data from official sources, and the case types we build there.</>,
       ],
       cards: [
         { icon: Building2, title: "Your market first", text: "Case types, competition and state bar rules are reviewed before any ad is written." },
