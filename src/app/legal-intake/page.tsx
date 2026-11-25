@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BellRing, CalendarCheck, ClipboardList, Database, FileText, Hourglass, PhoneCall, Route, UserX } from "lucide-react";
+import { BellRing, CalendarCheck, FileText, Hourglass, PhoneCall, Route, UserX } from "lucide-react";
 import { PillarPage, type PillarPageConfig } from "@/components/leads/PillarPage";
 import { pageMeta } from "@/lib/seo";
 

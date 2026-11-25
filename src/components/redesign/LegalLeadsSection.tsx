@@ -46,6 +46,23 @@ export function LegalLeadsSection() {
             </Link>
           ))}
         </div>
+        <div className="mt-10 rounded-3xl border border-stone-200 bg-[#FAF8F4] px-5 py-5 text-center">
+          <p className="font-mono text-[11px] font-black uppercase tracking-widest text-stone-500">Markets we serve</p>
+          <div className="mt-3 flex flex-wrap justify-center gap-2">
+            {[
+              ["Law firm marketing", "/law-firm-marketing"],
+              ["Florida", "/law-firm-marketing/florida"],
+              ["Miami", "/law-firm-marketing/miami-fl"],
+              ["Chicago", "/law-firm-marketing/chicago-il"],
+              ["Los Angeles", "/law-firm-marketing/los-angeles-ca"],
+              ["Philadelphia", "/law-firm-marketing/philadelphia-pa"],
+            ].map(([label, href]) => (
+              <Link key={href} href={href} className="rounded-full border-2 border-stone-200 bg-white px-4 py-2 text-xs font-black text-stone-700 hover:border-purple-600 hover:text-purple-700 transition-colors">
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

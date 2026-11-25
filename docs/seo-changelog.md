@@ -108,3 +108,17 @@ Blocked by the 7-day rule (scheduled): legal page upgrades (/personal-injury-lea
 | Upgrade | /workers-comp-leads | 7 FAQs | "Workers Comp Leads for Attorneys"; In short answer (no published results), pricing model, 6 FAQs |
 | Upgrade | /mass-tort-leads | 7 FAQs | "Mass Tort Leads and Mass Tort Marketing"; In short answer (no published results), pricing model, 6 FAQs. Active torts list not added: dates could not be verified |
 | Upgrade | /facebook-ads-for-lawyers | Title "Facebook Ads for Lawyers That Bring Signed Cases" | "Facebook Ads for Lawyers and Law Firms"; In short answer, pricing model, cost table |
+
+## 2026-11-25: City Page Plan (tier 1, verified sources only)
+
+| URL | Words | Sources linked on the page |
+|---|---|---|
+| /law-firm-marketing/florida | 1,616 | Florida Bar advertising guidance pages (Rules 4-7.12, 4-7.13, 4-7.18, 4-7.19, 4-7.20), FLHSMV 2024 Traffic Crash Facts, Florida Bar roster (Oct 31, 2026) |
+| /law-firm-marketing/miami-fl | 1,539 | Florida Bar guidance pages, FLHSMV 2024 report (Miami-Dade figures) |
+| /law-firm-marketing/chicago-il | 1,623 | Illinois Rules of Professional Conduct 7.1 to 7.3 (illinoiscourts.gov), IDOT 2024 Crash Facts and 2020 to 2024 Trends, ARDC 2025 Annual Report highlights |
+| /law-firm-marketing/los-angeles-ca | 1,600 | California Rules of Professional Conduct Chapter 7 (calbar.ca.gov). No local statistics: CA crash and BLS sources blocked automated access |
+| /law-firm-marketing/philadelphia-pa | 1,572 | Pennsylvania Rules of Professional Conduct 7.1 to 7.3 and the Disciplinary Board 2025 Annual Report (attorney counts). No crash data: PennDOT redirects to a blocked host |
+
+All city pages: Service schema with areaServed, FAQPage, BreadcrumbList, no LocalBusiness, proof labeled national, no em dashes, 68 percent or more unique vs sibling pages. Hub /law-firm-marketing and the homepage law firm section ("Markets we serve") link to every page.
+
+Not built (sources could not be verified today): /law-firm-marketing/texas and /law-firm-marketing/dallas-tx (texasbar.com returned 503 all day; TxDOT crash data is verified and saved), /law-firm-marketing/new-york-ny (nycourts.gov blocks automated access, so the New York advertising rules could not be read). BLS workplace injury data could not be read for any state (bls.gov blocks automated access).
