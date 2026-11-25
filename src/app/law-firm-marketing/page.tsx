@@ -141,7 +141,9 @@ const config: PillarPageConfig = {
   related: [
     { kind: "Service", title: "Personal injury marketing", text: "The full marketing system for PI firms.", href: "/personal-injury-marketing" },
     { kind: "Service", title: "Legal lead generation", text: "Lawyer and attorney leads screened before intake.", href: "/legal-lead-generation" },
-    { kind: "Guide", title: "How to choose a legal lead generation company", text: "8 criteria and a comparison of lead sources.", href: "/blog/how-to-choose-a-legal-lead-generation-company" },
+    { kind: "Service", title: "Google Ads for lawyers", text: "Search campaigns for PI firms, in your own account.", href: "/google-ads-for-lawyers" },
+    { kind: "Service", title: "Legal intake", text: "Fast follow-up and screening behind every campaign.", href: "/legal-intake" },
+    { kind: "Guide", title: "PI lead generation companies compared", text: "4 provider types, 8 criteria and honest trade-offs.", href: "/best-personal-injury-lead-generation-companies" },
   ],
 };
 

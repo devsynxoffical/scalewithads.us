@@ -92,3 +92,19 @@ Data: Search Console 28 days to 23 Nov. /workers-comp-leads 13 impressions, aver
 Already done before this plan: /facebook-ads-for-roofing-companies 301 to roofingsystems.co (23 Nov), /metads 301 to /services. Kept by owner decision: /blog/vsl-script-structure and /blog/low-ticket-offer-funnel. Offer pages (/metalto, /paidpilot, /leadpilot, /medialibrary) already have clear titles and descriptions; kept indexed.
 
 Blocked by the 7-day rule (scheduled): legal page upgrades (/personal-injury-lead-generation, /exclusive-mva-leads, /car-accident-leads, /workers-comp-leads, /mass-tort-leads, /facebook-ads-for-lawyers) and the /mvaleadgeneration 301 merge, on 1 Dec. Person schema bios need owner text. State bar rule links could not be verified from this environment (americanbar.org unreachable), so no rule is cited by number.
+
+## 2026-11-25: SEO plan, batch 2 (owner asked to finish all work today, overriding the 3-pages-per-run and 7-day rules)
+
+| Change | URL | Before | After |
+|---|---|---|---|
+| New page | /legal-intake | No page | 1,513 words, intake steps, speed to lead, CRM, metrics table, 6 FAQs |
+| New page | /google-ads-for-lawyers | No page | 1,510 words, Google vs Facebook table, structure, PI PPC steps, mistakes, 6 FAQs; states no Google Ads results are published |
+| New page | /best-personal-injury-lead-generation-companies | No page | 1,475 words, 4 provider types table, 8 criteria, when another model fits better, red flags, disclosure that SWA is one option |
+| New blog post | /blog/how-much-do-personal-injury-leads-cost | No page | Answer block, published cost table, pricing models table, cost per signed case method, 5 FAQs |
+| 301 merge | /mvaleadgeneration and /snipermethod | Separate page | 301 to /exclusive-mva-leads; removed from sitemap, nav, footer and llms.txt; links repointed |
+| Upgrade | /exclusive-mva-leads | Title "Exclusive MVA Leads for Personal Injury Attorneys" | "Exclusive MVA Leads (Motor Vehicle Accident)"; In short answer, MVA qualification checklist (incl. statute of limitations), pricing model, published cost table |
+| Upgrade | /personal-injury-lead-generation | Title "Personal Injury Leads From Facebook and Instagram" | "Personal Injury Leads and Lead Generation for Lawyers"; In short answer, qualification checklist, pricing model, cost table |
+| Upgrade | /car-accident-leads | Title "...for Personal Injury Lawyers" | "Car Accident Leads for Personal Injury Attorneys"; In short answer, pricing model, cost table |
+| Upgrade | /workers-comp-leads | 7 FAQs | "Workers Comp Leads for Attorneys"; In short answer (no published results), pricing model, 6 FAQs |
+| Upgrade | /mass-tort-leads | 7 FAQs | "Mass Tort Leads and Mass Tort Marketing"; In short answer (no published results), pricing model, 6 FAQs. Active torts list not added: dates could not be verified |
+| Upgrade | /facebook-ads-for-lawyers | Title "Facebook Ads for Lawyers That Bring Signed Cases" | "Facebook Ads for Lawyers and Law Firms"; In short answer, pricing model, cost table |

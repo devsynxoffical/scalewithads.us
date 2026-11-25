@@ -140,7 +140,9 @@ const config: PillarPageConfig = {
   related: [
     { kind: "Service", title: "Personal injury marketing", text: "The full marketing system for PI firms.", href: "/personal-injury-marketing" },
     { kind: "Service", title: "Law firm marketing", text: "Meta ads, intake and follow-up for law firms.", href: "/law-firm-marketing" },
-    { kind: "Guide", title: "How much do MVA leads cost?", text: "Pricing models and our published numbers.", href: "/blog/how-much-do-mva-leads-cost" },
+    { kind: "Guide", title: "How much do personal injury leads cost?", text: "Pricing models and our published numbers.", href: "/blog/how-much-do-personal-injury-leads-cost" },
+    { kind: "Service", title: "Legal intake", text: "Fast follow-up and screening behind every lead.", href: "/legal-intake" },
+    { kind: "Guide", title: "PI lead generation companies compared", text: "4 provider types, 8 criteria and honest trade-offs.", href: "/best-personal-injury-lead-generation-companies" },
   ],
 };
 

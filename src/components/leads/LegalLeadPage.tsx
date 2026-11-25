@@ -12,6 +12,7 @@ import { Breadcrumbs, RelatedResources, type RelatedItem } from "@/components/se
 import { LeadForm } from "@/components/leads/LeadForm";
 import { CaseCostCalculator } from "@/components/leads/Calculators";
 import { LegalProofSection } from "@/components/leads/LegalProofSection";
+import { AnswerBlock, PricingBlock } from "@/components/leads/LegalBlocks";
 import type { Faq } from "@/lib/faqs";
 import { SITE_URL, breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 
@@ -40,6 +41,10 @@ export type LegalLeadPageConfig = {
   qualifyIntro: ReactNode;
   questions: string[];
   showCalculator: boolean;
+  answerQuestion?: string;
+  answer?: string;
+  pricing?: string[];
+  showCostTable?: boolean;
   calcIntro?: ReactNode;
   steps: Card[];
   compliance: string;
@@ -104,6 +109,8 @@ export function LegalLeadPage({ c }: { c: LegalLeadPageConfig }) {
       </section>
 
       <TrustBarSection />
+
+      {c.answerQuestion && c.answer && <AnswerBlock question={c.answerQuestion} answer={c.answer} />}
 
       {c.showProof && <LegalProofSection title={c.proofTitle} subtitle={c.proofIntro} />}
 
@@ -173,6 +180,8 @@ export function LegalLeadPage({ c }: { c: LegalLeadPageConfig }) {
           </div>
         </section>
       )}
+
+      {c.pricing && <PricingBlock items={c.pricing} showCostTable={c.showCostTable} />}
 
       {/* Process */}
       <section className="relative overflow-hidden bg-stone-950 text-white py-24 sm:py-28 px-4 md:px-8">

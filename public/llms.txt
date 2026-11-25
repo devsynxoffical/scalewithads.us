@@ -33,7 +33,6 @@ Clients own 100% of every asset we build. Onboarding and system build take rough
 - [Book a strategy call](https://www.scalewithads.us/contact): free call to audit your client acquisition and map a 90-day plan
 - [AI Client Acquisition Mastermind](https://www.scalewithads.us/privatemastermind): a 6-week, hands-on implementation mastermind with 12 live classes on targeting, AI-assisted ads, tracking, scaling, retargeting and profitability, applied to your own campaigns
 - [1-on-1 Meta Ads coaching](https://www.scalewithads.us/privatemastermind/coaching): direct coaching on your own ad account
-- [MVA Lead Generation: The Sniper Method](https://www.scalewithads.us/mvaleadgeneration): a 1 hour 33 minute mastermind on finding hidden Facebook audiences for personal injury (motor vehicle accident) cases at up to 50% lower ad costs
 - [$847K LTO funnel case study](https://www.scalewithads.us/metalto): how a low-ticket offer funnel reached $847K revenue on $255K Meta ad spend (3.32x ROAS)
 - [Paid Pilot Trial](https://www.scalewithads.us/paidpilot): 7-day paid pilot to test the system before committing
 - [Personal injury lead generation](https://www.scalewithads.us/personal-injury-lead-generation): exclusive MVA and personal injury case inquiries from Meta Ads run in the law firm's own ad account
@@ -59,6 +58,9 @@ Clients own 100% of every asset we build. Onboarding and system build take rough
 - [Law firm marketing](https://www.scalewithads.us/law-firm-marketing): Meta ads, screening, intake follow-up and signed-case reporting for law firms
 - [Personal injury marketing](https://www.scalewithads.us/personal-injury-marketing): the 4 parts of a PI marketing system, channels compared, one campaign per case type
 - [Legal lead generation](https://www.scalewithads.us/legal-lead-generation): exclusive attorney leads from the firm's own campaigns, screened and verified
+- [Legal intake](https://www.scalewithads.us/legal-intake): screening, instant follow-up, CRM routing and signed-case tracking behind every lead campaign
+- [Google Ads for lawyers](https://www.scalewithads.us/google-ads-for-lawyers): search campaigns for personal injury firms in the firm's own Google Ads account (no Google Ads results published yet)
+- [Personal injury lead generation companies compared](https://www.scalewithads.us/best-personal-injury-lead-generation-companies): the 4 provider types, 8 criteria and red flags, with honest trade-offs
 
 ## Published legal results (Meta Ads, dated client dashboards on /work)
 
@@ -76,6 +78,7 @@ Roofing lead generation, roofing ads and roofing case studies are published on o
 - [How to find hidden Facebook interests](https://www.scalewithads.us/blog/find-hidden-facebook-interests): step-by-step workflow for finding, filtering and testing less-contested Meta Ads interests
 - [Low-ticket offer funnel](https://www.scalewithads.us/blog/low-ticket-offer-funnel): how the funnel works, with numbers from an $847K Meta Ads case study
 - [How much do MVA leads cost?](https://www.scalewithads.us/blog/how-much-do-mva-leads-cost): pricing models, what drives the price, published Meta Ads cost per lead ($17.13 to $26.93) and cost per signed case
+- [How much do personal injury leads cost?](https://www.scalewithads.us/blog/how-much-do-personal-injury-leads-cost): pricing models, our published cost per lead and how to calculate cost per signed case
 - [How to choose a legal lead generation company](https://www.scalewithads.us/blog/how-to-choose-a-legal-lead-generation-company): 8 criteria and a comparison of shared, exclusive, pay-per-case and own-account lead sources
 - [How to get workers' comp leads](https://www.scalewithads.us/blog/how-to-get-workers-comp-leads): channels, reaching injured workers with Meta Ads, qualifying questions and common mistakes
 - [VSL script structure](https://www.scalewithads.us/blog/vsl-script-structure): an 8-part framework and fill-in template for high-ticket VSLs

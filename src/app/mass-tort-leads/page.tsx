@@ -3,11 +3,12 @@ import Link from "next/link";
 import { BadgeCheck, BarChart3, ClipboardList, Crosshair, FileSearch, Layers, Megaphone, MessageSquare, Pill, ShieldCheck } from "lucide-react";
 import { LegalLeadPage, type LegalLeadPageConfig } from "@/components/leads/LegalLeadPage";
 import { pageMeta } from "@/lib/seo";
+import { LEGAL_PRICING } from "@/components/leads/LegalBlocks";
 
 const PATH = "/mass-tort-leads";
 
 export const metadata: Metadata = pageMeta({
-  title: "Exclusive Mass Tort Leads Screened to Your Criteria",
+  title: "Mass Tort Leads and Mass Tort Marketing",
   description:
     "Mass tort leads screened against your case criteria, with phone verification and fast intake follow-up. Learn what mass tort lead generation involves.",
   path: PATH,
@@ -65,6 +66,10 @@ const config: LegalLeadPageConfig = {
     "Have you already signed with another law firm?",
   ],
   showCalculator: true,
+  answerQuestion: "What is a mass tort lead?",
+  answer:
+    "A mass tort lead is a person who may qualify for a specific mass tort, such as a defective product or drug case, and has asked to speak to a law firm. Good leads are screened against the case criteria before intake. We have not published mass tort results yet.",
+  pricing: LEGAL_PRICING,
   calcIntro: (
     <>
       In mass tort, the real measure is cost per signed retainer. We report leads, qualified claimants and signed cases. Note: we do not publish mass tort results yet. We will add them once campaigns complete reporting. See how we run <Link href="/facebook-ads-for-lawyers" className="font-bold text-purple-700 underline underline-offset-4">Facebook ads for lawyers</Link>.
@@ -85,7 +90,6 @@ const config: LegalLeadPageConfig = {
     { q: "What is mass tort lead generation?", a: "It is the process of finding people who may qualify for a specific mass tort and screening them against the case criteria before they reach a law firm's intake team." },
     { q: "Is mass tort the same as a class action?", a: "No. In a class action, one lawsuit represents the whole group. In a mass tort, each claimant has an individual case, although the cases are often handled together." },
     { q: "How are mass tort leads screened?", a: "Claimants answer questions on product use, exposure dates, diagnosis and representation. Only those who match your criteria are sent to intake." },
-    { q: "Why do mass torts take so long?", a: "They involve many claimants, complex evidence and often bellwether trials before settlements, so cases can run for several years." },
   ],
   faqTitle: "mass tort leads.",
   finalTitle: "Get mass tort claimants screened to your criteria",
