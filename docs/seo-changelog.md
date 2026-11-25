@@ -78,3 +78,17 @@ Data: Search Console 28 days to 23 Nov. /workers-comp-leads 13 impressions, aver
 | Table block for blog posts | Blog template | Not available | Available |
 | Em dashes in visible text | Homepage and shared sections | 40+ across shared components | 0 on every page |
 | Home title | / | 60 characters | 59 characters |
+
+## 2026-11-25: SEO, AEO and GEO plan, week 1 (owner decisions on 25 Nov)
+
+| Change | URL | Target keywords | Before | After |
+|---|---|---|---|---|
+| Homepage retitle | / | facebook advertising agency, facebook ads agency | "Facebook Ads Agency for Client Acquisition" | "Facebook Ads Agency for Personal Injury Law Firms"; description now leads with "Facebook advertising agency for personal injury law firms" |
+| New pillar page | /personal-injury-marketing | personal injury lawyer marketing, personal injury marketing, PI law firm marketing, PI marketing agency, PI advertising | No page | 1,579 words: answer block, 4-part system, channel table, case types, process, proof, pricing model, compliance, 6 FAQs |
+| New hub page | /law-firm-marketing | law firm marketing, lawyer marketing, attorney marketing, legal marketing agency, law firm advertising | No page | 1,480 words: answer block, funnel, channel table, practice areas, agency checklist, markets, proof, pricing model, 6 FAQs |
+| New page | /legal-lead-generation | legal lead generation, lawyer leads, attorney leads, law firm leads, lead generation for lawyers | No page | 1,368 words: answer block, lead source table, qualified lead criteria, lead types, process, buyer questions, proof, pricing model, 6 FAQs |
+| Sitemap, footer and llms.txt | Sitewide | | 26 sitemap URLs | 29 URLs; footer Services links to the 3 new pages; llms.txt has a Key facts block (who we serve, case types, pricing model, setup, compliance) |
+
+Already done before this plan: /facebook-ads-for-roofing-companies 301 to roofingsystems.co (23 Nov), /metads 301 to /services. Kept by owner decision: /blog/vsl-script-structure and /blog/low-ticket-offer-funnel. Offer pages (/metalto, /paidpilot, /leadpilot, /medialibrary) already have clear titles and descriptions; kept indexed.
+
+Blocked by the 7-day rule (scheduled): legal page upgrades (/personal-injury-lead-generation, /exclusive-mva-leads, /car-accident-leads, /workers-comp-leads, /mass-tort-leads, /facebook-ads-for-lawyers) and the /mvaleadgeneration 301 merge, on 1 Dec. Person schema bios need owner text. State bar rule links could not be verified from this environment (americanbar.org unreachable), so no rule is cited by number.

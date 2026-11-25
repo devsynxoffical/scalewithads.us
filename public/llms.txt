@@ -46,6 +46,20 @@ Clients own 100% of every asset we build. Onboarding and system build take rough
 - [Workers comp leads](https://www.scalewithads.us/workers-comp-leads): injured-worker inquiries screened for work injury and claim status
 - [Mass tort leads](https://www.scalewithads.us/mass-tort-leads): claimants screened against the firm's tort criteria (no mass tort results published yet)
 
+## Key facts
+
+- Who we serve: personal injury and other law firms in the United States, plus agencies that advertise for attorneys
+- Case types: personal injury, motor vehicle accidents (car, truck, motorcycle, rideshare), workers compensation and mass tort
+- Pricing model: the firm pays Meta directly for ad spend in its own ad account, plus a management fee scoped on the strategy call. Leads are not sold per lead and never shared
+- Setup: campaigns typically go live 14 to 21 days after the kickoff call
+- Compliance: the firm approves every ad and landing page against its state bar's advertising rules; ads never promise case outcomes
+
+## Law firm marketing
+
+- [Law firm marketing](https://www.scalewithads.us/law-firm-marketing): Meta ads, screening, intake follow-up and signed-case reporting for law firms
+- [Personal injury marketing](https://www.scalewithads.us/personal-injury-marketing): the 4 parts of a PI marketing system, channels compared, one campaign per case type
+- [Legal lead generation](https://www.scalewithads.us/legal-lead-generation): exclusive attorney leads from the firm's own campaigns, screened and verified
+
 ## Published legal results (Meta Ads, dated client dashboards on /work)
 
 - 76 MVA leads in 5 days at $17.13 per lead ($1,301.63 spent, Jul 27 to Jul 31, 2026)

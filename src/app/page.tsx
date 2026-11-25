@@ -6,9 +6,9 @@ import { HOME_FAQS } from "@/lib/faqs";
 import { HOME_SERVICE_JSONLD, faqJsonLd, pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
-  title: "Facebook Ads Agency for Client Acquisition | Scale With Ads",
+  title: "Facebook Ads Agency for Personal Injury Law Firms",
   description:
-    "Done-for-you Meta Ads, creatives, funnels, CRM and AI follow-up for $10K+/month businesses. Double your revenue in 90 days, guaranteed in writing.",
+    "Facebook advertising agency for personal injury law firms: exclusive case leads from Meta ads, screened and followed up in minutes, with real legal results",
   path: "/",
 });
 
