@@ -10,10 +10,10 @@ import { Crown, ArrowRight, ShieldCheck, Sparkles, CheckCircle2, TrendingUp, Bar
 import Link from "next/link";
 
 export const metadata: Metadata = pageMeta({
-  title: "7-Day Meta Ads Paid Pilot | Scale With Ads™",
+  title: "7-Day Meta Ads Paid Pilot | Scale With Ads",
   description:
     "Test our client acquisition system with a 7-day paid pilot before committing: campaign launch, creatives and tracking set up, with results you can see.",
-  path: "/paidpilot",
+  path: "/paid-pilot",
 });
 
 export default function PaidPilotPage() {

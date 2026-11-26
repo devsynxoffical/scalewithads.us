@@ -12,6 +12,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, faqJsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { AnswerBlock } from "@/components/leads/LegalBlocks";
 import {
   ArrowRight,
   CheckCircle2,
@@ -183,6 +184,11 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <AnswerBlock
+        question="What does a Meta ads agency do?"
+        answer="A Meta ads agency plans, creates and manages Facebook and Instagram ads for a business: the offer and angle, creatives, audiences, budgets, landing pages, tracking and reporting. We also connect the ads to your CRM and follow-up, and measure results on booked calls and signed clients, not on clicks or likes."
+      />
 
       {/* 5 Core Overview Cards Grid */}
       <section className="py-20 px-4 md:px-8 bg-[#FDFBF7] border-b border-stone-200">
@@ -576,7 +582,7 @@ export default function ServicesPage() {
               ))}
             </div>
             <p className="mt-3 text-sm text-stone-600">
-              From $255K in tracked Meta ad spend over 90 days. Full breakdown in the <Link href="/metalto" className="font-bold text-purple-700 underline underline-offset-4">$847K low-ticket funnel case study</Link>.
+              From $255K in tracked Meta ad spend over 90 days. Full breakdown in the <Link href="/low-ticket-funnel-case-study" className="font-bold text-purple-700 underline underline-offset-4">$847K low-ticket funnel case study</Link>.
             </p>
           </div>
           <ol className="grid gap-3">
@@ -665,7 +671,7 @@ export default function ServicesPage() {
             kind: "Case study",
             title: "$847K low-ticket funnel",
             text: "How one funnel turned $255K in Meta spend into $847K at a 3.32x ROAS.",
-            href: "/metalto",
+            href: "/low-ticket-funnel-case-study",
           },
           {
             kind: "Guide",

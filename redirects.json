@@ -9,7 +9,7 @@
   },
   {
     "source": "/portfolio",
-    "destination": "/medialibrary"
+    "destination": "/media-library"
   },
   {
     "source": "/metads",
@@ -82,5 +82,33 @@
   {
     "source": "/home",
     "destination": "/"
+  },
+  {
+    "source": "/privatemastermind/coaching",
+    "destination": "/meta-ads-coaching"
+  },
+  {
+    "source": "/privatemastermind",
+    "destination": "/private-mastermind"
+  },
+  {
+    "source": "/metalto",
+    "destination": "/low-ticket-funnel-case-study"
+  },
+  {
+    "source": "/paidpilot",
+    "destination": "/paid-pilot"
+  },
+  {
+    "source": "/leadpilot",
+    "destination": "/lead-pilot"
+  },
+  {
+    "source": "/medialibrary",
+    "destination": "/media-library"
+  },
+  {
+    "source": "/features",
+    "destination": "/tracking-and-attribution"
   }
 ]

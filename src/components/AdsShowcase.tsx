@@ -89,7 +89,7 @@ export function AdsShowcase() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/medialibrary"
+            href="/media-library"
             className="btn btn-outline-dark inline-flex px-8 py-4 text-sm font-semibold"
           >
             See every ad in the media library →

@@ -1,19 +1,31 @@
 import type { Metadata } from "next";
-import { pageMeta } from "@/lib/seo";
+import { faqJsonLd, pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { MarqueeTicker } from "@/components/redesign/MarqueeTicker";
 import { CreativeCtaSection } from "@/components/redesign/CreativeCtaSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import Link from "next/link";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { FaqSection } from "@/components/redesign/FaqSection";
+import { AnswerBlock } from "@/components/leads/LegalBlocks";
+
 import { ArrowRight, BarChart3, ShieldCheck, Zap, Layers, Sparkles, Database } from "lucide-react";
 
 export const metadata: Metadata = pageMeta({
-  title: "Client Acquisition OS: Tracking & Attribution | Scale With Ads™",
+  title: "Meta Ads Tracking and Attribution | Scale With Ads",
   description:
-    "Inside the Scale With Ads™ acquisition OS: live dashboards, server-side attribution, CRM automation and lead qualification that show what your ads really earn.",
-  path: "/features",
+    "Meta ads tracking and attribution: Pixel and Conversions API setup, live dashboards, CRM automation and lead tracking that show what your ads really earn.",
+  path: "/tracking-and-attribution",
 });
+
+const TRACKING_FAQS = [
+  { q: "What is the Meta Conversions API?", a: "The Conversions API (CAPI) sends conversion events from your server or CRM directly to Meta, alongside the browser Pixel. It helps Meta see conversions that the Pixel alone can miss, such as leads that become clients later." },
+  { q: "Do I need both the Meta Pixel and the Conversions API?", a: "Most advertisers run both. The Pixel records actions in the browser, and the Conversions API sends events from your server or CRM. Events are deduplicated so each conversion is only counted once." },
+  { q: "Why track leads all the way to a sale or signed case?", a: "Cost per lead hides lead quality. When you send qualified lead, appointment and sale events back to Meta, you can see what each customer really costs, and the algorithm can optimize toward people who actually convert." },
+  { q: "What should a Meta ads dashboard show?", a: "Spend, leads, cost per lead, qualified leads, appointments and sales or signed cases, by campaign and ad, so budget decisions are based on revenue instead of clicks." },
+  { q: "Who owns the tracking setup and data?", a: "You do. Tracking runs in your own ad account, Pixel and CRM, and stays with your business if we stop working together." },
+];
 
 export default function FeaturesPage() {
   const features = [
@@ -51,6 +63,7 @@ export default function FeaturesPage() {
 
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-stone-900 font-sans">
+      <JsonLd data={faqJsonLd(TRACKING_FAQS)} />
       <FloatingNavbar />
       
       {/* Features Hero */}
@@ -90,6 +103,11 @@ export default function FeaturesPage() {
 
       <MarqueeTicker />
       <CreativeCtaSection />
+      <AnswerBlock
+        question="What is Meta ads tracking and attribution?"
+        answer="Meta ads tracking and attribution is how you connect every ad to the leads, appointments and sales it produces. It combines the Meta Pixel, the Conversions API and your CRM, so you can see real cost per customer by campaign and ad, and Meta can optimize toward the people who actually buy."
+      />
+      <FaqSection faqs={TRACKING_FAQS} eyebrow="Tracking and attribution FAQ" title={<>Questions about <span className="font-serif italic animate-purple-gradient">tracking.</span></>} />
       <EditorialFooter />
     </main>
   );

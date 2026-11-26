@@ -122,3 +122,19 @@ Blocked by the 7-day rule (scheduled): legal page upgrades (/personal-injury-lea
 All city pages: Service schema with areaServed, FAQPage, BreadcrumbList, no LocalBusiness, proof labeled national, no em dashes, 68 percent or more unique vs sibling pages. Hub /law-firm-marketing and the homepage law firm section ("Markets we serve") link to every page.
 
 Not built (sources could not be verified today): /law-firm-marketing/texas and /law-firm-marketing/dallas-tx (texasbar.com returned 503 all day; TxDOT crash data is verified and saved), /law-firm-marketing/new-york-ny (nycourts.gov blocks automated access, so the New York advertising rules could not be read). BLS workplace injury data could not be read for any state (bls.gov blocks automated access).
+
+## 2026-11-26: Two-day SEO, AEO, GEO and technical round
+
+| Change | Before | After |
+|---|---|---|
+| Clean slugs (301 from old) | /metalto, /paidpilot, /leadpilot, /medialibrary, /privatemastermind, /privatemastermind/coaching, /features | /low-ticket-funnel-case-study, /paid-pilot, /lead-pilot, /media-library, /private-mastermind, /meta-ads-coaching, /tracking-and-attribution; 63 internal links, sitemap and llms.txt updated; /portfolio now points to /media-library |
+| Titles | Mixed "Scale With Ads™" suffix; /features 63 chars; /leadpilot 61 chars; blog title about funnels | One "| Scale With Ads" suffix, all titles 60 chars or fewer; blog "Legal Marketing and Meta Ads Blog"; about "About Scale With Ads: Meta Ads Agency for Law Firms"; coaching "1-on-1 Meta Ads Coaching" |
+| Descriptions | Blog and media library described funnels and roofing; tracking page generic | Lane-correct descriptions, all 160 chars or fewer |
+| 404 page | Default Next.js 404 with the homepage description | Custom "Page Not Found" page, noindex, links to key pages |
+| /portfolio (old duplicate page) | Indexable, no canonical | noindex, canonical to /media-library (URL still 301s) |
+| /about (GEO entity page) | No facts, no FAQ, no schema | "What is Scale With Ads?" answer, 8 key facts (who we serve, case types, pricing model, setup, dated results, leadership, compliance), 6 FAQs, AboutPage + FAQPage schema |
+| AEO answer blocks | None on /services or /work | "What does a Meta ads agency do?" and "What results has Scale With Ads published?" |
+| Thin pages | /tracking-and-attribution 236 words, /meta-ads-coaching 286 words | Answer block and 5 FAQs each (387 and 413 words), FAQPage schema |
+| Hidden interests post | No law firm FAQ | FAQ "Can law firms use hidden Facebook interests in their ads?", updated date 26 Nov |
+| llms.txt | No date, old slugs | Last updated date, link to the About facts, new slugs |
+| Performance | Physics animation in the closing section started on page load (home TBT 3,700 ms, perf 52; PI marketing TBT 1,840 ms, perf 63) | Starts only when scrolled near (home TBT 1,670 ms, perf 61; PI marketing TBT 420 ms, perf 81). Lighthouse SEO 100 on both |

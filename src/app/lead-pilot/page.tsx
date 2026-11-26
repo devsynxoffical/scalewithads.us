@@ -7,7 +7,7 @@ export const metadata: Metadata = pageMeta({
   title: LEADPILOT_FUNNEL.metaTitle,
   description:
     LEADPILOT_FUNNEL.metaDescription,
-  path: "/leadpilot",
+  path: "/lead-pilot",
 });
 
 export default function LeadPilotPage() {

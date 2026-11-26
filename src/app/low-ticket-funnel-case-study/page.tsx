@@ -14,7 +14,7 @@ export const metadata: Metadata = pageMeta({
   title: "$847K Low-Ticket Funnel Case Study (3.32x ROAS)",
   description:
     "How a low-ticket offer funnel turned $255K of Meta ad spend into $847K in revenue and 13,630+ sales: offer, VSL, CAPI, upsells and scaling, phase by phase.",
-  path: "/metalto",
+  path: "/low-ticket-funnel-case-study",
 });
 
 export default function MetaLTOPage() {

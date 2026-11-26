@@ -9,13 +9,13 @@ const navLinks = [
   { href: "/#clients", label: "9-Figure Operators" },
   { href: "/#shorts", label: "Short Creatives" },
   { href: "/#results", label: "Campaign Results" },
-  { href: "/medialibrary", label: "Media Library" },
+  { href: "/media-library", label: "Media Library" },
   { href: BOOKING_PATH, label: "Book Strategy Call" },
 ];
 
 const pageLinks = [
-  { href: "/leadpilot", label: "Lead Pilot DFY" },
-  { href: "/privatemastermind", label: "Private Mastermind" },
+  { href: "/lead-pilot", label: "Lead Pilot DFY" },
+  { href: "/private-mastermind", label: "Private Mastermind" },
   { href: BOOKING_PATH, label: "Apply Now" },
 ];
 

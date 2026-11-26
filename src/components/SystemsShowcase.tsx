@@ -32,7 +32,7 @@ const systems = [
   },
   {
     slug: "leadpilot",
-    href: "/leadpilot",
+    href: "/lead-pilot",
     cover: "/media/covers/cover-leadpilot.jpg",
     videoSrc: "https://assets.cdn.filesafe.space/W8B8H8FvOolLCrvxXzYp/media/69ef9443717d5dd4e170f445.mp4",
     tag: "DONE-FOR-YOU LEAD PILOT",
@@ -51,7 +51,7 @@ const systems = [
   },
   {
     slug: "privatemastermind",
-    href: "/privatemastermind",
+    href: "/private-mastermind",
     cover: "/media/covers/cover-mastermind.jpeg",
     videoSrc: "/media/videos/mastermind.mp4",
     tag: "AGENCY MASTERMIND",

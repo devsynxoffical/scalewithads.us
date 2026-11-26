@@ -11,13 +11,13 @@ const links = [
   { href: "/#results", label: "Results" },
   { href: "/#reviews", label: "Videos" },
   { href: "/#comparison", label: "Why Us" },
-  { href: "/medialibrary", label: "Media Library" },
+  { href: "/media-library", label: "Media Library" },
 ];
 
 const mastermindLinks = [
-  { href: "/privatemastermind", label: "Private Mastermind" },
+  { href: "/private-mastermind", label: "Private Mastermind" },
   { href: "/services", label: "Meta Ads Training" },
-  { href: "/leadpilot", label: "Lead Pilot" },
+  { href: "/lead-pilot", label: "Lead Pilot" },
 ];
 
 export function Header() {

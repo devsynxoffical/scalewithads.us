@@ -156,7 +156,7 @@ export function VideoExamplesSection() {
             HIGH-PRODUCTION CREATIVE LAB // SCALEWITHADS
           </span>
           <Link
-            href="/medialibrary"
+            href="/media-library"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-xs uppercase tracking-wider transition-colors shadow-lg shadow-orange-500/20"
           >
             <span>Explore All Video Examples</span>
