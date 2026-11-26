@@ -7,6 +7,7 @@ import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ResultsByIndustry } from "@/components/work/ResultsByIndustry";
 import { LeadForm } from "@/components/leads/LeadForm";
+import { AnswerBlock } from "@/components/leads/LegalBlocks";
 import { INDUSTRIES, WORK_RESULTS } from "@/lib/workResults";
 import { breadcrumbJsonLd } from "@/lib/seo";
 
@@ -51,6 +52,11 @@ export default function WorkPage() {
         </div>
       </section>
 
+      <AnswerBlock
+        question="What results has Scale With Ads published?"
+        answer="Every result on this page is a dated client dashboard, posted publicly by Vaishali or Gaurav Kapoor. Legal results include 530 leads in 7 days at $26.93 per lead for a Texas personal injury firm, 76 MVA leads in 5 days at $17.13 and 203 MVA leads in 21 days at $18.69. Results vary by market and are not a guarantee."
+      />
+
       {/* Results by industry */}
       <section className="py-16 sm:py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
@@ -74,7 +80,7 @@ export default function WorkPage() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-stone-500">
-            In-depth write-ups: the <Link href="/metalto" className="font-bold text-purple-700 underline underline-offset-4">$847K low-ticket funnel case study</Link> and our{" "}
+            In-depth write-ups: the <Link href="/low-ticket-funnel-case-study" className="font-bold text-purple-700 underline underline-offset-4">$847K low-ticket funnel case study</Link> and our{" "}
             <Link href="/exclusive-mva-leads" className="font-bold text-purple-700 underline underline-offset-4">MVA lead campaigns</Link>.
           </p>
         </div>

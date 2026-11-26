@@ -32,7 +32,7 @@ export function FourWaysSection() {
       italicWord: "copy",
       subtitle: "Others write copy. Someone else handles follow-up.",
       icon: AlertTriangle,
-      href: "/features",
+      href: "/tracking-and-attribution",
     },
     {
       number: "03",

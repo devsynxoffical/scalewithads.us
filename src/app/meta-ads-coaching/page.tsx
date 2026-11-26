@@ -1,18 +1,30 @@
 import type { Metadata } from "next";
-import { pageMeta } from "@/lib/seo";
+import { faqJsonLd, pageMeta } from "@/lib/seo";
 import React from "react";
 import { FloatingNavbar } from "@/components/redesign/FloatingNavbar";
 import { LusionEndSection } from "@/components/redesign/LusionEndSection";
 import { EditorialFooter } from "@/components/redesign/EditorialFooter";
 import { Users, ArrowRight, Play, AlertTriangle, Target, Clapperboard, Crosshair, LineChart, Gauge, MessagesSquare } from "lucide-react";
 import Link from "next/link";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { FaqSection } from "@/components/redesign/FaqSection";
+import { AnswerBlock } from "@/components/leads/LegalBlocks";
+
 
 export const metadata: Metadata = pageMeta({
-  title: "1-on-1 Meta Ads Growth Coaching | Scale With Ads™",
+  title: "1-on-1 Meta Ads Coaching | Scale With Ads",
   description:
     "Work directly with our team on your Meta Ads: offer, creatives, targeting and scaling, for businesses spending to grow. Watch the overview, then book a call.",
-  path: "/privatemastermind/coaching",
+  path: "/meta-ads-coaching",
 });
+
+const COACHING_FAQS = [
+  { q: "What is 1-on-1 Meta ads coaching?", a: "It is direct coaching on your own Facebook and Instagram ad account. You run the ads, and we review your offer, creatives, targeting, tracking and scaling with you and tell you what to change." },
+  { q: "Is coaching different from the mastermind?", a: "Yes. Coaching is one-to-one and built around your account. The AI Client Acquisition Mastermind is a 6-week program with 12 live classes applied to your own campaigns." },
+  { q: "Do you run the ads for me in coaching?", a: "No. In coaching you keep control and run the ads yourself. If you want the ads built and run for you, see our done-for-you services instead." },
+  { q: "Which industries does coaching cover?", a: "Any industry that runs Meta ads. The principles of offer, creative, targeting, tracking and scaling are the same; we apply them to your market on the call." },
+  { q: "How do I start?", a: "Book a coaching call. We look at your account and goals on the call and agree what the coaching should cover." },
+];
 
 export default function GrowthCoachingPage() {
   const stats = [
@@ -33,6 +45,7 @@ export default function GrowthCoachingPage() {
 
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-stone-900 font-sans selection:bg-purple-200 selection:text-purple-950">
+      <JsonLd data={faqJsonLd(COACHING_FAQS)} />
       <FloatingNavbar />
 
       {/* Top Warning Banner */}
@@ -151,12 +164,17 @@ export default function GrowthCoachingPage() {
 
           <p className="mt-10 text-center text-sm text-stone-500">
             Want us to run the ads for you instead? See{" "}
-            <Link href="/leadpilot" className="font-bold text-purple-700 underline underline-offset-4">Lead Pilot done-for-you ads</Link> or join the{" "}
-            <Link href="/privatemastermind" className="font-bold text-purple-700 underline underline-offset-4">private mastermind</Link>.
+            <Link href="/lead-pilot" className="font-bold text-purple-700 underline underline-offset-4">Lead Pilot done-for-you ads</Link> or join the{" "}
+            <Link href="/private-mastermind" className="font-bold text-purple-700 underline underline-offset-4">private mastermind</Link>.
           </p>
         </div>
       </section>
 
+      <AnswerBlock
+        question="What is 1-on-1 Meta ads coaching?"
+        answer="One-to-one Meta ads coaching is direct, personal help on your own Facebook and Instagram ad account. You keep running the ads; we review your offer, creatives, targeting, tracking and scaling with you on live calls and tell you exactly what to change, in any industry."
+      />
+      <FaqSection faqs={COACHING_FAQS} eyebrow="Meta ads coaching FAQ" title={<>Questions about <span className="font-serif italic animate-purple-gradient">coaching.</span></>} />
       <LusionEndSection />
       <EditorialFooter />
     </main>

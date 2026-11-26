@@ -53,7 +53,7 @@ export function DifferenceSection() {
       desc: "Our proprietary multi-stage qualification filters leads before they hit your calendar, maximizing show-up and close rates.",
       highlight: "High-Ticket Filter",
       icon: ShieldCheck,
-      href: "/features",
+      href: "/tracking-and-attribution",
     },
     {
       number: "03",

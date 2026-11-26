@@ -211,7 +211,7 @@ export default function PersonalInjuryLeadGenerationPage() {
                 Book a free strategy call <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/privatemastermind"
+                href="/private-mastermind"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full border-2 border-stone-950 bg-white hover:bg-purple-50 text-stone-950 font-black text-xs sm:text-sm uppercase tracking-wider transition-colors"
               >
                 <Play className="w-4 h-4" /> Watch the mastermind
@@ -426,7 +426,7 @@ export default function PersonalInjuryLeadGenerationPage() {
               <p className="mt-3 text-stone-600 font-medium leading-relaxed">
                 Pay-per-lead agencies with an intake team ready to call leads quickly that want a steady flow of cases they control. Learn the process in the mastermind, or partner with our team.
               </p>
-              <Link href="/privatemastermind" className="mt-6 inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
+              <Link href="/private-mastermind" className="mt-6 inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 hover:text-stone-950">
                 See the private mastermind <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

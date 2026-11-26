@@ -150,7 +150,7 @@ export function ClientsShowcase() {
         {/* Bottom CTA bar */}
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
-            href="/medialibrary"
+            href="/media-library"
             className="btn btn-outline border-zinc-300 text-zinc-900 px-8 py-4 text-xs font-extrabold uppercase tracking-wider hover:bg-zinc-100"
           >
             Browse All Client Videos & Case Studies →
@@ -220,7 +220,7 @@ export function ClientsShowcase() {
                       BOOK STRATEGY CALL
                     </Link>
                     <Link
-                      href="/medialibrary"
+                      href="/media-library"
                       className="btn btn-outline-dark px-5 py-2.5 text-xs font-bold"
                     >
                       Full Case Study

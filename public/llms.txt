@@ -4,6 +4,8 @@
 
 Founded and led by Vaishali Kapoor (Founder) and Gaurav Kapoor (Co-Founder). Website: https://www.scalewithads.us
 
+Last updated: 26 November 2026. Company facts: https://www.scalewithads.us/about
+
 ## Team
 
 - Vaishali Kapoor, Founder
@@ -31,10 +33,10 @@ Clients own 100% of every asset we build. Onboarding and system build take rough
 - [Services](https://www.scalewithads.us/services): Meta Ads, creatives, VSLs, funnels, CRM and automation
 - [Client results](https://www.scalewithads.us/work): verified dashboards, ROAS and revenue proof
 - [Book a strategy call](https://www.scalewithads.us/contact): free call to audit your client acquisition and map a 90-day plan
-- [AI Client Acquisition Mastermind](https://www.scalewithads.us/privatemastermind): a 6-week, hands-on implementation mastermind with 12 live classes on targeting, AI-assisted ads, tracking, scaling, retargeting and profitability, applied to your own campaigns
-- [1-on-1 Meta Ads coaching](https://www.scalewithads.us/privatemastermind/coaching): direct coaching on your own ad account
-- [$847K LTO funnel case study](https://www.scalewithads.us/metalto): how a low-ticket offer funnel reached $847K revenue on $255K Meta ad spend (3.32x ROAS)
-- [Paid Pilot Trial](https://www.scalewithads.us/paidpilot): 7-day paid pilot to test the system before committing
+- [AI Client Acquisition Mastermind](https://www.scalewithads.us/private-mastermind): a 6-week, hands-on implementation mastermind with 12 live classes on targeting, AI-assisted ads, tracking, scaling, retargeting and profitability, applied to your own campaigns
+- [1-on-1 Meta Ads coaching](https://www.scalewithads.us/meta-ads-coaching): direct coaching on your own ad account
+- [$847K LTO funnel case study](https://www.scalewithads.us/low-ticket-funnel-case-study): how a low-ticket offer funnel reached $847K revenue on $255K Meta ad spend (3.32x ROAS)
+- [Paid Pilot Trial](https://www.scalewithads.us/paid-pilot): 7-day paid pilot to test the system before committing
 - [Personal injury lead generation](https://www.scalewithads.us/personal-injury-lead-generation): exclusive MVA and personal injury case inquiries from Meta Ads run in the law firm's own ad account
 
 ## Lead generation offers
@@ -83,7 +85,7 @@ Roofing lead generation, roofing ads and roofing case studies are published on o
 - [How to choose a legal lead generation company](https://www.scalewithads.us/blog/how-to-choose-a-legal-lead-generation-company): 8 criteria and a comparison of shared, exclusive, pay-per-case and own-account lead sources
 - [How to get workers' comp leads](https://www.scalewithads.us/blog/how-to-get-workers-comp-leads): channels, reaching injured workers with Meta Ads, qualifying questions and common mistakes
 - [VSL script structure](https://www.scalewithads.us/blog/vsl-script-structure): an 8-part framework and fill-in template for high-ticket VSLs
-- [Shorts and video library](https://www.scalewithads.us/medialibrary): short-form ad creatives produced for clients
+- [Shorts and video library](https://www.scalewithads.us/media-library): short-form ad creatives produced for clients
 
 ## Frequently asked questions
 

@@ -39,10 +39,14 @@ export const POSTS: Post[] = [
       "A practical workflow for finding hidden Facebook interests in Ads Manager, building tighter interest stacks and testing them without wasting budget.",
     category: "Meta Ads Targeting",
     datePublished: "2026-11-16",
-    dateModified: "2026-11-18",
+    dateModified: "2026-11-26",
     primaryKeyword: "hidden facebook interests",
     related: { label: "Get exclusive MVA leads", href: "/exclusive-mva-leads" },
     faqs: [
+      {
+        q: "Can law firms use hidden Facebook interests in their ads?",
+        a: "Yes. Law firms can use interest targeting like any advertiser, as long as the ads follow their state bar's advertising rules. Hidden interests help personal injury and MVA campaigns reach people who are not yet targeted by every other firm, and a short screening form keeps lead quality high.",
+      },
       {
         q: "What are hidden Facebook interests?",
         a: "They are real, relevant interests in Meta's detailed targeting that sit one or two steps away from the obvious ones for your niche, such as publications, tools, job titles and life situations your buyers share. Fewer competitors target them, so they are often less contested.",
@@ -164,7 +168,7 @@ export const POSTS: Post[] = [
     datePublished: "2026-11-16",
     dateModified: "2026-11-18",
     primaryKeyword: "low ticket offer funnel",
-    related: { label: "Read the full $847K case study", href: "/metalto" },
+    related: { label: "Read the full $847K case study", href: "/low-ticket-funnel-case-study" },
     faqs: [
       {
         q: "What is a low-ticket offer funnel?",
@@ -239,7 +243,7 @@ export const POSTS: Post[] = [
       },
       {
         type: "p",
-        text: "The full breakdown, including the playbooks behind each phase, is in the [$847K LTO funnel case study](/metalto).",
+        text: "The full breakdown, including the playbooks behind each phase, is in the [$847K LTO funnel case study](/low-ticket-funnel-case-study).",
       },
       { type: "h2", text: "Common low-ticket funnel mistakes" },
       {
@@ -365,7 +369,7 @@ export const POSTS: Post[] = [
       },
       {
         type: "p",
-        text: "VSL scripting, ad creative and landing pages are all part of our [done-for-you services](/services). For an example of a VSL-led funnel at scale, see the [$847K low-ticket funnel case study](/metalto), and for the funnel side, our guide to the [low-ticket offer funnel](/blog/low-ticket-offer-funnel).",
+        text: "VSL scripting, ad creative and landing pages are all part of our [done-for-you services](/services). For an example of a VSL-led funnel at scale, see the [$847K low-ticket funnel case study](/low-ticket-funnel-case-study), and for the funnel side, our guide to the [low-ticket offer funnel](/blog/low-ticket-offer-funnel).",
       },
     ],
   },

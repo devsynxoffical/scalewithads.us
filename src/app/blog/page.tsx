@@ -13,9 +13,9 @@ import { PostCover } from "@/components/blog/PostCover";
 import { breadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
-  title: "Meta Ads & Funnel Strategy Blog | Scale With Ads™",
+  title: "Legal Marketing and Meta Ads Blog | Scale With Ads",
   description:
-    "Practical guides on Facebook interest targeting, low-ticket funnels, VSL scripts and Meta Ads scaling, written from campaigns our team actually runs.",
+    "Guides for law firms on personal injury and MVA lead costs, workers comp leads and choosing a lead provider, plus Meta ads targeting and VSL scripts.",
   path: "/blog",
 });
 
@@ -162,7 +162,7 @@ export default function BlogPage() {
             kind: "Case study",
             title: "$847K low-ticket funnel",
             text: "How one Meta Ads funnel turned $255K in ad spend into $847K at a 3.32x ROAS.",
-            href: "/metalto",
+            href: "/low-ticket-funnel-case-study",
           },
         ]}
       />

@@ -11,7 +11,7 @@ import { CheckCircle2 } from "lucide-react";
 import { LeadForm } from "@/components/leads/LeadForm";
 
 export const metadata: Metadata = pageMeta({
-  title: "Book a Free Meta Ads Strategy Call | Scale With Ads™",
+  title: "Book a Free Meta Ads Strategy Call | Scale With Ads",
   description:
     "Pick a time for a free strategy call. We audit your client acquisition, review your offer and map out a 90-day Meta Ads growth plan for your business.",
   path: "/contact",

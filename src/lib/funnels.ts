@@ -26,7 +26,7 @@ export type FunnelConfig = {
 
 export const LEADPILOT_FUNNEL: FunnelConfig = {
   slug: "leadpilot",
-  metaTitle: "Lead Pilot: Done-For-You Meta Ads That Sell | Scale With Ads™",
+  metaTitle: "Lead Pilot: Done-For-You Meta Ads | Scale With Ads",
   metaDescription:
     "Done-for-you Meta Ads for $10K+/month businesses in any industry, from a team with $50M+ in Meta spend. Double your revenue in 90 days, in writing.",
   eyebrow: "Lead Pilot · done-for-you ads that sell",
@@ -66,7 +66,7 @@ export const LEADPILOT_FUNNEL: FunnelConfig = {
 export const MASTERMIND_FUNNEL: FunnelConfig = {
   slug: "privatemastermind",
   metaTitle:
-    "Private Meta Ads Mastermind for Agencies | Scale With Ads™",
+    "Private Meta Ads Mastermind for Agencies | Scale With Ads",
   metaDescription:
     "A 6-week Meta Ads mastermind for agencies: 12 live classes on targeting, AI ads, tracking, scaling and profitability, applied to your own campaigns.",
   eyebrow: "Private mastermind · media agencies + operators",

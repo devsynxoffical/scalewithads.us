@@ -15,7 +15,7 @@ import { ProgramJourney } from "@/components/mastermind/ProgramJourney";
 export const metadata: Metadata = pageMeta({
   title: MASTERMIND_FUNNEL.metaTitle,
   description: MASTERMIND_FUNNEL.metaDescription,
-  path: "/privatemastermind",
+  path: "/private-mastermind",
 });
 
 const BENEFITS = [
@@ -348,7 +348,7 @@ export default function PrivateMastermindPage() {
             <p className="mt-6 text-sm text-stone-300 leading-relaxed">
               Prefer to have the system built and run for you instead? See our{" "}
               <Link href="/services" className="font-bold text-purple-300 underline underline-offset-4">Meta ads agency</Link> and{" "}
-              <Link href="/leadpilot" className="font-bold text-purple-300 underline underline-offset-4">done-for-you lead generation</Link> services.
+              <Link href="/lead-pilot" className="font-bold text-purple-300 underline underline-offset-4">done-for-you lead generation</Link> services.
             </p>
           </div>
         </div>

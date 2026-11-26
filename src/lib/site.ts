@@ -26,7 +26,7 @@ export const nav = [
   { label: "Operators", href: "/#clients" },
   { label: "Shorts", href: "/#shorts" },
   { label: "Results", href: "/#results" },
-  { label: "Media Library", href: "/medialibrary" },
+  { label: "Media Library", href: "/media-library" },
 ] as const;
 
 export const navCta = {

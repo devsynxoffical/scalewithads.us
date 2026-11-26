@@ -13,18 +13,18 @@ export function FloatingNavbar() {
 
   const navItems = [
     { label: "Home", href: "/", rotate: 0 },
-    { label: "Shorts & Videos", href: "/medialibrary", rotate: -5, hasArcTop: true },
+    { label: "Shorts & Videos", href: "/media-library", rotate: -5, hasArcTop: true },
     { label: "Results", href: "/work", rotate: 0 },
     {
       label: "Mastermind",
-      href: "/privatemastermind",
+      href: "/private-mastermind",
       rotate: -4,
       hasArcBottom: true,
       dropdown: [
-        { label: "Private Mastermind", href: "/privatemastermind", icon: Crown, desc: "Private 1:1 Advisory & Media Systems" },
-        { label: "$847K LTO Funnel", href: "/metalto", icon: BookOpen, desc: "$847K Meta Ads Funnel Case Study" },
-        { label: "Paid Pilot Trial", href: "/paidpilot", icon: Zap, desc: "Guaranteed Revenue Paid Trial" },
-        { label: "1-on-1 Coaching", href: "/privatemastermind/coaching", icon: Users, desc: "Meta Ads growth coaching" },
+        { label: "Private Mastermind", href: "/private-mastermind", icon: Crown, desc: "Private 1:1 Advisory & Media Systems" },
+        { label: "$847K LTO Funnel", href: "/low-ticket-funnel-case-study", icon: BookOpen, desc: "$847K Meta Ads Funnel Case Study" },
+        { label: "Paid Pilot Trial", href: "/paid-pilot", icon: Zap, desc: "Guaranteed Revenue Paid Trial" },
+        { label: "1-on-1 Coaching", href: "/meta-ads-coaching", icon: Users, desc: "Meta Ads growth coaching" },
       ],
     },
     {

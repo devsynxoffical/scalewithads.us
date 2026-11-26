@@ -20,12 +20,12 @@ const mastermindLinks = [
   {
     label: "LeadPilot",
     sub: "The full client acquisition system, installed",
-    href: "/leadpilot",
+    href: "/lead-pilot",
   },
   {
     label: "Private Mastermind",
     sub: "The playbook behind $50M+ in Meta Ads",
-    href: "/privatemastermind",
+    href: "/private-mastermind",
   },
 ];
 

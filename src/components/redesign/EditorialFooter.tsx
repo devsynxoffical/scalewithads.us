@@ -53,7 +53,7 @@ export function EditorialFooter() {
                 <Link href="/" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Home
                 </Link>
-                <Link href="/medialibrary" className="text-stone-600 hover:text-purple-700 transition-colors">
+                <Link href="/media-library" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Shorts & Videos
                 </Link>
                 <Link href="/work" className="text-stone-600 hover:text-purple-700 transition-colors">
@@ -120,10 +120,10 @@ export function EditorialFooter() {
                 <Link href="/services" className="text-stone-600 hover:text-purple-700 transition-colors">
                   CRM & AI Nurture
                 </Link>
-                <Link href="/features" className="text-stone-600 hover:text-purple-700 transition-colors">
+                <Link href="/tracking-and-attribution" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Tracking & Attribution
                 </Link>
-                <Link href="/leadpilot" className="text-stone-600 hover:text-purple-700 transition-colors">
+                <Link href="/lead-pilot" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Lead Pilot DFY
                 </Link>
               </div>
@@ -133,19 +133,19 @@ export function EditorialFooter() {
                 <p className="text-xs font-mono font-bold uppercase tracking-widest text-purple-700">
                   MASTERMIND
                 </p>
-                <Link href="/privatemastermind" className="text-stone-600 hover:text-purple-700 transition-colors">
+                <Link href="/private-mastermind" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Private Mastermind
                 </Link>
-                <Link href="/privatemastermind/coaching" className="text-stone-600 hover:text-purple-700 transition-colors">
+                <Link href="/meta-ads-coaching" className="text-stone-600 hover:text-purple-700 transition-colors">
                   1-on-1 Coaching
                 </Link>
-                <Link href="/metalto" className="text-stone-600 hover:text-purple-700 transition-colors">
+                <Link href="/low-ticket-funnel-case-study" className="text-stone-600 hover:text-purple-700 transition-colors">
                   $847K Meta Funnel
                 </Link>
-                <Link href="/paidpilot" className="text-stone-600 hover:text-purple-700 transition-colors">
+                <Link href="/paid-pilot" className="text-stone-600 hover:text-purple-700 transition-colors">
                   7-Day Paid Pilot
                 </Link>
-                <Link href="/medialibrary" className="text-stone-600 hover:text-purple-700 transition-colors">
+                <Link href="/media-library" className="text-stone-600 hover:text-purple-700 transition-colors">
                   Media Library
                 </Link>
               </div>

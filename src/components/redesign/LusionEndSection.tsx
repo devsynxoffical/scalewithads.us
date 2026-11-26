@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Matter from "matter-js";
 import Link from "next/link";
 
@@ -44,8 +44,24 @@ interface WaterRipple {
 export function LusionEndSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  // Start the physics only when the section is near the viewport, so it does not block the main thread on page load.
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
+    const el = containerRef.current;
+    if (!el || active) return;
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) {
+        setActive(true);
+        io.disconnect();
+      }
+    }, { rootMargin: "300px 0px" });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [active]);
+
+  useEffect(() => {
+    if (!active) return;
     const stage = containerRef.current;
     const canvas = canvasRef.current;
     if (!stage || !canvas) return;
@@ -54,7 +70,7 @@ export function LusionEndSection() {
     if (!ctx) return;
 
     let W = stage.clientWidth || window.innerWidth;
-    let H = 640;
+    const H = 640;
 
     canvas.width = W;
     canvas.height = H;
@@ -497,7 +513,7 @@ export function LusionEndSection() {
       Composite.clear(world, false);
       Engine.clear(engine);
     };
-  }, []);
+  }, [active]);
 
   return (
     <section id="end-section" className="py-24 px-4 bg-[#E9EAEE] text-stone-900 border-t border-stone-300 relative overflow-hidden select-none min-h-[640px] flex items-center justify-center">
