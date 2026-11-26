@@ -143,6 +143,7 @@ export const SITEMAP_ROUTES: Route[] = [
   { path: "/contact", changeFrequency: "monthly", priority: 0.9 },
   { path: "/work", changeFrequency: "weekly", priority: 0.8 },
   { path: "/media-library", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/private-mastermind/personal-injury-facebook-ads", changeFrequency: "monthly", priority: 0.8 },
   { path: "/private-mastermind", changeFrequency: "monthly", priority: 0.8 },
   { path: "/personal-injury-lead-generation", changeFrequency: "monthly", priority: 0.9 },
   { path: "/exclusive-mva-leads", changeFrequency: "monthly", priority: 0.9 },

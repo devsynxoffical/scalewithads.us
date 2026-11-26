@@ -139,6 +139,9 @@ export function EditorialFooter() {
                 <Link href="/meta-ads-coaching" className="text-stone-600 hover:text-purple-700 transition-colors">
                   1-on-1 Coaching
                 </Link>
+                <Link href="/private-mastermind/personal-injury-facebook-ads" className="text-stone-600 hover:text-purple-700 transition-colors">
+                  PI Facebook Ads Mastermind
+                </Link>
                 <Link href="/low-ticket-funnel-case-study" className="text-stone-600 hover:text-purple-700 transition-colors">
                   $847K Meta Funnel
                 </Link>
