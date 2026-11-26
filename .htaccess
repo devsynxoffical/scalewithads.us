@@ -15,7 +15,7 @@ RewriteRule ^ https://www.scalewithads.us%{REQUEST_URI} [R=301,L]
 # Permanent redirects (same list as Vercel, from redirects.json)
 RewriteRule ^mvaleadgeneration/?$ /exclusive-mva-leads [R=301,L]
 RewriteRule ^snipermethod/?$ /exclusive-mva-leads [R=301,L]
-RewriteRule ^portfolio/?$ /medialibrary [R=301,L]
+RewriteRule ^portfolio/?$ /media-library [R=301,L]
 RewriteRule ^metads/?$ /services [R=301,L]
 RewriteRule ^book/?$ /contact [R=301,L]
 RewriteRule ^book-a-call/?$ /contact [R=301,L]
@@ -34,6 +34,13 @@ RewriteRule ^case-studies/roofing-leads-154-in-15-days/?$ https://www.roofingsys
 RewriteRule ^testimonials/?$ /work [R=301,L]
 RewriteRule ^results/?$ /work [R=301,L]
 RewriteRule ^home/?$ / [R=301,L]
+RewriteRule ^privatemastermind/coaching/?$ /meta-ads-coaching [R=301,L]
+RewriteRule ^privatemastermind/?$ /private-mastermind [R=301,L]
+RewriteRule ^metalto/?$ /low-ticket-funnel-case-study [R=301,L]
+RewriteRule ^paidpilot/?$ /paid-pilot [R=301,L]
+RewriteRule ^leadpilot/?$ /lead-pilot [R=301,L]
+RewriteRule ^medialibrary/?$ /media-library [R=301,L]
+RewriteRule ^features/?$ /tracking-and-attribution [R=301,L]
 
 # Lead form endpoint
 RewriteRule ^api/lead/?$ api/lead.php [L]
