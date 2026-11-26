@@ -1,0 +1,2 @@
+:HL["/_next/static/chunks/0ygluvj2dk1qy.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"private-mastermind","param":null,"prefetchHints":0,"slots":{"children":{"name":"personal-injury-facebook-ads","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"uClSnDS3nYNL5Ky4RixZf"}
