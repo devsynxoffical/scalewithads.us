@@ -25,6 +25,7 @@ export function FloatingNavbar() {
         { label: "$847K LTO Funnel", href: "/low-ticket-funnel-case-study", icon: BookOpen, desc: "$847K Meta Ads Funnel Case Study" },
         { label: "Paid Pilot Trial", href: "/paid-pilot", icon: Zap, desc: "Guaranteed Revenue Paid Trial" },
         { label: "1-on-1 Coaching", href: "/meta-ads-coaching", icon: Users, desc: "Meta Ads growth coaching" },
+        { label: "PI Facebook Ads Mastermind", href: "/private-mastermind/personal-injury-facebook-ads", icon: Crosshair, desc: "Sniper Method: hidden Facebook audiences for PI cases" },
       ],
     },
     {

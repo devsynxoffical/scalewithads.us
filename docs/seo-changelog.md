@@ -138,3 +138,11 @@ Not built (sources could not be verified today): /law-firm-marketing/texas and /
 | Hidden interests post | No law firm FAQ | FAQ "Can law firms use hidden Facebook interests in their ads?", updated date 26 Nov |
 | llms.txt | No date, old slugs | Last updated date, link to the About facts, new slugs |
 | Performance | Physics animation in the closing section started on page load (home TBT 3,700 ms, perf 52; PI marketing TBT 1,840 ms, perf 63) | Starts only when scrolled near (home TBT 1,670 ms, perf 61; PI marketing TBT 420 ms, perf 81). Lighthouse SEO 100 on both |
+
+## 2026-11-26: Personal injury Facebook ads mastermind page (owner request)
+
+| Change | Before | After |
+|---|---|---|
+| New page /private-mastermind/personal-injury-facebook-ads | No page (the old /mvaleadgeneration Sniper Method page was merged into /exclusive-mva-leads on 25 Nov) | Same structure as qualifiedleadsx.com/mastermind/personal-injury-facebook-ads in the Scale With Ads design: headline, 1h 33m Vimeo mastermind (loads on click), answer block, 6 lessons, why it matters, SWA's own published legal results, training videos, testimonials, 7 FAQs, lead form. Course + VideoObject + FAQPage + BreadcrumbList schema. Title "Personal Injury Facebook Ads: Sniper Method Mastermind" |
+| 301s | /mvaleadgeneration and /snipermethod to /exclusive-mva-leads | Both now 301 to the new mastermind page (same content as the original) |
+| Navigation | No link | Mastermind menu, footer, sitemap and llms.txt link to the new page |
